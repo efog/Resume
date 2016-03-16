@@ -1,0 +1,87 @@
+{
+    "name": "Étienne Brouillard",
+    "title": {
+        "en": "Solution Architect",
+        "fr": "Architecte de solution"
+    },
+    "phone": "+1-514-576-4915",
+    "email": "etienne.brouillard@outlook.com",
+    "website": "https://labradar.net",
+    "github": "https://github.com/efog",
+    "linkedin": "https://ca.linkedin.com/in/étienne-brouillard-2b99062",
+    "twitter": "ebrouillard",
+    "careerProfile": {
+        "en": [
+            "Graduate in software engineering from the École de Technologie Supérieure of Montreal in 2007, Mr. Brouillard is a solution architect, accomplished developer and team lead which cumulates nearly 10 years of hands-on experience on several projects such as web applications, mobile apps and xClient apps on the .Net platform and backend integrations. Mr. Brouillard is also training as a Professional Scrum Master. On his latest mandates he has leveraged technologies such as .NET 4.5, C#, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS and SaaS, ASP.Net MVC5, WPF, WCF. Worked with various clients from Montreal to Sacramento through Winnipeg and led development teams located in India.",
+            "At CGI, Mr. Brouillard is establishing the mobility expertise for CGI’s excellence centers in Sherbrooke and Shawinigan. This mandate involves establishing practices and designs, lead projects, hiring talents, establishing relationships with clients and mentoring to consultants."
+        ],
+        "fr": ""
+    },
+    "skills": {
+        "areaOfExpertise": [],
+        "methodologies": [],
+        "softSkills": {
+            "en": [],
+            "fr": []
+        },
+        "environments": [],
+        "programmingLanguages": [],
+        "operatingSystems": [],
+        "databases": []
+    },
+    "education": [
+        {
+            "year": 2007,
+            "diploma": {
+                "en": "Software Engineering B.Ing.",
+                "fr": "Bachelier en Génie Logiciel"
+            },
+            "school": {
+                "en": "École de Technologie Supérieure, Montréal, Quebec, Canada",
+                "fr": "École de Technologie Supérieure, Montréal, Quebec, Canada"
+            }
+        },
+        {
+            "year": 2003,
+            "diploma": {
+                "en": "DEC Computer Science",
+                "fr": "DEC Techniques de l'informatique"
+            },
+            "school": {
+                "en": "CÉGEP Granby Haute-Yamaska, Granby, Quebec, Canada",
+                "fr": "CÉGEP Granby Haute-Yamaska, Granby, Quebec, Canada"
+            }
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "levelWritten": 5,
+            "levelSpoken": 5
+        },
+        {
+            "name": "French",
+            "levelWritten": 5,
+            "levelSpoken": 5
+        }
+    ],
+    "certifications":[
+        {
+            "en": "70-483: Programming in C#",
+            "fr": "70-483: Programmation C#"
+        },
+        {
+            "en": "70-536 TS: Microsoft .NET Framework 2.0—Application Development Foundation",
+            "fr": "70-536 TS: Microsoft .NET Framework 2.0—Application Development Foundation"
+        }
+    ],
+    "affiliations": [
+        {
+            "en": "Ordre des ingénieurs du Québec",
+            "fr": "Ordre des ingénieurs du Québec"
+        }
+    ],
+    "workExperiences":{
+        "employers":[]
+    }
+}
