@@ -1,0 +1,20 @@
+{
+    "name": "Étienne Brouillard",
+    "title": {
+        "en": "Solution Architect",
+        "fr": "Architecte de solution"
+    },
+    "phone": "+1-514-576-4915",
+    "email": "etienne.brouillard@outlook.com",
+    "website": "https://labradar.net",
+    "github": "https://github.com/efog",
+    "linkedin": "https://ca.linkedin.com/in/étienne-brouillard-2b99062",
+    "twitter": "ebrouillard",
+    "careerProfile": {
+        "en": [
+            "Graduate in software engineering from the École de Technologie Supérieure of Montreal in 2007, Mr. Brouillard is a solution architect, accomplished developer and team lead which cumulates nearly 10 years of hands-on experience on several projects such as web applications, mobile apps and xClient apps on the .Net platform and backend integrations. Mr. Brouillard is also training as a Professional Scrum Master. On his latest mandates he has leveraged technologies such as .NET 4.5, C#, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS and SaaS, ASP.Net MVC5, WPF, WCF. Worked with various clients from Montreal to Sacramento through Winnipeg and led development teams located in India.",
+            "At CGI, Mr. Brouillard is establishing the mobility expertise for CGI’s excellence centers in Sherbrooke and Shawinigan. This mandate involves establishing practices and designs, lead projects, hiring talents, establishing relationships with clients and mentoring to consultants."
+        ],
+        "fr": ""
+    }
+}
