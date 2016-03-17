@@ -84,7 +84,7 @@
     "workExperiences": {
         "employers": [
             {
-                "name": "CGI Inc.",
+                "name": "CGI",
                 "projects": [
                     {
                         "client": "CGI",
@@ -385,23 +385,11 @@
                         },
                         "tasks": [
                             {
-                                "en": "Design and document the automated deployment process on Azure;",
+                                "en": "Develop the Toruk microsite using ASP.Net MVC 5, C# and JavaScript;",
                                 "fr": ""
                             },
                             {
-                                "en": "Develop PowerShell modules;",
-                                "fr": ""
-                            },
-                            {
-                                "en": "Integrate the Azure Resource Management in the tooling;",
-                                "fr": ""
-                            },
-                            {
-                                "en": "Design and document master data enterprise services (clients and sales);",
-                                "fr": ""
-                            },
-                            {
-                                "en": "Develop, integrate and deploy master data enterprise services;",
+                                "en": "Develop the microsite automated deployment strategy on Azure;",
                                 "fr": ""
                             }
                         ],
@@ -430,6 +418,143 @@
                             "Entity Framework",
                             "SQL Azure",
                             "Azure WebJobs"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "Garda World",
+                        "project": {
+                            "en": "CashTrak NG System and Framework",
+                            "fr": "CashTrak NG System and Framework"
+                        },
+                        "role": {
+                            "en": "Solution Architect and Senior Developer",
+                            "fr": "Architecte de Solution et développeur .NET principal"
+                        },
+                        "startDate": "2014-07-01",
+                        "endDate": "2015-02-01",
+                        "description": {
+                            "en": "For the Cashtrak NG project, Mr. Brouillard was in charge for the delivery of the technological platform. This platform aims at implement a brand new Azure platform for the cash in transit management system used by GardaWorld. The system consists in several key integration points, several performance key points, a new SPA application template and REST Services hardened to meet high security requirements. All this solely relying on Microsoft Azure PaaS’ and SaaS' in order to reduce to its minimum operation costs and leverages Azure’s great availability record. On this mandate Mr. Brouillard was in charge of: ",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Design the application development platform for the SPA HTML5 app and REST web services using C#, .Net, AngularJS, Azure PaaS and SaaS;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Design the solutions architecture around data access, business rules and legacy systems integrations (ftp, file share, SOAP);",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Design the security architecture around Azure Active Directory and nTiers systems;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Create project templates on Visual Studio 2013;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Manage SDLC tooling such as continuous integration and automated testing;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Manage development teams at the architecture level;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 4.5",
+                            "AngularJS",
+                            "JavaScript",
+                            "CSS",
+                            "Azure",
+                            "PaaS",
+                            "IaaS",
+                            "Azure AD",
+                            "OAuth2",
+                            "OWin",
+                            "PowerShell",
+                            "MVVM",
+                            "Unity",
+                            "C#",
+                            "REST",
+                            "SQL Azure",
+                            "XML",
+                            "TDD",
+                            "NUnit",
+                            "GIT",
+                            "Scrum",
+                            "Visual Studio 2013",
+                            "Agile Methodologies",
+                            "Azure WebJobs"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "Techsolcom",
+                        "project": {
+                            "en": "Studio Numérique",
+                            "fr": "Studio Numérique"
+                        },
+                        "role": {
+                            "en": "Microsoft Practice Lead",
+                            "fr": "Lead de pratique Microsoft"
+                        },
+                        "startDate": "2014-07-01",
+                        "endDate": "2015-07-01",
+                        "description": {
+                            "en": "For TechSolCom Inc, Mr. Brouillard has driven Microsoft focused development center of expertise. The orientation of the company is to become a leader in Microsoft and Azure applications solutions development. Moreover, the goal is to leverage the skillset acquired on the Java side of the center to quickly make this development center shine. The existing centers skillsets includes SCRUM and Atlassian. The center used the Cashtrak project with Garda as a first significant milestone. The main objectives were: ",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Establish and obtain the centers development competency silver certification and then move forward toward obtaining the Gold level. ;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Manage developer’s certifications and trainings paths;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Recruit skilled resources to deliver Garda and Faurecia projects;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Provide tools and guidance to developers;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Setup Azure enterprise agreement between Microsoft and TechSolCom inc;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Start establishing proper SDLC practices;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Participate to project costing and sizing for proposals;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 4.5",
+                            "AngularJS",
+                            "JavaScript",
+                            "CSS",
+                            "Azure",
+                            "PaaS",
+                            "IaaS",
+                            "C#",
+                            "REST",
+                            "SQL Azure",
+                            "XML",
+                            "TDD",
+                            "NUnit",
+                            "GIT",
+                            "Scrum",
+                            "Visual Studio 2013",
+                            "Agile Methodologies"
                         ],
                         "products": []
                     }
