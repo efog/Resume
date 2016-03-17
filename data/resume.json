@@ -68,7 +68,7 @@
     "certifications": [
         {
             "en": "70-483: Programming in C#",
-            "fr": "70-483: Programmation C#"
+            "fr": "70-483: Programmation en C#"
         },
         {
             "en": "70-536 TS: Microsoft .NET Framework 2.0—Application Development Foundation",
@@ -153,7 +153,7 @@
                             "fr": "Spectocor Reports On-Premise Application"
                         },
                         "role": {
-                            "en": "Lead .Net Developer",
+                            "en": "Lead .NET Developer",
                             "fr": "Dévelopeur .Net principal"
                         },
                         "startDate": "2015-11-01",
@@ -295,6 +295,466 @@
                             "Google PlayStore"
                         ],
                         "products": []
+                    },
+                    {
+                        "client": "CGI Energy",
+                        "project": {
+                            "en": "CGI Exploration2Revenue Mobile Data Capture",
+                            "fr": "CGI Exploration2Revenue Mobile Data Capture"
+                        },
+                        "role": {
+                            "en": "Solution Architect and Senior .NET Developer",
+                            "fr": "Architecte de Solution et développeur .NET principal"
+                        },
+                        "startDate": "2012-10-01",
+                        "endDate": "2014-03-01",
+                        "description": {
+                            "en": "For the development of a data capture mobile application for the oil and gas industry the objective was to develop a brand new application on both WinRT platforms and Windows WPF using a reusable code base. Mr. Brouillard on this position was in charge of the solutions design, technical analysis and lead of a team of 5 developers. This project spanned on multiple sites from Montreal, Calgary and Bangalore. As highlights, the application had to allow a disconnected operation model, a scriptable business rule engine and a UIx consistent between the mobile and classic modes. On this mandate, Mr. Brouillard had to:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Design visual models and user experience (UX);",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Design the solution to minimize the WPF development tasks and by using the WinRT MVVM Framework Caliburn.Micro;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Develop the solution to support the offline mode and a dynamic configurable business rules engine;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Develop training material for developers;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Establish a development recipe and practices to be adopted;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Lead a development team and perform quality assurance tasks;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Manage customer expectations in terms of technical challenges;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Develop components TDD and write unit tests;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Actively participate in daily monitoring activities;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Apply established standards development;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Carry out inspections and code reviews;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 4.5",
+                            "WPF",
+                            "XAML for Windows Store",
+                            "Windows Store",
+                            "MVVM",
+                            "Caliburn.Micro",
+                            "Unity",
+                            "C#",
+                            "REST",
+                            "SQLite",
+                            "Telerik",
+                            "XML",
+                            "Antlr3",
+                            "TDD",
+                            "NUnit",
+                            "TFS",
+                            "Agile",
+                            "Oil & Gas",
+                            "Jira",
+                            "SVN",
+                            "Visual Studio 2012"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "CGI",
+                        "project": {
+                            "en": "Windows Store Offer, Mobile App Fabric",
+                            "fr": "Windows Store Offer, Mobile App Fabric"
+                        },
+                        "role": {
+                            "en": "Solution Architect and Senior .NET Developer",
+                            "fr": "Architecte de Solution et développeur .NET principal"
+                        },
+                        "startDate": "2014-01-01",
+                        "endDate": "2014-03-01",
+                        "description": {
+                            "en": "As head of the Windows Store service offering Microsoft CGI Expertise Center, Mr. Brouillard is in charge of developing strategies and tools to position the CoE in this growing market. A mandate that has been entrusted to Mr. Brouillard is to develop a reusable application that maximizes the machine base of T4 templating Microsoft in order to obtain a platform that reduces costs of Windows Store application development. In this position, Mr. Brouillard has completed the following tasks:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Analyze tendering and estimating projects;;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Provide training materials and create a core of developers;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Perform technology watch;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Design visual models and user experience (UX);",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Design a project template that will generate Windows Phone, Windows Store and WPF applications simultaneously;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Design and develop the project and the components required for an application of 'Line of Business';",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Create T4 templates to generate code from an external data source (SQL, WebAPI);",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Develop and write unit tests;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 4.5",
+                            "WPF",
+                            "XAML",
+                            "WinRT",
+                            "Windows Phone",
+                            "Universal Apps for Windows",
+                            "WebAPI",
+                            "T4",
+                            "REST",
+                            "UX",
+                            "Tendering",
+                            "Project estimations"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "Technologies Nter",
+                        "project": {
+                            "en": "Prim'Heure",
+                            "fr": "Prim'Heure"
+                        },
+                        "role": {
+                            "en": "Senior .NET Developer",
+                            "fr": "Développeur .NET principal"
+                        },
+                        "startDate": "2010-08-01",
+                        "endDate": "2013-04-01",
+                        "description": {
+                            "en": "As a senior developer assigned to the Prim’Heure project, Mr. Brouillard is responsible for the development of key functional components. This application manages the schedule of employees and workstations at four Casinos of Lotto-Quebec sites. This application requires the development of components using GDI+. This task requires strong knowledge of Windows Forms and .Net framework foundations. In this role, he executed the following activities:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Based on functional requirements documentation, detailing tasks, estimates and and designs of the technical solution elements required to develop the components to meet the functional requirements;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Developing and improving the applications infrastructure that integrated the functional units, which posed several challenges, required a long term project vision and risk management strategies;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Developing screens and forms using Windows Forms, GDI+ and the Infragistics controls;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Performing inspections and code reviews; developing optimization strategies with the client in order to reduce the screens complexity while maintaining users’ functional goals; managing the documentation and updates to functional unit documents;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Manage source control and build delivery;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Write technical documentation;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 3.5",
+                            ".NET 4.5",
+                            "WinForms",
+                            "C#",
+                            "Object Oriented Programming",
+                            "Design Patterns",
+                            "Visual Studio 2010",
+                            "GDI+",
+                            "LINQ",
+                            "ASP.Net MVC",
+                            "nHibernate",
+                            "Infragistics",
+                            "ActiveReports",
+                            "Unity IOC",
+                            "XML",
+                            "XSLT",
+                            "Code Injection",
+                            "TDD",
+                            "nUnit",
+                            "TFS",
+                            "Oracle 10g",
+                            "nMock",
+                            "Agile",
+                            "SCRUM",
+                            "SCQ",
+                            "MVC"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "Hydro-Québec Équipement",
+                        "project": {
+                            "en": "SimDel 5",
+                            "fr": "SimDel 5"
+                        },
+                        "role": {
+                            "en": ".NET Developer",
+                            "fr": "Développeur .NET"
+                        },
+                        "startDate": "2009-02-01",
+                        "endDate": "2009-07-01",
+                        "description": {
+                            "en": "As an Analyst / .NET Developer, Mr. Brouillard was in charge of developing a .Net WinForms-based simulator of an HydroQuebec grid off-loader. The system needed to operate with near real time performance while simulating up to 48 off-loaders concurrently. The goal was to use this software as a tool to test the next generation of HydroQuebec Network Management System (CADRE). The system uses a new network protocol (DNP/IP) which is developed by a third party specifically for this system. On this assignment, his principal tasks were:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Extracting from technical specifications of the original hardware equipment requirements for the simulator and write tests cases accordingly;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Based on a prototype built beforehand, improving the user interface and rewriting WinForms user controls. Using nUnit and nMock in a TDD fashion, proceeding to development of the simulator to reflect extracted requirements. Implementing mocks to supplement third-party components not yet available. Implementing a rich scripting environment that provides the end user a convenient way to simulate events inside the simulator;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Writing unit tests to prove correctness of implementation. Creating application profiling scenarios to evaluate actual performances and detecting improvement areas;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Managing third-party deliverables and milestones while keeping change requests at the lowest number possible;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 2.0",
+                            "WinForms",
+                            "DNP/IP (IEC 60870-5-104)",
+                            "TCP/IP",
+                            "XML",
+                            "XSLT",
+                            "Code Injection",
+                            "Triangle Microworks",
+                            "Real Time System Development",
+                            "TDD",
+                            "nUnit",
+                            "nMock2",
+                            "Agile Methodologies",
+                            "Windows Server 2003",
+                            "Hydro Quebec",
+                            "Cooper Power Enterprise Gateway",
+                            "CADRE"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "Bombardier Recreational Products",
+                        "project": {
+                            "en": "BRP BOSSWeb Compensation",
+                            "fr": "BRP BOSSWeb Compensation"
+                        },
+                        "role": {
+                            "en": ".NET Developer",
+                            "fr": "Développeur .NET"
+                        },
+                        "startDate": "2008-06-01",
+                        "endDate": "2009-01-01",
+                        "description": {
+                            "en": "This mandate consisted of developing the updated compensation program used by BRP. The project involved the use of SQL Server SSIS 2005 to extract, manipulate, calculate and store values as required to produce accurate reports in MS Excel and within BRP BOSSWeb. This project required the use of ASP.NET 2.0, Ajax Control Toolkit, Microsoft SQL Server Integration Services, Microsoft SQL Server 2005 and Mercury Quality Center. He carried out the following tasks:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Implementing, modifying and correcting new reports built as ASP.NET 2.0 Web forms, implementing and modifying specific SSIS data flows, implementing and modifying specific stored procedures, implementing specific MS Excel macros for cross validation;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Drafting and executing unit tests to ensure quality control throughout the report development phase using NUnit and NMock;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Drafting and executing functional and integrated tests using Mercury Quality Center and Team Foundation Server as a work item tracking system;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Source control management;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            "ASP.NET 2.0",
+                            "Visual Studio 2008",
+                            ".NET 2.0",
+                            "Ajax Control Toolkit",
+                            "AndroMDA",
+                            "Eclipse EMF",
+                            "NVelocity",
+                            "SAP R3",
+                            "SAP XI",
+                            "XSL",
+                            "Rational Software Modeler",
+                            "NUnit",
+                            "NMock",
+                            "Agile Methodologies",
+                            "TFS",
+                            "CruiseControl .NET",
+                            "SQL Server 2005",
+                            "nTiers architecture",
+                            "Microsoft Office",
+                            "SharePoint Services",
+                            "CMMi",
+                            "Windows Server 2003",
+                            "SSIS",
+                            "Source control management"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "Ministère de la Justice du Québec",
+                        "project": {
+                            "en": "RDPRM Web Conversion",
+                            "fr": "RDPRM Web Conversion"
+                        },
+                        "role": {
+                            "en": ".NET Developer",
+                            "fr": "Développeur .NET"
+                        },
+                        "startDate": "2008-01-01",
+                        "endDate": "2009-05-01",
+                        "description": {
+                            "en": "This mandate consisted of migrating the existing VB6 FormulRDPRM application to an ASP.NET Web application on service-oriented architecture. The solution was used by clients of the Ministère de la justice du Québec wishing to register personal and real rights in the RDPRM registry. His tasks included the following:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Developing Web Forms using ASP.NET 2.0 and the Ajax Control Toolkit. Constructing WebControls to attain maintainability and reusability objectives and extending the behaviour of numerous Ajax controls;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Performing unit tests using NUnit and performing integration tests;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Applying strict coding standards guided by the use of tools such as the code analysis provided with Visual Studio .NET 2005;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Source control management;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 2.0",
+                            "ASP.NET 2.0",
+                            "Transactional Web",
+                            "Visual Studio Team System",
+                            "WCF",
+                            "SOA",
+                            "Web Services",
+                            "Oracle 10g",
+                            "Microsoft SQL Server",
+                            "NUnit",
+                            "Rhino Mocks",
+                            "nTiers architecture",
+                            "Windows Server 2003",
+                            "Scheduler",
+                            "QA Center",
+                            "EnTrust TruePass",
+                            "Microsoft Exchange",
+                            "Cadre commun d’interopérabilité du gouvernement du Québec"
+                        ],
+                        "products": []
+                    },
+                    {
+                        "client": "Bombardier Recreational Products",
+                        "project": {
+                            "en": "BRP BOSSWeb",
+                            "fr": "BRP BOSSWeb"
+                        },
+                        "role": {
+                            "en": ".NET Developer",
+                            "fr": "Développeur .NET"
+                        },
+                        "startDate": "2006-08-01",
+                        "endDate": "2007-09-01",
+                        "description": {
+                            "en": "The BRP BOSSWeb project consisted of reengineering a CRM application built originally with ASP, SQL Server 2000 and SAP R3. The objectives of this reengineering were to provide the customer with the same features on a rewritten system in ASP.NET 2.0 and Ajax, SQL Server 2005, Microsoft Office SharePoint Services, SAP XI, AndroMda for the code generation and TeamFoundation Server. On this particular assignment, his tasks included the following:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Developing bottom-up functional deliverables using the .NET 2.0 framework;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Developing ASP.NET WebForms according to requirements. Improving behaviours by integrating the Ajax Toolkit;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Updating the software models generated with Rational Software Modeler. Refactoring and extending existing models;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Building the code generation process using AndroMDA. Developing code templates expressing the architecture correctly, integrating the code generation process within the build environment;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Constructing XSL transformations for messages exchanged between BOSSWeb and SAP XI. Integrating SAP R3 functions within SAP XI;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            "ASP.NET 2.0",
+                            ".NET 2.0",
+                            "Ajax Control Toolkit",
+                            "AndroMDA",
+                            "Eclipse EMF",
+                            "NVelocity",
+                            "SAP R3",
+                            "SAP XI",
+                            "XSL",
+                            "Rational Software Modeler",
+                            "NUnit",
+                            "NMock",
+                            "Agile Methodologies",
+                            "TFS",
+                            "CruiseControl .NET",
+                            "SQL Server 2005",
+                            "nTiers architecture",
+                            "Microsoft Office SharePoint Services",
+                            "CMMi",
+                            "Windows Server 2003"
+                        ],
+                        "products": []
                     }
                 ]
             },
@@ -430,6 +890,75 @@
                             "Entity Framework",
                             "SQL Azure",
                             "Azure WebJobs"
+                        ],
+                        "products": []
+                    }
+                ]
+            },
+            {
+                "name": "Processia Solutions",
+                "projects": [
+                    {
+                        "client": "Renault F1 Team",
+                        "project": {
+                            "en": "ECOBOM (Engineering Change Order / Bill Of Material)",
+                            "fr": "ECOBOM (Engineering Change Order / Bill Of Material)"
+                        },
+                        "role": {
+                            "en": "Senior .NET Developer",
+                            "fr": "Développeur .NET principal"
+                        },
+                        "startDate": "2009-07-01",
+                        "endDate": "2010-08-01",
+                        "description": {
+                            "en": "As a senior developer, Mr. Brouillard was in charge of developing and maintaining an application managing parts engineering change orders for Renault F1 race cars. The process ultimately allowed releasing, within the shortest timeframe possible, parts for a specific car following the part design cycle. As the main developer on the project, he had travel often to Enstone, UK to meet with the team, project managers, client and business analysts. The task at hand was to rebuild, nearly from the ground up, core components of the system to improve its maintainability, evolutivity and overall quality. His tasks included:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "From the existing solution, extracting business modules and redefining logical layers; analyzing the structure, proposing rebuilding strategies, presenting structured risk and feasibility analysis and determining project scope;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Defining a software development process and tools to use; training team and ensuring that the clients expectations are in line with the planning;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Executing the rework, integrating change and evolution requests and assigning tasks to the development team;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Defining the code generation process using MyGeneration which produces from database tables Stored Procedures and CRUD C# code;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Write relevant technical documentation;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 3.5",
+                            "C#",
+                            "WinForms",
+                            "PLM",
+                            "Catia",
+                            "Linx",
+                            "MyGeneration",
+                            "Object Oriented Programming",
+                            "SQL Server 2005",
+                            "SSRS",
+                            "TDD",
+                            "nUnit",
+                            "RhinoMock",
+                            "WCF",
+                            "MVC",
+                            "MVVM",
+                            "ASP.Net",
+                            "OffShoring",
+                            "WCF",
+                            "Agile",
+                            "SCRUM",
+                            "Patterns and Practices"
                         ],
                         "products": []
                     }
