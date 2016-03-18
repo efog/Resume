@@ -18,7 +18,7 @@
                 url: '/',
                 config: {
                     title: 'home',
-                    templateUrl: '/home.html',
+                    templateUrl: '/views/home.html',
                     settings: {}
                 }
             }

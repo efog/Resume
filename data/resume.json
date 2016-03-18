@@ -5,8 +5,8 @@
         "fr": "Architecte de solution"
     },
     "phone": "+1-514-576-4915",
-    "email": "etienne.brouillard@outlook.com",
-    "website": "https://labradar.net",
+    "email": "ebrouillard@outlook.com",
+    "website": "http://www.labradar.net",
     "github": "https://github.com/efog",
     "linkedin": "https://ca.linkedin.com/in/étienne-brouillard-2b99062",
     "twitter": "ebrouillard",
@@ -31,7 +31,7 @@
     },
     "education": [
         {
-            "year": 2007,
+            "year": "2003 - 2007",
             "diploma": {
                 "en": "Software Engineering B.Ing.",
                 "fr": "Bachelier en Génie Logiciel"
@@ -42,7 +42,7 @@
             }
         },
         {
-            "year": 2003,
+            "year": "2000 - 2003",
             "diploma": {
                 "en": "DEC Computer Science",
                 "fr": "DEC Techniques de l'informatique"

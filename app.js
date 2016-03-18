@@ -1,5 +1,5 @@
 var express = require('express'),
-    dataService = require('./dataService.js'),
+    dataService = require('./data.js'),
     app = express(),
     port = 9090;
 

@@ -1,19 +1,36 @@
-(function () {
+(function() {
     'use strict';
 
     angular
         .module('app')
         .controller('home', home);
 
-    home.$inject = ['$location']; 
+    home.$inject = ['$location', 'dataService', 'settingsFactory'];
 
-    function home($location) {
+    function home($location, dataService, settingsFactory) {
+        var _data = {};
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'home';
-
+        Object.defineProperty(vm, 'data', {
+            get: function() {
+                return _data;
+            },
+            set: function(value) {
+                _data = value;
+            }
+        });
         activate();
-
-        function activate() { }
+        return vm;
+        /**
+         * Activate controller
+         */
+        function activate() {
+            settingsFactory.prime();
+            dataService.get(function(resultData) {
+                vm.data = resultData;
+            }, function(error) {
+                console.log(error);
+            });
+        }
     }
 })();
