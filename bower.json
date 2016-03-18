@@ -39,7 +39,7 @@
     "bootstrap": {
       "main": [
         "dist/js/bootstrap.js",
-        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap.css",
         "less/bootstrap.less"
       ]
     },
@@ -48,6 +48,11 @@
         "less/font-awesome.less",
         "scss/font-awesome.scss",
         "css/font-awesome.css"
+      ]
+    },
+    "angular": {
+      "main": [
+        "angular.min.js"
       ]
     },
     "angular-ui": {
