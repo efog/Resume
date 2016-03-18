@@ -13,13 +13,13 @@
                 <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{ vm.data.phone }}">{{vm.data.phone}}</a></li>
                 <li class="website"><i class="fa fa-globe"></i><a href="{{ vm.data.website }}" target="_blank"><span output content="vm.data.website" substr="7"></span></a></li>
                 <li class="linkedin"><i class="fa fa-linkedin"></i><a href="{{ vm.data.linkedin }}" target="_blank"><span output content="vm.data.linkedin" substr="8"></span></a></li>
-                <li class="github"><i class="fa fa-github"></i><a href="{{ vm.data.github }}" target="_blank"><span output content="vm.data.github"></span></a></li>
+                <li class="github"><i class="fa fa-github"></i><a href="{{ vm.data.github }}" target="_blank"><span output content="vm.data.github" substr="8"></span></a></li>
                 <li class="twitter"><i class="fa fa-twitter"></i><a href="http://twitter.com/{{vm.data.twitter}}" target="_blank">@{{vm.data.twitter}}</a></li>
             </ul>
         </div>
         <!--//contact-container-->
         <div class="education-container container-block">
-            <h2 class="container-block-title">Education</h2>                       
+            <h2 class="container-block-title">Education</h2>
             <div class="item" ng-repeat="item in vm.data.education">
                 <h4 class="degree" output content="item.diploma">MSc in Computer Science</h4>
                 <h5 class="meta" output content="item.school">University of London</h5>
@@ -53,7 +53,7 @@
     <!--//sidebar-wrapper-->
 
     <div class="main-wrapper">
-
+        <div class="resume-header-background"></div>
         <section class="section summary-section">
             <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
             <div class="summary" output content="vm.data.careerProfile">
