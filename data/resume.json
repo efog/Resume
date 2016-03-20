@@ -81,11 +81,11 @@
             "fr": "Ordre des ingénieurs du Québec"
         }
     ],
-    "workExperiences": {
+    "workExperience": {
         "employers": [
             {
                 "name": "CGI",
-                "projects": [
+                "mandates": [
                     {
                         "client": "CGI",
                         "project": {
@@ -153,8 +153,8 @@
                             "fr": "Spectocor Reports On-Premise Application"
                         },
                         "role": {
-                            "en": "Lead .NET Developer",
-                            "fr": "Dévelopeur .Net principal"
+                            "en": "Solution Architect and Senior Developer",
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2015-11-01",
                         "endDate": null,
@@ -204,8 +204,8 @@
                             "fr": "Preuve de concept pour client confidentiel"
                         },
                         "role": {
-                            "en": "Solution Architect and Senior .NET Developer",
-                            "fr": "Architecte de Solution et développeur .NET principal"
+                            "en": "Solution Architect and Senior Developer",
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2015-11-01",
                         "endDate": "2015-12-01",
@@ -259,8 +259,8 @@
                             "fr": "MyBenefits.ca Mobile V2"
                         },
                         "role": {
-                            "en": "Solution Architect and Senior .NET Developer",
-                            "fr": "Architecte de Solution et développeur .NET principal"
+                            "en": "Solution Architect and Senior Developer",
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2015-07-01",
                         "endDate": null,
@@ -303,8 +303,8 @@
                             "fr": "CGI Exploration2Revenue Mobile Data Capture"
                         },
                         "role": {
-                            "en": "Solution Architect and Senior .NET Developer",
-                            "fr": "Architecte de Solution et développeur .NET principal"
+                            "en": "Solution Architect and Senior Developer",
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2012-10-01",
                         "endDate": "2014-03-01",
@@ -390,8 +390,8 @@
                             "fr": "Windows Store Offer, Mobile App Fabric"
                         },
                         "role": {
-                            "en": "Solution Architect and Senior .NET Developer",
-                            "fr": "Architecte de Solution et développeur .NET principal"
+                            "en": "Solution Architect and Senior Developer",
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2014-01-01",
                         "endDate": "2014-03-01",
@@ -401,7 +401,7 @@
                         },
                         "tasks": [
                             {
-                                "en": "Analyze tendering and estimating projects;;",
+                                "en": "Analyze tendering and estimating projects;",
                                 "fr": ""
                             },
                             {
@@ -456,8 +456,8 @@
                             "fr": "Prim'Heure"
                         },
                         "role": {
-                            "en": "Senior .NET Developer",
-                            "fr": "Développeur .NET principal"
+                            "en": "Senior Developer",
+                            "fr": "Développeur principal"
                         },
                         "startDate": "2010-08-01",
                         "endDate": "2013-04-01",
@@ -528,8 +528,8 @@
                             "fr": "SimDel 5"
                         },
                         "role": {
-                            "en": ".NET Developer",
-                            "fr": "Développeur .NET"
+                            "en": "Developer",
+                            "fr": "Développeur"
                         },
                         "startDate": "2009-02-01",
                         "endDate": "2009-07-01",
@@ -583,8 +583,8 @@
                             "fr": "BRP BOSSWeb Compensation"
                         },
                         "role": {
-                            "en": ".NET Developer",
-                            "fr": "Développeur .NET"
+                            "en": "Developer",
+                            "fr": "Développeur"
                         },
                         "startDate": "2008-06-01",
                         "endDate": "2009-01-01",
@@ -645,8 +645,8 @@
                             "fr": "RDPRM Web Conversion"
                         },
                         "role": {
-                            "en": ".NET Developer",
-                            "fr": "Développeur .NET"
+                            "en": "Developer",
+                            "fr": "Développeur"
                         },
                         "startDate": "2008-01-01",
                         "endDate": "2009-05-01",
@@ -701,8 +701,8 @@
                             "fr": "BRP BOSSWeb"
                         },
                         "role": {
-                            "en": ".NET Developer",
-                            "fr": "Développeur .NET"
+                            "en": "Developer",
+                            "fr": "Développeur"
                         },
                         "startDate": "2006-08-01",
                         "endDate": "2007-09-01",
@@ -760,7 +760,7 @@
             },
             {
                 "name": "Techsolcom",
-                "projects": [
+                "mandates": [
                     {
                         "client": "Cirque du Soleil",
                         "project": {
@@ -769,7 +769,7 @@
                         },
                         "role": {
                             "en": "Solution Architect and Senior Developer",
-                            "fr": "Architecte de Solution et développeur .NET principal"
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2015-02-01",
                         "endDate": "2015-08-01",
@@ -835,7 +835,7 @@
                         },
                         "role": {
                             "en": "Solution Architect and Senior Developer",
-                            "fr": "Architecte de Solution et développeur .NET principal"
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2015-02-01",
                         "endDate": "2015-05-01",
@@ -889,7 +889,7 @@
                         },
                         "role": {
                             "en": "Solution Architect and Senior Developer",
-                            "fr": "Architecte de Solution et développeur .NET principal"
+                            "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2014-07-01",
                         "endDate": "2015-02-01",
@@ -1022,7 +1022,7 @@
             },
             {
                 "name": "Processia Solutions",
-                "projects": [
+                "mandates": [
                     {
                         "client": "Renault F1 Team",
                         "project": {
@@ -1030,8 +1030,8 @@
                             "fr": "ECOBOM (Engineering Change Order / Bill Of Material)"
                         },
                         "role": {
-                            "en": "Senior .NET Developer",
-                            "fr": "Développeur .NET principal"
+                            "en": "Senior Developer",
+                            "fr": "Développeur principal"
                         },
                         "startDate": "2009-07-01",
                         "endDate": "2010-08-01",

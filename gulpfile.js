@@ -17,7 +17,7 @@ var injectFunc = function () {
         injectOptions = {
             ignorePath: 'public/'
         },
-        injectSrc = gulp.src(['./public/assets/css/app.css', './public/assets/css/styles.css', './public/assets/js/min/*.js', './public/app/*.js', './public/app/**/*.js'],
+        injectSrc = gulp.src(['./public/assets/css/app.css', './public/assets/css/styles-6.css', './public/assets/js/min/*.js', './public/app/*.js', './public/app/**/*.js'],
             {
                 read: false
             }),

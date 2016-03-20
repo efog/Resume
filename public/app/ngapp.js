@@ -7,9 +7,10 @@
         'ngRoute',
         'ngMessages',
         'ngSanitize',
-        'ngTouch'
+        'ngTouch',
         // Custom modules
         // 3rd Party Modules
+        'angularMoment'
     ]);
     app.constant('routes', getRoutes());
     function getRoutes() {
