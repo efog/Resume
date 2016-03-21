@@ -1,4 +1,4 @@
-<div class="wrapper" ng-controller="home as vm">
+<div class="wrapper" ng-controller="home as vm" ng-hide="vm.isBusy">
     <div class="sidebar-wrapper">
         <div class="profile-container">
             <img class="profile" src="assets/images/profile.png" alt="" />
@@ -62,15 +62,30 @@
         </section>
         <!--//section-->
         <section class="section experiences-section">
+            <h2 class="section-title"><i class="fa fa-sticky-note"></i>Summary</h2>
+            <h4>Between {{ vm.startYear.year() }} and {{ vm.endYear.year() }}, Mr. Brouillard worked at:</h4>
+            <ul class="horizontal">
+                <li ng-repeat="employer in vm.employers track by $index">
+                    <filter-select data-value="employer.name" data-filtered="vm.filters.employers[employer.name]">{{employer.name}}</filter-select>
+                </li>
+            </ul>
+            <h4>as</h4>
+            <ul class="horizontal">
+                <li ng-repeat="role in vm.roles track by $index">
+                    {{role}}
+                </li>
+            </ul>
+            <h4>doing</h4>            
+            <ul class="horizontal">
+                <li ng-repeat="tech in vm.technologies track by $index">
+                    {{tech}}
+                </li>
+            </ul>
+            <p>&nbsp;</p>
+        </section>
+        <!--//section-->
+        <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-            <div class="employer-jumplinks">
-                <h4>Worked at</h4>
-                <ul class="horizontal">
-                    <li ng-repeat="employer in vm.data.workExperience.employers track by $index">
-                        <h5><a href="/#/#{{employer.name}}" target="_self">{{employer.name}}</a></h5>
-                    </li>
-                </ul>
-            </div>
             <div ng-repeat="employer in vm.data.workExperience.employers track by $index" class="clearfix">
                 <h3><a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
                 <div ng-repeat="mandate in employer.mandates track by $index" class="item clearfix">

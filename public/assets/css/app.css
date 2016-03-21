@@ -18,6 +18,10 @@
     list-style-type: none;
 }
 
+.horizontal+*{
+    clear: both;
+}
+
 .employer-jumplinks{
     margin-bottom: 60px;
 }

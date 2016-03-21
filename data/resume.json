@@ -185,7 +185,7 @@
                             }
                         ],
                         "technologies": [
-                            "NET 4.5",
+                            ".NET 4.5",
                             "C#",
                             "WinForms",
                             "Agile",
@@ -193,7 +193,8 @@
                             "WCF",
                             "SQL Server",
                             " Windows Services",
-                            "GIT"
+                            "GIT",
+                            "UX Design"
                         ],
                         "products": []
                     },
@@ -235,7 +236,7 @@
                             ".NET 4.5",
                             "C#",
                             "HTML5",
-                            "Javascript",
+                            "JavaScript",
                             "CSS",
                             "CSS Media Queries",
                             "AngularJS",
@@ -245,9 +246,10 @@
                             "NUnit",
                             "GIT",
                             "Agile",
-                            "Visual Studio 2015",
+                            "Visual Studio",
                             "JQuery",
                             "JQuery UI",
+                            "UX Design",
                             "Bootstrap"
                         ],
                         "products": []
@@ -379,7 +381,8 @@
                             "Oil & Gas",
                             "Jira",
                             "SVN",
-                            "Visual Studio 2012"
+                            "UX Design",
+                            "Visual Studio"
                         ],
                         "products": []
                     },
@@ -443,8 +446,7 @@
                             "WebAPI",
                             "T4",
                             "REST",
-                            "UX",
-                            "Tendering",
+                            "UX Design",
                             "Project estimations"
                         ],
                         "products": []
@@ -498,7 +500,7 @@
                             "C#",
                             "Object Oriented Programming",
                             "Design Patterns",
-                            "Visual Studio 2010",
+                            "Visual Studio",
                             "GDI+",
                             "LINQ",
                             "ASP.Net MVC",
@@ -510,13 +512,13 @@
                             "XSLT",
                             "Code Injection",
                             "TDD",
-                            "nUnit",
+                            "NUnit",
                             "TFS",
                             "Oracle 10g",
-                            "nMock",
+                            "NMock",
                             "Agile",
                             "SCRUM",
-                            "SCQ",
+                            "UX Design",
                             "MVC"
                         ],
                         "products": []
@@ -543,7 +545,7 @@
                                 "fr": ""
                             },
                             {
-                                "en": "Based on a prototype built beforehand, improving the user interface and rewriting WinForms user controls. Using nUnit and nMock in a TDD fashion, proceeding to development of the simulator to reflect extracted requirements. Implementing mocks to supplement third-party components not yet available. Implementing a rich scripting environment that provides the end user a convenient way to simulate events inside the simulator;",
+                                "en": "Based on a prototype built beforehand, improving the user interface and rewriting WinForms user controls. Using NUnit and NMock in a TDD fashion, proceeding to development of the simulator to reflect extracted requirements. Implementing mocks to supplement third-party components not yet available. Implementing a rich scripting environment that provides the end user a convenient way to simulate events inside the simulator;",
                                 "fr": ""
                             },
                             {
@@ -562,16 +564,12 @@
                             "TCP/IP",
                             "XML",
                             "XSLT",
-                            "Code Injection",
                             "Triangle Microworks",
-                            "Real Time System Development",
                             "TDD",
-                            "nUnit",
-                            "nMock2",
+                            "NUnit",
+                            "NMock",
                             "Agile Methodologies",
                             "Windows Server 2003",
-                            "Hydro Quebec",
-                            "Cooper Power Enterprise Gateway",
                             "CADRE"
                         ],
                         "products": []
@@ -589,12 +587,12 @@
                         "startDate": "2008-06-01",
                         "endDate": "2009-01-01",
                         "description": {
-                            "en": "This mandate consisted of developing the updated compensation program used by BRP. The project involved the use of SQL Server SSIS 2005 to extract, manipulate, calculate and store values as required to produce accurate reports in MS Excel and within BRP BOSSWeb. This project required the use of ASP.NET 2.0, Ajax Control Toolkit, Microsoft SQL Server Integration Services, Microsoft SQL Server 2005 and Mercury Quality Center. He carried out the following tasks:",
+                                "en": "This mandate consisted of developing the updated compensation program used by BRP. The project involved the use of SQL Server SSIS 2005 to extract, manipulate, calculate and store values as required to produce accurate reports in MS Excel and within BRP BOSSWeb. This project required the use of ASP.Net 2.0, Ajax Control Toolkit, Microsoft SQL Server Integration Services, Microsoft SQL Server and Mercury Quality Center. He carried out the following tasks:",
                             "fr": ""
                         },
                         "tasks": [
                             {
-                                "en": "Implementing, modifying and correcting new reports built as ASP.NET 2.0 Web forms, implementing and modifying specific SSIS data flows, implementing and modifying specific stored procedures, implementing specific MS Excel macros for cross validation;",
+                                "en": "Implementing, modifying and correcting new reports built as ASP.Net 2.0 Web forms, implementing and modifying specific SSIS data flows, implementing and modifying specific stored procedures, implementing specific MS Excel macros for cross validation;",
                                 "fr": ""
                             },
                             {
@@ -611,8 +609,8 @@
                             }
                         ],
                         "technologies": [
-                            "ASP.NET 2.0",
-                            "Visual Studio 2008",
+                            "ASP.Net 2.0",
+                            "Visual Studio",
                             ".NET 2.0",
                             "Ajax Control Toolkit",
                             "AndroMDA",
@@ -627,14 +625,12 @@
                             "Agile Methodologies",
                             "TFS",
                             "CruiseControl .NET",
-                            "SQL Server 2005",
+                            "SQL Server",
                             "nTiers architecture",
-                            "Microsoft Office",
-                            "SharePoint Services",
+                            "Microsoft Office SharePoint Services",
                             "CMMi",
                             "Windows Server 2003",
-                            "SSIS",
-                            "Source control management"
+                            "SSIS"
                         ],
                         "products": []
                     },
@@ -656,7 +652,7 @@
                         },
                         "tasks": [
                             {
-                                "en": "Developing Web Forms using ASP.NET 2.0 and the Ajax Control Toolkit. Constructing WebControls to attain maintainability and reusability objectives and extending the behaviour of numerous Ajax controls;",
+                                "en": "Developing Web Forms using ASP.Net 2.0 and the Ajax Control Toolkit. Constructing WebControls to attain maintainability and reusability objectives and extending the behaviour of numerous Ajax controls;",
                                 "fr": ""
                             },
                             {
@@ -674,23 +670,17 @@
                         ],
                         "technologies": [
                             ".NET 2.0",
-                            "ASP.NET 2.0",
-                            "Transactional Web",
-                            "Visual Studio Team System",
+                            "ASP.Net 2.0",
+                            "TFS",
                             "WCF",
                             "SOA",
                             "Web Services",
                             "Oracle 10g",
                             "Microsoft SQL Server",
                             "NUnit",
-                            "Rhino Mocks",
+                            "RhinoMock",
                             "nTiers architecture",
-                            "Windows Server 2003",
-                            "Scheduler",
-                            "QA Center",
-                            "EnTrust TruePass",
-                            "Microsoft Exchange",
-                            "Cadre commun d’interopérabilité du gouvernement du Québec"
+                            "Windows Server 2003"
                         ],
                         "products": []
                     },
@@ -707,7 +697,7 @@
                         "startDate": "2006-08-01",
                         "endDate": "2007-09-01",
                         "description": {
-                            "en": "The BRP BOSSWeb project consisted of reengineering a CRM application built originally with ASP, SQL Server 2000 and SAP R3. The objectives of this reengineering were to provide the customer with the same features on a rewritten system in ASP.NET 2.0 and Ajax, SQL Server 2005, Microsoft Office SharePoint Services, SAP XI, AndroMda for the code generation and TeamFoundation Server. On this particular assignment, his tasks included the following:",
+                            "en": "The BRP BOSSWeb project consisted of reengineering a CRM application built originally with ASP, SQL Server 2000 and SAP R3. The objectives of this reengineering were to provide the customer with the same features on a rewritten system in ASP.Net 2.0 and Ajax, SQL Server, Microsoft Office SharePoint Services, SAP XI, AndroMda for the code generation and TeamFoundation Server. On this particular assignment, his tasks included the following:",
                             "fr": ""
                         },
                         "tasks": [
@@ -733,7 +723,7 @@
                             }
                         ],
                         "technologies": [
-                            "ASP.NET 2.0",
+                            "ASP.Net 2.0",
                             ".NET 2.0",
                             "Ajax Control Toolkit",
                             "AndroMDA",
@@ -748,7 +738,7 @@
                             "Agile Methodologies",
                             "TFS",
                             "CruiseControl .NET",
-                            "SQL Server 2005",
+                            "SQL Server",
                             "nTiers architecture",
                             "Microsoft Office SharePoint Services",
                             "CMMi",
@@ -803,7 +793,7 @@
                             ".NET 4.5",
                             "C#",
                             "HTML5",
-                            "Javascript",
+                            "JavaScript",
                             "CSS",
                             "Azure",
                             "PaaS",
@@ -814,9 +804,7 @@
                             "TFS",
                             "Agile",
                             "GIT",
-                            "Visual Studio 2012",
-                            "COSA",
-                            "Enterprise Services",
+                            "Visual Studio",
                             "PowerShell",
                             "Azure Resource Manager",
                             "ASM",
@@ -857,7 +845,7 @@
                             ".NET 4.5",
                             "C#",
                             "HTML5",
-                            "Javascript",
+                            "JavaScript",
                             "CSS",
                             "Azure",
                             "PaaS",
@@ -868,9 +856,7 @@
                             "TFS",
                             "Agile",
                             "GIT",
-                            "Visual Studio 2012",
-                            "COSA",
-                            "Enterprise Services",
+                            "Visual Studio",
                             "PowerShell",
                             "Azure Resource Manager",
                             "ASM",
@@ -911,7 +897,7 @@
                                 "fr": ""
                             },
                             {
-                                "en": "Create project templates on Visual Studio 2013;",
+                                "en": "Create project templates on Visual Studio;",
                                 "fr": ""
                             },
                             {
@@ -945,7 +931,7 @@
                             "NUnit",
                             "GIT",
                             "Scrum",
-                            "Visual Studio 2013",
+                            "Visual Studio",
                             "Agile Methodologies",
                             "Azure WebJobs"
                         ],
@@ -1013,7 +999,7 @@
                             "NUnit",
                             "GIT",
                             "Scrum",
-                            "Visual Studio 2013",
+                            "Visual Studio",
                             "Agile Methodologies"
                         ],
                         "products": []
@@ -1067,23 +1053,18 @@
                             "WinForms",
                             "PLM",
                             "Catia",
-                            "Linx",
                             "MyGeneration",
-                            "Object Oriented Programming",
-                            "SQL Server 2005",
+                            "SQL Server",
                             "SSRS",
                             "TDD",
-                            "nUnit",
+                            "NUnit",
                             "RhinoMock",
                             "WCF",
                             "MVC",
-                            "MVVM",
-                            "ASP.Net",
-                            "OffShoring",
+                            "ASP.Net 2.0",
                             "WCF",
                             "Agile",
-                            "SCRUM",
-                            "Patterns and Practices"
+                            "SCRUM"
                         ],
                         "products": []
                     }
