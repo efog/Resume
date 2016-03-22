@@ -1,0 +1,8 @@
+<div class="selection-overlay">
+    <ul class="horizontal">
+        <li ng-repeat="item in items track by $index">
+            <filter-select key="item" selected="filters[item]">{{item}}</filter-select>
+        </li>
+    </ul>
+    <p>&nbsp;</p>
+</div>

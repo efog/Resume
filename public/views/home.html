@@ -72,16 +72,11 @@
             <h4>as</h4>
             <ul class="horizontal">
                 <li ng-repeat="role in vm.roles track by $index">
-                   <filter-select key="role" selected="vm.roleFilters[role]">{{role}}</filter-select>
+                    <filter-select key="role" selected="vm.roleFilters[role]">{{role}}</filter-select>
                 </li>
             </ul>
-            <h4>doing</h4>            
-            <ul class="horizontal">
-                <li ng-repeat="tech in vm.technologies track by $index">
-                   <filter-select key="tech" selected="vm.techFilters[tech]">{{tech}}</filter-select>
-                </li>
-            </ul>
-            <p>&nbsp;</p>
+            <h4>doing</h4>
+            <selection-overlay items="vm.technologies" filters="vm.techFilters"></selection-overlay>
         </section>
         <!--//section-->
         <section class="section experiences-section">

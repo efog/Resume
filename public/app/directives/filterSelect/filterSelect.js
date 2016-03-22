@@ -23,7 +23,6 @@
         };
         return directive;
         function link(scope, element, attrs) {
-            console.log(scope);
             scope.toggle = function() {
                 scope.selected = !scope.selected;
             };
