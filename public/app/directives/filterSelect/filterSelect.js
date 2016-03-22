@@ -13,17 +13,20 @@
         //
         var directive = {
             link: link,
-            restrict: 'E',
+            restrict: 'AE',
             templateUrl: '/app/directives/filterSelect/filterSelect.html',
             transclude: true,
             scope: {
-                value: '=dataValue',
-                filtered: '=dataFiltered'
+                key: '=key',
+                selected: '=selected'
             }
         };
         return directive;
         function link(scope, element, attrs) {
             console.log(scope);
+            scope.toggle = function() {
+                scope.selected = !scope.selected;
+            };
         }
     }
     /* @ngInject */

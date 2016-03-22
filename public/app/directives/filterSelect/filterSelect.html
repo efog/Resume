@@ -1,6 +1,3 @@
-<div>
-    <input type="checkbox" ng-model="filtered">
+<div class="selection-box" ng-class="{selected: !selected}" ng-click="toggle()">
     <ng-transclude></ng-transclude>
-    {{ filtered }}
-    {{ vaue }}    
 </div>

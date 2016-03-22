@@ -15,7 +15,9 @@
             _employers = [],
             _roles = [],
             _technologies = [],
-            _filters = {};
+            _employerFilters = [],
+            _roleFilters = [],
+            _techFilters = [];
         /* jshint validthis:true */
         var vm = this;
         Object.defineProperty(vm, 'data', {
@@ -26,20 +28,20 @@
                 _data = value;
             }
         });
+        Object.defineProperty(vm, 'employerFilters', {
+            get: function() {
+                return _employerFilters;
+            },
+            set: function(value) {
+                _employerFilters = value;
+            }
+        });
         Object.defineProperty(vm, 'employers', {
             get: function() {
                 return _employers;
             },
             set: function(value) {
                 _employers = value;
-            }
-        });
-        Object.defineProperty(vm, 'filters', {
-            get: function() {
-                return _filters;
-            },
-            set: function(value) {
-                _filters = value;
             }
         });
         Object.defineProperty(vm, 'isBusy', {
@@ -50,12 +52,28 @@
                 _isBusy = value;
             }
         });
+        Object.defineProperty(vm, 'roleFilters', {
+            get: function() {
+                return _roleFilters;
+            },
+            set: function(value) {
+                _roleFilters = value;
+            }
+        });
         Object.defineProperty(vm, 'roles', {
             get: function() {
                 return _roles;
             },
             set: function(value) {
                 _roles = value;
+            }
+        });
+        Object.defineProperty(vm, 'techFilters', {
+            get: function() {
+                return _techFilters;
+            },
+            set: function(value) {
+                _techFilters = value;
             }
         });
         Object.defineProperty(vm, 'technologies', {
@@ -123,31 +141,32 @@
             });
         }
         function setFilters() {
-            if (!_filters['employers']) {
-                _filters['employers'] = {};
-            }
             vm.employers.forEach(function(employer) {
-                _filters.employers[employer] = true;
+                if (!employer.name) { return; }
+                var name = employer.name;
+                if (name && name !== '') {
+                    _employerFilters[name] = true;
+                }
             });
-
-            if (!_filters['roles']) {
-                _filters['roles'] = {};
-            }
             vm.roles.forEach(function(role) {
-                _filters.roles[role] = true;
+                if (!role) { return; }
+                var name = role;
+                if (name && name !== '') {
+                    _roleFilters[name] = true;
+                }
             });
-
-            if (!_filters['technologies']) {
-                _filters['technologies'] = {};
-            }
             vm.technologies.forEach(function(tech) {
-                _filters.technologies[tech] = true;
+                if (!tech) { return; }
+                var name = tech;
+                if (name && name !== '') {
+                    _techFilters[name] = true;
+                }
             });
         }
         function setEmployers(data) {
             var employers = '';
             vm.employers = data.workExperience.employers.map(function(employer) {
-                if (employers.indexOf(employer.name) === -1) {
+                if (employer && employers.indexOf(employer.name) === -1) {
                     employers += employer.name;
                     return employer;
                 }
@@ -155,6 +174,7 @@
             });
         }
         function setRoles(data) {
+            var rolesArr = [];
             var roles = '';
             var lang = settingsFactory.lang;
             data.workExperience.employers.forEach(function(employer) {
@@ -169,17 +189,21 @@
                     if (roles.indexOf('"' + name + '"') === -1) {
                         return name;
                     }
-                    return null;
                 });
-                vm.roles = vm.roles.concat(tmpr);
+                rolesArr = rolesArr.concat(tmpr);
             });
             roles = '';
-            vm.roles = vm.roles.map(function(role) {
-                if (roles.indexOf(role) === -1) {
+            rolesArr = rolesArr.map(function(role) {
+                if (role && roles.indexOf(role) === -1) {
                     roles += role;
                     return role.split('"')[1];
                 }
-                return null;
+            });
+            vm.roles.length = 0;
+            rolesArr.forEach(function(r) {
+                if (r) {
+                    vm.roles.push(r);
+                }
             });
         }
         function setTechnologies(data) {
@@ -190,16 +214,20 @@
                 employer.mandates.forEach(function(mandate) {
                     if (!mandate.technologies) { return; }
                     var tmp = mandate.technologies.map(function(tech) {
-                        if (technologies.indexOf(tech) === -1) {
+                        if (tech && technologies.indexOf(tech) === -1) {
                             technologies += tech;
                             return tech;
                         }
-                        return null;
                     });
                     techs = techs.concat(tmp);
                 });
             });
-            vm.technologies = techs;
+            vm.technologies.length = 0;
+            techs.forEach(function(t) {
+                if (t) {
+                    vm.technologies.push(t);
+                }
+            });
         }
     }
 })();

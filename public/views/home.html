@@ -66,19 +66,19 @@
             <h4>Between {{ vm.startYear.year() }} and {{ vm.endYear.year() }}, Mr. Brouillard worked at:</h4>
             <ul class="horizontal">
                 <li ng-repeat="employer in vm.employers track by $index">
-                    <filter-select data-value="employer.name" data-filtered="vm.filters.employers[employer.name]">{{employer.name}}</filter-select>
+                    <filter-select key="employer.name" selected="vm.employerFilters[employer.name]">{{employer.name}}</filter-select>
                 </li>
             </ul>
             <h4>as</h4>
             <ul class="horizontal">
                 <li ng-repeat="role in vm.roles track by $index">
-                    {{role}}
+                   <filter-select key="role" selected="vm.roleFilters[role]">{{role}}</filter-select>
                 </li>
             </ul>
             <h4>doing</h4>            
             <ul class="horizontal">
                 <li ng-repeat="tech in vm.technologies track by $index">
-                    {{tech}}
+                   <filter-select key="tech" selected="vm.techFilters[tech]">{{tech}}</filter-select>
                 </li>
             </ul>
             <p>&nbsp;</p>

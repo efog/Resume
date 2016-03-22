@@ -25,3 +25,24 @@
 .employer-jumplinks{
     margin-bottom: 60px;
 }
+
+.selection-box,
+.selection-box.selected{
+    transition: 100ms;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.selection-box{
+    text-align: center;
+    margin: 2px;
+    padding: 7px;
+    background-color: #4B6A78;
+    color: white;
+    border: 1px solid silver;
+}
+.selection-box.selected{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
