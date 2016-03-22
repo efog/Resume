@@ -44,6 +44,16 @@
                 _employers = value;
             }
         });
+        Object.defineProperty(vm, 'filteredEmployers', {
+            get: function() {
+                if (!vm.data || !vm.data.workExperience) { return []; }
+                return vm.data.workExperience.employers.map(function(emp) {
+                    if (vm.employerFilters[emp.name]) {
+                        return emp;
+                    }
+                });
+            }
+        });
         Object.defineProperty(vm, 'isBusy', {
             get: function() {
                 return _isBusy;
@@ -88,7 +98,7 @@
             get: function() {
                 if (vm.data.workExperience && !_earliest) {
                     _earliest = new Date();
-                    vm.data.workExperience.employers.forEach(function(employer) {
+                    vm.filteredEmployers.forEach(function(employer) {
                         employer.mandates.forEach(function(mandate) {
                             var d = moment(mandate.startDate);
                             if (d && d < _earliest) {
@@ -104,7 +114,7 @@
             get: function() {
                 if (vm.data.workExperience && !_latest) {
                     _latest = vm.startYear;
-                    vm.data.workExperience.employers.forEach(function(employer) {
+                    vm.filteredEmployers.forEach(function(employer) {
                         employer.mandates.forEach(function(mandate) {
                             if (!mandate.endDate) {
                                 _latest = moment(new Date());
@@ -155,11 +165,13 @@
                     _roleFilters[name] = true;
                 }
             });
+            var defaultTechs = '.NET 4.5 C# WinForms Agile Entity NodeJS Express Swift XCode Framework WCF SQL Server ASP.Net MVC GIT UX Design HTML5 JavaScript CSS AngularJS SignalR REST ';
+            defaultTechs += 'JQuery Bootstrap IOS Android Apple AppStore Google PlayStore WPF MVVM Unity TDD Windows Phone WebAPI GDI+ NHibernate SCRUM Azure PaaS IaaS SQL Azure Azure WebJobs';
             vm.technologies.forEach(function(tech) {
                 if (!tech) { return; }
                 var name = tech;
                 if (name && name !== '') {
-                    _techFilters[name] = true;
+                    _techFilters[name] = defaultTechs.indexOf(name) !== -1;
                 }
             });
         }

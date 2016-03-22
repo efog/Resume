@@ -81,7 +81,7 @@
         <!--//section-->
         <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-            <div ng-repeat="employer in vm.data.workExperience.employers track by $index" class="clearfix">
+            <div ng-repeat="employer in vm.filteredEmployers track by $index" class="clearfix">
                 <h3><a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
                 <div ng-repeat="mandate in employer.mandates track by $index" class="item clearfix">
                     <div class="meta">

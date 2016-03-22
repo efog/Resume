@@ -132,6 +132,17 @@
                                 "fr": ""
                             }
                         ],
+                        "technologies": [
+                            "IOS",
+                            "Android",
+                            "AngularJS",
+                            "NodeJS",
+                            "Express",
+                            "Swift",
+                            "XCode",
+                            "Apple AppStore",
+                            "Google PlayStore"
+                        ],
                         "products": [
                             {
                                 "year": 2015,

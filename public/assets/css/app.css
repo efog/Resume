@@ -27,12 +27,16 @@
 }
 
 .selection-box,
-.selection-box.selected{
-    transition: 100ms;
-    border-radius: 10px;
-    cursor: pointer;
+.selection-box:hover,
+.selection-box.selected,
+.selection-box.selected:hover{
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    transition: all 100ms ease;
 }
-
+.selection-box:hover{
+    opacity: 0.9;
+}
 .selection-box{
     text-align: center;
     margin: 2px;
@@ -40,9 +44,82 @@
     background-color: #4B6A78;
     color: white;
     border: 1px solid silver;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .selection-box.selected{
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+.selection-box.selected:hover{
+    background-color: rgba(240, 240, 240, 100);
+}
+selection-collapsed > .filtered-item,
+selection-collapsed > .filtered-item.ng-hide
+{
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+selection-collapsed > .filtered-item.ng-hide{
+    opacity: 0;
+}
+.selection-modal{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 30px;
+    
+    /* A centered div above the overlay with a box shadow. */
+    z-index:10000;
+    position: absolute;
+    width: 75%; /* Default */
+
+    /* Center the dialog */
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+}
+.selection-modal,
+.selection-modal.ng-hide{
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+.selection-close-button{
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  display: inline-block;
+  font-weight: bold;
+}
+.selection-modal > h4{
+    margin-left: 30px;
+}
+.selection-overlay,
+.selection-overlay.ng-hide{
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+.selection-overlay{
+    position:absolute;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#FFF;
+    opacity: 0.6;
+}
+.selection-overlay.ng-hide{
+    opacity: 0;
 }
