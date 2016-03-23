@@ -16,7 +16,8 @@
             restrict: 'E',
             scope: {
                 items: '=items',
-                filters: '=filters'
+                filters: '=filters',
+                defaults: '=defaults'
             },
             templateUrl: '/app/directives/selectionOverlay/selectionOverlay.html'
         };
@@ -31,7 +32,7 @@
                 get: function() {
                     var retVal = [];
                     scope.items.forEach(function(i) {
-                        if (scope.filters[i]) {
+                        if (scope.filters[i] || scope.defaults.indexOf(i) > -1) {
                             retVal.push(i);
                         }
                     });

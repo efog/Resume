@@ -28,6 +28,13 @@
                 _data = value;
             }
         });
+        Object.defineProperty(vm, 'defaultTechs', {
+            get: function() {
+                var defaultTechs = '.NET 4.5 C# WinForms Agile Entity NodeJS Express Swift XCode Framework WCF SQL Server ASP.Net MVC GIT UX Design HTML5 JavaScript CSS AngularJS SignalR REST ';
+                defaultTechs += 'JQuery Bootstrap IOS Android Apple AppStore Google PlayStore WPF MVVM Unity TDD Windows Phone WebAPI GDI+ NHibernate SCRUM Azure PaaS IaaS SQL Azure Azure WebJobs';
+                return defaultTechs;
+            }
+        });
         Object.defineProperty(vm, 'employerFilters', {
             get: function() {
                 return _employerFilters;
@@ -47,11 +54,40 @@
         Object.defineProperty(vm, 'filteredEmployers', {
             get: function() {
                 if (!vm.data || !vm.data.workExperience) { return []; }
-                return vm.data.workExperience.employers.map(function(emp) {
+                var mapped = vm.data.workExperience.employers.map(function(emp) {
                     if (vm.employerFilters[emp.name]) {
                         return emp;
                     }
                 });
+                var retVal = [];
+                mapped.forEach(function(r) {
+                    if (r) {
+                        retVal.push(r);
+                    }
+                });
+                return retVal;
+            }
+        });
+        Object.defineProperty(vm, 'filteredRoles', {
+            get: function() {
+                if (!vm.data || !vm.filteredEmployers) { return []; }
+                var lang = settingsFactory.lang;
+                var roles = [];
+                for (var i = 0; i < vm.filteredEmployers.length; i++) {
+                    var emp = vm.filteredEmployers[i];
+                    if (!emp) { continue; }
+                    roles = roles.concat(emp.mandates.map(function(mandate) {
+                        var role = mandate.role[lang] ? mandate.role[lang] : mandate.role;
+                        return role;
+                    }));
+                }
+                var retVal = [];
+                roles.forEach(function(r) {
+                    if (retVal.indexOf(r) === -1) {
+                        retVal.push(r);
+                    }
+                });
+                return retVal;
             }
         });
         Object.defineProperty(vm, 'isBusy', {
@@ -136,6 +172,7 @@
          * Activate controller
          */
         function activate() {
+            vm.isFilteredOut = isFilteredOut;
             _isBusy = true;
             settingsFactory.prime();
             dataService.get(function(resultData) {
@@ -150,6 +187,13 @@
                 _isBusy = false;
             });
         }
+        function isFilteredOut(mandate){
+            var lang = settingsFactory.lang;
+            var role = mandate.role[lang] ? mandate.role[lang] : mandate.role;
+            var filtered = false;
+            filtered = filtered || !vm.roleFilters[role];
+            return filtered;
+        }        
         function setFilters() {
             vm.employers.forEach(function(employer) {
                 if (!employer.name) { return; }
@@ -165,13 +209,11 @@
                     _roleFilters[name] = true;
                 }
             });
-            var defaultTechs = '.NET 4.5 C# WinForms Agile Entity NodeJS Express Swift XCode Framework WCF SQL Server ASP.Net MVC GIT UX Design HTML5 JavaScript CSS AngularJS SignalR REST ';
-            defaultTechs += 'JQuery Bootstrap IOS Android Apple AppStore Google PlayStore WPF MVVM Unity TDD Windows Phone WebAPI GDI+ NHibernate SCRUM Azure PaaS IaaS SQL Azure Azure WebJobs';
             vm.technologies.forEach(function(tech) {
                 if (!tech) { return; }
                 var name = tech;
                 if (name && name !== '') {
-                    _techFilters[name] = defaultTechs.indexOf(name) !== -1;
+                    _techFilters[name] = vm.defaultTechs.indexOf(name) !== -1;
                 }
             });
         }

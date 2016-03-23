@@ -123,3 +123,12 @@ selection-collapsed > .filtered-item.ng-hide{
 .selection-overlay.ng-hide{
     opacity: 0;
 }
+.item,
+.item.ng-hide{
+    -webkit-transition: all 100ms ease-in 0;
+    -moz-transition: all 100ms ease-in 0;
+    transition: all 100ms ease-in 0;
+}
+.item.ng-hide{
+    opacity: 0;
+}

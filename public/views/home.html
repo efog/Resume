@@ -71,19 +71,19 @@
             </ul>
             <h4>as</h4>
             <ul class="horizontal">
-                <li ng-repeat="role in vm.roles track by $index">
+                <li ng-repeat="role in vm.filteredRoles track by $index">
                     <filter-select key="role" selected="vm.roleFilters[role]">{{role}}</filter-select>
                 </li>
             </ul>
             <h4>doing</h4>
-            <selection-overlay items="vm.technologies" filters="vm.techFilters"></selection-overlay>
+            <selection-overlay items="vm.technologies" filters="vm.techFilters" defaults="vm.defaultTechs"></selection-overlay>
         </section>
         <!--//section-->
         <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-            <div ng-repeat="employer in vm.filteredEmployers track by $index" class="clearfix">
+            <div ng-repeat="employer in vm.filteredEmployers track by $index" class="item clearfix">
                 <h3><a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
-                <div ng-repeat="mandate in employer.mandates track by $index" class="item clearfix">
+                <div ng-repeat="mandate in employer.mandates track by $index" class="item clearfix" ng-hide="vm.isFilteredOut(mandate)">
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title" output content="mandate.role"></h3>
