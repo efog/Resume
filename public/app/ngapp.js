@@ -1,5 +1,5 @@
 /* global angular */
-(function () {
+(function() {
     'use strict';
     var app = angular.module('app', [
         // Angular modules
@@ -27,21 +27,21 @@
     }
     app.config(['$httpProvider', '$provide', '$routeProvider', appConfigurator]);
     function appConfigurator($httpProvider, $provide, $routeProvider) {
-        $provide.factory('$routeProvider', function () {
+        $provide.factory('$routeProvider', function() {
             return $routeProvider;
         });
-        $provide.decorator('$exceptionHandler', function ($delegate, $injector) {
-            return function (exception, cause) {
+        $provide.decorator('$exceptionHandler', function($delegate, $injector) {
+            return function(exception, cause) {
                 $delegate(exception, cause);
             };
         });
     }
     app.run(['$http', '$location', '$rootScope', '$injector', '$route', '$routeProvider', 'routes', run]);
     function run($http, $location, $rootScope, $injector, $route, $routeProvider, routes) {
-        routes.forEach(function (r) {
+        routes.forEach(function(r) {
             setRoute(r.url, r.config);
         });
-        $routeProvider.otherwise({redirectTo: '/'});
+        $routeProvider.otherwise({ redirectTo: '/' });
         $route.reload();
 
         function setRoute(url, config) {
@@ -52,7 +52,7 @@
                 $routeProvider.when(config.editUrl, config);
             }
         }
-        $rootScope.$on('$routeChangeStart', function (event, next, current) {
+        $rootScope.$on('$routeChangeStart', function(event, next, current) {
         });
     }
 })();

@@ -81,9 +81,9 @@
         <!--//section-->
         <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-            <div ng-repeat="employer in vm.filteredEmployers track by $index" class="item clearfix">
+            <div ng-repeat="employer in vm.filteredEmployers track by $index" ng-hide="vm.employerMandates(employer.mandates).length === 0" class="item clearfix">
                 <h3><a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
-                <div ng-repeat="mandate in employer.mandates track by $index" class="item clearfix" ng-hide="vm.isFilteredOut(mandate)">
+                <div ng-repeat="mandate in vm.employerMandates(employer.mandates) track by $index" class="item clearfix">
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title" output content="mandate.role"></h3>

@@ -173,6 +173,7 @@
          */
         function activate() {
             vm.isFilteredOut = isFilteredOut;
+            vm.employerMandates = employerMandates;
             _isBusy = true;
             settingsFactory.prime();
             dataService.get(function(resultData) {
@@ -187,13 +188,22 @@
                 _isBusy = false;
             });
         }
-        function isFilteredOut(mandate){
+        function employerMandates(mandates) {
+            var retVal = [];
+            mandates.forEach(function(m) {
+                if (!vm.isFilteredOut(m)) {
+                    retVal.push(m);
+                }
+            });
+            return retVal;
+        }
+        function isFilteredOut(mandate) {
             var lang = settingsFactory.lang;
             var role = mandate.role[lang] ? mandate.role[lang] : mandate.role;
             var filtered = false;
             filtered = filtered || !vm.roleFilters[role];
             return filtered;
-        }        
+        }
         function setFilters() {
             vm.employers.forEach(function(employer) {
                 if (!employer.name) { return; }
