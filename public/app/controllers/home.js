@@ -98,6 +98,19 @@
                 _isBusy = value;
             }
         });
+        Object.defineProperty(vm, 'projects', {
+            get: function() {
+                if (!vm.data || !vm.data.workExperience) { return []; }
+                var projects = [];
+                for (var i = 0; i < vm.data.workExperience.employers.length; i++) {
+                    for (var j = 0; j < vm.data.workExperience.employers[i].mandates.length; j++) {
+                        var mandate = vm.data.workExperience.employers[i].mandates[j];
+                        mandate.products.forEach(function(p) { projects.push(p); });
+                    }
+                }
+                return projects;
+            }
+        });
         Object.defineProperty(vm, 'roleFilters', {
             get: function() {
                 return _roleFilters;
@@ -200,8 +213,15 @@
         function isFilteredOut(mandate) {
             var lang = settingsFactory.lang;
             var role = mandate.role[lang] ? mandate.role[lang] : mandate.role;
+
+            var techFiltered = false;
+            for (var i = 0; i < mandate.technologies.length; i++) {
+                techFiltered = techFiltered || vm.techFilters[mandate.technologies[i]];
+                if (techFiltered) { break; }
+            }
+
             var filtered = false;
-            filtered = filtered || !vm.roleFilters[role];
+            filtered = filtered || !vm.roleFilters[role] || !techFiltered;
             return filtered;
         }
         function setFilters() {

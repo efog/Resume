@@ -151,9 +151,10 @@
                                     "fr": "VS2015 TACO Angular on Cordova Bootstrap"
                                 },
                                 "description": {
-                                    "en": "It’s a simple project bootstrap for Visual Studio which lets developers get a head start on developing AngularJS apps on Apache Cordova. (http://www.nuget.org/packages/VS2015.TACO.AngularOnCordova.Bootstrap)",
+                                    "en": "A simple nuget package for Visual Studio which lets developers get a head start on developing AngularJS apps on Apache Cordova.",
                                     "fr": ""
-                                }
+                                },
+                                "url": "http://www.nuget.org/packages/VS2015.TACO.AngularOnCordova.Bootstrap"
                             }
                         ]
                     },
@@ -502,7 +503,7 @@
                             "WinForms",
                             "C#",
                             "Visual Studio",
-                            "GDI+",                            
+                            "GDI+",
                             "ASP.Net MVC",
                             "NHibernate",
                             "Unity",
@@ -581,7 +582,7 @@
                         "startDate": "2008-06-01",
                         "endDate": "2009-01-01",
                         "description": {
-                                "en": "This mandate consisted of developing the updated compensation program used by BRP. The project involved the use of SQL Server SSIS 2005 to extract, manipulate, calculate and store values as required to produce accurate reports in MS Excel and within BRP BOSSWeb. This project required the use of ASP.Net 2.0, Ajax Control Toolkit, Microsoft SQL Server Integration Services, Microsoft SQL Server and Mercury Quality Center. He carried out the following tasks:",
+                            "en": "This mandate consisted of developing the updated compensation program used by BRP. The project involved the use of SQL Server SSIS 2005 to extract, manipulate, calculate and store values as required to produce accurate reports in MS Excel and within BRP BOSSWeb. This project required the use of ASP.Net 2.0, Ajax Control Toolkit, Microsoft SQL Server Integration Services, Microsoft SQL Server and Mercury Quality Center. He carried out the following tasks:",
                             "fr": ""
                         },
                         "tasks": [
@@ -723,7 +724,7 @@
                             "Eclipse EMF",
                             "NVelocity",
                             "SAP R3",
-                            "SAP XI",                            
+                            "SAP XI",
                             "Rational Software Modeler",
                             "NUnit",
                             "NMock",
@@ -993,6 +994,71 @@
                             "Scrum",
                             "Visual Studio",
                             "Agile Methodologies"
+                        ],
+                        "products": []
+                    }
+                ]
+            },
+            {
+                "name": "Robots & Fruits",
+                "mandates": [
+                    {
+                        "client": "LabRadar.net",
+                        "project": {
+                            "en": "LabRadar.net",
+                            "fr": "LabRadar.net"
+                        },
+                        "role": {
+                            "en": "Founder",
+                            "fr": "Fondateur"
+                        },
+                        "startDate": "2015-01-01",
+                        "endDate": null,
+                        "description": {
+                            "en": "As the founder of Robots & Fruits and initiator of LabRadar, Mr Brouillard is in charge of designing the system solution, develop the initial beta and setting up the company. LabRadar aims at providing a powerful content aggregation system using Azure as a cloud environment. The application is being developped by a small team led by Mr. Brouillard. On this endeavour, Mr. Brouillard has these responsibilities:",
+                            "fr": ""
+                        },
+                        "tasks": [
+                            {
+                                "en": "Designing the systen solution around Azure;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Develop application modules and features which fulfil initial feature goals;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Manage SDLC and DevOps;",
+                                "fr": ""
+                            },
+                            {
+                                "en": "Manage an init of an enterprise and prepare business plan for founding round;",
+                                "fr": ""
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 4.5",
+                            "C#",
+                            "Azure",
+                            "NodeJS",
+                            "UX Design",
+                            "Bootstrap",
+                            "CSS",
+                            "HTML5",
+                            "JavaScript",
+                            "SQL Azure",
+                            "Azure WebJobs",
+                            "DocumentDB",
+                            "NoSQL",
+                            "ASP.Net MVC",
+                            "TDD",
+                            "NUnit",
+                            "RhinoMock",
+                            "WCF",
+                            "MVC",
+                            "WCF",
+                            "Agile",
+                            "SCRUM"
                         ],
                         "products": []
                     }

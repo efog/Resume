@@ -73,10 +73,9 @@ selection-collapsed > .filtered-item.ng-hide{
     /* A centered div above the overlay with a box shadow. */
     z-index:10000;
     position: absolute;
-    width: 75%; /* Default */
+    width: 80%; /* Default */
 
     /* Center the dialog */
-    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);

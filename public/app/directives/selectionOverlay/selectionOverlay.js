@@ -15,9 +15,11 @@
             link: link,
             restrict: 'E',
             scope: {
+                id: '@id',
                 items: '=items',
                 filters: '=filters',
-                defaults: '=defaults'
+                defaults: '=defaults',
+                parentId: '@parentId'
             },
             templateUrl: '/app/directives/selectionOverlay/selectionOverlay.html'
         };
@@ -26,7 +28,21 @@
             if (!scope.expanded) { scope.expanded = false; }
             scope.toggle = function(event) {
                 event.preventDefault();
+                var top = $('#' + scope.parentId).offset().top;
+                $('#' + scope.id + '>.selection-modal').offset().top = top;
                 scope.expanded = !scope.expanded;
+            };
+            scope.selectAll = function(event) {
+                event.preventDefault();
+                scope.items.forEach(function(i) {
+                    scope.filters[i] = true;
+                });
+            };
+            scope.selectNone = function(event) {
+                event.preventDefault();
+                scope.items.forEach(function(i) {
+                    scope.filters[i] = false;
+                });
             };
             Object.defineProperty(scope, 'selected', {
                 get: function() {

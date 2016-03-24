@@ -32,9 +32,8 @@
         <div class="languages-container container-block">
             <h2 class="container-block-title">Languages</h2>
             <ul class="list-unstyled interests-list">
-                <li>English <span class="lang-desc">(Native)</span></li>
-                <li>French <span class="lang-desc">(Professional)</span></li>
-                <li>Spanish <span class="lang-desc">(Professional)</span></li>
+                <li>French <span class="lang-desc">(Native)</span></li>
+                <li>English <span class="lang-desc">(Professional)</span></li>
             </ul>
         </div>
         <!--//interests-->
@@ -42,9 +41,10 @@
         <div class="interests-container container-block">
             <h2 class="container-block-title">Interests</h2>
             <ul class="list-unstyled interests-list">
-                <li>Climbing</li>
-                <li>Snowboarding</li>
+                <li>Running</li>
                 <li>Cooking</li>
+                <li>My sons</li>
+                <li>Programming</li>
             </ul>
         </div>
         <!--//interests-->
@@ -61,7 +61,7 @@
             <!--//summary-->
         </section>
         <!--//section-->
-        <section class="section experiences-section">
+        <section class="section experiences-section" id="filter-picker">
             <h2 class="section-title"><i class="fa fa-sticky-note"></i>Summary</h2>
             <h4>Between {{ vm.startYear.year() }} and {{ vm.endYear.year() }}, Mr. Brouillard worked at:</h4>
             <ul class="horizontal">
@@ -76,7 +76,7 @@
                 </li>
             </ul>
             <h4>doing</h4>
-            <selection-overlay items="vm.technologies" filters="vm.techFilters" defaults="vm.defaultTechs"></selection-overlay>
+            <selection-overlay id="tech-selector" items="vm.technologies" filters="vm.techFilters" defaults="vm.defaultTechs" parent-id="filter-picker"></selection-overlay>
         </section>
         <!--//section-->
         <section class="section experiences-section">
@@ -113,101 +113,15 @@
         <section class="section projects-section">
             <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
             <div class="intro">
-                <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                <p>Mr. Brouillard has worked on different side projects:</p>
             </div>
             <!--//intro-->
-            <div class="item">
-                <span class="project-title"><a href="#hook">Velocity</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote, market and sell their products.</span>
-
+            <div class="item" ng-repeat="project in vm.projects">
+                <h3 class="project-title"><a href="{{project.url}}" target="_blank" output content="project.name"></a></h3>
+                <span class="project-tagline" output content="project.description"></span>
             </div>
-            <!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span>                -
-                <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-            </div>
-            <!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">Tempo</a></span>                - <span class="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
-            </div>
-            <!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Atom</a></span>                - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
-            </div>
-            <!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span>                - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
-            </div>
-            <!--//item-->
         </section>
         <!--//section-->
-
-        <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-            <div class="skillset">
-                <div class="item">
-                    <h3 class="level-title">Python &amp; Django</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="98%">
-                        </div>
-                    </div>
-                    <!--//level-bar-->
-                </div>
-                <!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">Javascript &amp; jQuery</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="98%">
-                        </div>
-                    </div>
-                    <!--//level-bar-->
-                </div>
-                <!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">Angular</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="98%">
-                        </div>
-                    </div>
-                    <!--//level-bar-->
-                </div>
-                <!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">HTML5 &amp; CSS</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="95%">
-                        </div>
-                    </div>
-                    <!--//level-bar-->
-                </div>
-                <!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">Ruby on Rails</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="85%">
-                        </div>
-                    </div>
-                    <!--//level-bar-->
-                </div>
-                <!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">Sketch &amp; Photoshop</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="60%">
-                        </div>
-                    </div>
-                    <!--//level-bar-->
-                </div>
-                <!--//item-->
-
-            </div>
-        </section>
-        <!--//skills-section-->
 
         </div>
         <!--//main-body-->
