@@ -1,6 +1,6 @@
 {
     "engines": {
-        "node": "5.9.0"
+        "node": "5.8.0"
     },
     "name": "etienne.brouillard.my-resume",
     "version": "1.0.0",
