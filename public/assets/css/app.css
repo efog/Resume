@@ -131,3 +131,5 @@ selection-collapsed > .filtered-item.ng-hide{
 .item.ng-hide{
     opacity: 0;
 }
+.profile-container > .profile{
+}
