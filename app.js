@@ -1,7 +1,7 @@
 var express = require('express'),
     dataService = require('./data.js'),
     app = express(),
-    port = 9090;
+    port = process.env.PORT || 9090;
 
 // Statics
 app.use(express.static('public'));

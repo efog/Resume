@@ -11,8 +11,8 @@ var injectFunc = function () {
     var stream = wiredep.stream,
         options = {
             bowerJson: require('./bower.json'),
-            directory: './public/lib',
-            ignorePath: '../'
+            directory: './public/bower',
+            ignorePath: ''
         },
         injectOptions = {
             ignorePath: 'public/'
