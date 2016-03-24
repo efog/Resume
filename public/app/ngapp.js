@@ -41,7 +41,7 @@
         routes.forEach(function(r) {
             setRoute(r.url, r.config);
         });
-        $routeProvider.otherwise({ redirectTo: '/' });
+        $routeProvider.otherwise({redirectTo: '/'});
         $route.reload();
 
         function setRoute(url, config) {
