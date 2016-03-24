@@ -12,7 +12,7 @@ var injectFunc = function () {
         options = {
             bowerJson: require('./bower.json'),
             directory: './public/lib',
-            ignorePath: '../'
+            ignorePath: ''
         },
         injectOptions = {
             ignorePath: 'public/'
