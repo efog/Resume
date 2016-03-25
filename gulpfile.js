@@ -29,9 +29,7 @@ var injectFunc = function() {
             './public/dist/**/*.css',
             './public/assets/css/app.css',
             './public/assets/css/styles-6.css',
-            './public/assets/js/min/*.js',
-            './public/app/*.js',
-            './public/app/**/*.js'],
+            './public/assets/js/min/*.js'],
             {
                 read: false
             }),
@@ -53,7 +51,6 @@ gulp.task('compact', function() {
     var fontFilter = gulpFilter(['**/*.eot', '**/*.woff', '**/*.svg', '**/*.ttf']);
 
     var bowerFiles = mainBowerFiles();
-    bowerFiles.forEach(function(f) { console.log(f); });
     return gulp.src(bowerFiles)
         // grab vendor js files from bower_components, minify and push in /public
         .pipe(jsFilter)
@@ -71,6 +68,23 @@ gulp.task('compact', function() {
         .pipe(fontFilter)
         .pipe(flatten())
         .pipe(gulp.dest(path + '/fonts/'));
+});
+
+gulp.task('compactApp', ['compact'], function() {
+    var path = './public/dist/app';
+    var jsFilter = gulpFilter('**/*.js', {
+        restore: true
+    });
+
+    return gulp.src([
+            './public/app/*.js',
+            './public/app/**/*.js'])
+        // grab vendor js files from bower_components, minify and push in /public
+        .pipe(jsFilter)
+        .pipe(concat('webapp.js'))
+        //.pipe(uglify())
+        .pipe(gulp.dest(path + '/js/'))
+        .pipe(jsFilter.restore);
 });
 
 gulp.task('serve', ['style', 'inject'], function() {
@@ -97,4 +111,4 @@ gulp.task('style', function() {
         .pipe(jscs());
 });
 
-gulp.task('inject', ['compact'], injectFunc);
+gulp.task('inject', ['compactApp'], injectFunc);
