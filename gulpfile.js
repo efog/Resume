@@ -27,8 +27,6 @@ var injectFunc = function() {
         injectSrc = gulp.src([
             './public/dist/**/*.js',
             './public/dist/**/*.css',
-            './public/assets/css/app.css',
-            './public/assets/css/styles-6.css',
             './public/assets/js/min/*.js'],
             {
                 read: false
@@ -65,7 +63,10 @@ gulp.task('compact', function() {
         // grab vendor css files from bower_components, minify and push in /public
         .pipe(cssFilter)
         .pipe(concat('all.css'))
-        .pipe(minifycss())
+        .pipe(minifycss({debug: true}, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
         .pipe(gulp.dest(path + '/css/'))
         .pipe(cssFilter.restore)
         // grab vendor font files from bower_components and push in /public
@@ -79,15 +80,29 @@ gulp.task('compactApp', ['compact'], function() {
     var jsFilter = gulpFilter('**/*.js', {
         restore: true
     });
+    var cssFilter = gulpFilter('**/*.css', {
+        restore: true
+    });
 
     return gulp.src([
         './public/app/*.js',
-        './public/app/**/*.js'])
+        './public/app/**/*.js',
+        './public/assets/css/app.css',
+        './public/assets/css/styles-6.css'])
         // grab vendor js files from bower_components, minify and push in /public
         .pipe(jsFilter)
         .pipe(concat('webapp.js'))
         //.pipe(uglify())
         .pipe(gulp.dest(path + '/js/'))
+        .pipe(jsFilter.restore)
+        // grab vendor css files from bower_components, minify and push in /public
+        .pipe(cssFilter)
+        .pipe(concat('webapp.css'))
+        .pipe(minifycss({debug: true}, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
+        .pipe(gulp.dest(path + '/css/'))        
         .pipe(jsFilter.restore);
 });
 
