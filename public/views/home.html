@@ -1,7 +1,7 @@
 <div class="wrapper" ng-controller="home as vm" ng-hide="vm.isBusy">
     <div class="sidebar-wrapper">
         <div class="profile-container">
-                <img class="profile" src="assets/images/profile.png" alt="" />
+            <img class="profile" src="assets/images/profile.png" alt="" />
             <h1 class="name" output content="vm.data.name"></h1>
             <h3 class="tagline" output content="vm.data.title">Solution Architect</h3>
         </div>
@@ -81,7 +81,8 @@
         <!--//section-->
         <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-            <div ng-repeat="employer in vm.filteredEmployers track by $index" ng-hide="vm.employerMandates(employer.mandates).length === 0" class="item clearfix">
+            <div ng-repeat="employer in vm.filteredEmployers track by $index" ng-hide="vm.employerMandates(employer.mandates).length === 0"
+            class="item clearfix">
                 <h3><a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
                 <div ng-repeat="mandate in vm.employerMandates(employer.mandates) track by $index" class="item clearfix">
                     <div class="meta">
@@ -92,13 +93,21 @@
                         <!--//upper-row-->
                         <div class="company" output content="mandate.client">
                         </div>
-                        <div class="details" output content="mandate.description">
+                        <div class="details">
+                            <a href="#" class="no-print" ng-click="vm.collapseMandate($event, mandate)" target="_self">
+                                <span ng-hide="mandate.collapsed">[-]</span>
+                                <span ng-hide="!mandate.collapsed">[+]</span>
+                            </a>
                         </div>
-                        <div class="details" ng-show="mandate.tasks">
-                            <ul>
-                                <li ng-repeat="task in mandate.tasks track by $index" output content="task">
-                                </li>
-                            </ul>
+                        <div class="display-collapsible" ng-hide="mandate.collapsed">
+                            <div class="details" output content="mandate.description">
+                            </div>
+                            <div class="details" ng-show="mandate.tasks">
+                                <ul>
+                                    <li ng-repeat="task in mandate.tasks track by $index" output content="task">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="details" ng-show="mandate.technologies">
                             <h5>Technologies</h5>

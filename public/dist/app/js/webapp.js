@@ -67,6 +67,7 @@
 
     function home($location, moment, dataService, settingsFactory) {
         var _data = {},
+            _collapsed = {},
             _earliest,
             _latest,
             _isBusy = false,
@@ -78,6 +79,7 @@
             _techFilters = [];
         /* jshint validthis:true */
         var vm = this;
+        vm.collapseMandate = collapseMandate;
         Object.defineProperty(vm, 'data', {
             get: function() {
                 return _data;
@@ -240,7 +242,7 @@
         activate();
         return vm;
         /**
-         * Activate controller
+         * Activate controller 
          */
         function activate() {
             vm.isFilteredOut = isFilteredOut;
@@ -258,6 +260,13 @@
                 console.log(error);
                 _isBusy = false;
             });
+        }
+        /**
+         * Collapse mandate
+         */
+        function collapseMandate(event, mandate) {
+            event.preventDefault();
+            mandate['collapsed'] = !mandate.collapsed;
         }
         function employerMandates(mandates) {
             var retVal = [];
@@ -322,6 +331,7 @@
             data.workExperience.employers.forEach(function(employer) {
                 var tmpr = employer.mandates.map(function(mandate) {
                     var name = '';
+                    mandate.collapsed = true;
                     if (mandate.role[lang]) {
                         name += '"' + mandate.role[lang] + '"';
                     }

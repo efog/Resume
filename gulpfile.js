@@ -40,6 +40,10 @@ var injectFunc = function() {
         .pipe(gulp.dest('./public/views'));
 };
 
+gulp.task('watch', function(){
+    gulp.watch('app/**/*.js', injectFunc);
+});
+
 gulp.task('compact', function() {
     var path = './public/dist';
     var jsFilter = gulpFilter('**/*.js', {
@@ -59,7 +63,7 @@ gulp.task('compact', function() {
         .pipe(gulp.dest(path + '/js/'))
         .pipe(jsFilter.restore)
         // grab vendor css files from bower_components, minify and push in /public
-        .pipe(cssFilter)        
+        .pipe(cssFilter)
         .pipe(concat('all.css'))
         .pipe(minifycss())
         .pipe(gulp.dest(path + '/css/'))
@@ -77,8 +81,8 @@ gulp.task('compactApp', ['compact'], function() {
     });
 
     return gulp.src([
-            './public/app/*.js',
-            './public/app/**/*.js'])
+        './public/app/*.js',
+        './public/app/**/*.js'])
         // grab vendor js files from bower_components, minify and push in /public
         .pipe(jsFilter)
         .pipe(concat('webapp.js'))
@@ -87,7 +91,7 @@ gulp.task('compactApp', ['compact'], function() {
         .pipe(jsFilter.restore);
 });
 
-gulp.task('serve', ['style', 'inject'], function() {
+gulp.task('serve', ['style', 'inject', 'watch'], function() {
     var options = {
         script: 'app.js',
         delayTime: 1,

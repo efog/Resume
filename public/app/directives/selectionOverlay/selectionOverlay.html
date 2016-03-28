@@ -4,21 +4,21 @@
             <filter-select key="item" selected="filters[item]">{{item}}</filter-select>
         </li>
         <li>
-            <a href="#" ng-click="toggle($event)">[+]</a>
+            <a href="#" class="no-print" ng-click="toggle($event)">[+]</a>
         </li>
         <li>
-            <a href="#" ng-click="selectAll($event)">[all]</a>
+            <a href="#" class="no-print" ng-click="selectAll($event)">[all]</a>
         </li>
         <li>
-            <a href="#" ng-click="selectNone($event)">[none]</a>
+            <a href="#" class="no-print" ng-click="selectNone($event)">[none]</a>
         </li>
     </ul>
     <p>&nbsp;</p>
 </div>
 <div class="selection-overlay" ng-show="expanded"></div>
-<div class="selection-modal" ng-show="expanded">
+<div class="selection-modal no-print" ng-show="expanded">
     <div class="selection-close-button">
-        <a href="#" ng-click="toggle($event)">[-]</a>
+        <a href="#" class="no-print" ng-click="toggle($event)">[-]</a>
     </div>
     <h4>I also do these:</h4>
     <ul class="horizontal">

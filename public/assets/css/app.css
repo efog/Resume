@@ -141,5 +141,46 @@ selection-collapsed > .filtered-item.ng-hide{
 .item.ng-hide{
     opacity: 0;
 }
-.profile-container > .profile{
+.details,
+.details.ng-hide{
+    -webkit-transition: opacity 100ms ease-in 0;
+    -moz-transition: opacity 100ms ease-in 0;
+    transition: opacity 100ms ease-in 0;
+    -webkit-transition: visibility 10ms ease-in 100ms;
+    -moz-transition: visibility 10ms ease-in 100ms;
+    transition: visibility 10ms ease-in 100ms;
+}
+.details.ng-hide{
+    opacity: 0;
+}
+
+@media print{
+    .display-collapsible.ng-hide{
+        visibility: visible;
+        display: inline-block !important;        
+    }
+    .no-print{
+        display: none;
+    }    
+    .selection-box{
+        text-align: center;
+        margin: 2px;
+        padding: 0px;
+        border: 0;
+        border-radius: 0px;
+    }
+    .container-block{
+        float: left;
+    }
+    .contact-list{
+        float: left;
+    }
+    .contact-list > li{
+        margin: 0;
+        padding: 0;
+        font-size: 8pt;
+    }
+    .summary-section{
+        clear: both;
+    }
 }
