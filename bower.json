@@ -1,74 +1,78 @@
 {
-    "name": "etienne.brouillard.my-resume",
-    "description": "My personal resume",
-    "main": "app.js",
-    "authors": [
-        "Étienne Brouillard"
-    ],
-    "license": "ISC",
-    "keywords": [
-        "etienne",
-        "brouillard",
-        "resume",
-        "cv",
-        "personal",
-        "website"
-    ],
-    "moduleType": [],
-    "homepage": "",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "bootstrap": "^3.3.6",
-        "font-awesome": "^4.5.0",
-        "angular": "^1.5.1",
-        "angular-ui": "^0.4.0",
-        "angular-route": "^1.5.1",
-        "angular-sanitize": "^1.5.1",
-        "angular-animate": "^1.5.1",
-        "angular-messages": "^1.5.1",
-        "angular-touch": "^1.5.1",
-        "moment": "^2.12.0",
-        "angular-moment": "^0.10.3",
-        "seiyria-bootstrap-slider": "^6.1.6"
+  "name": "etienne.brouillard.my-resume",
+  "description": "My personal resume",
+  "main": "app.js",
+  "authors": [
+    "Étienne Brouillard"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "etienne",
+    "brouillard",
+    "resume",
+    "cv",
+    "personal",
+    "website"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "angular": "^1.5.1",
+    "angular-ui": "^0.4.0",
+    "angular-route": "^1.5.1",
+    "angular-sanitize": "^1.5.1",
+    "angular-animate": "^1.5.1",
+    "angular-messages": "^1.5.1",
+    "angular-touch": "^1.5.1",
+    "moment": "^2.12.0",
+    "angular-moment": "^0.10.3",
+    "seiyria-bootstrap-slider": "^6.1.6",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-url": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "flag-icon-css": "^1.4.0"
+  },
+  "overrides": {
+    "angular": {
+      "main": [
+        "angular.js"
+      ]
     },
-    "overrides": {
-        "angular": {
-            "main": [
-                "angular.js"
-            ]
-        },
-        "angular-ui": {
-            "main": [
-                "build/angular-ui.css",
-                "build/angular-ui.js"
-            ]
-        },
-        "bootstrap": {
-            "main": [
-                "dist/js/bootstrap.js",
-                "dist/css/bootstrap.css",
-                "less/bootstrap.less"
-            ]
-        },
-        "font-awesome": {
-            "main": [
-                "less/font-awesome.less",
-                "scss/font-awesome.scss",
-                "css/font-awesome.css",
-                "fonts/FontAwesome.otf",
-                "fonts/fontawesome-webfont.eot",
-                "fonts/fontawesome-webfont.svg",
-                "fonts/fontawesome-webfont.ttf",
-                "fonts/fontawesome-webfont.woff",
-                "fonts/fontawesome-webfont.woff2"
-            ]
-        }
+    "angular-ui": {
+      "main": [
+        "build/angular-ui.css",
+        "build/angular-ui.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "scss/font-awesome.scss",
+        "css/font-awesome.css",
+        "fonts/FontAwesome.otf",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.svg",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.woff2"
+      ]
     }
+  }
 }

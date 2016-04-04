@@ -10,7 +10,8 @@
         'ngTouch',
         // Custom modules
         // 3rd Party Modules
-        'angularMoment'
+        'angularMoment',
+        'pascalprecht.translate'
     ]);
     app.constant('routes', getRoutes());
     function getRoutes() {
@@ -25,6 +26,21 @@
             }
         ];
     }
+    app.config(function($translateProvider) {
+        $translateProvider.useStaticFilesLoader({
+            prefix: 'resources/locale-',
+            suffix: '.json'
+        });
+        $translateProvider.useSanitizeValueStrategy('escapeParameters');
+        $translateProvider
+            .registerAvailableLanguageKeys(['en', 'fr'], {
+                'en_*': 'en',
+                'fr_*': 'fr'
+            })
+            .determinePreferredLanguage();
+        $translateProvider.fallbackLanguage(['en', 'fr']);
+    });
+
     app.config(['$httpProvider', '$provide', '$routeProvider', appConfigurator]);
     function appConfigurator($httpProvider, $provide, $routeProvider) {
         $provide.factory('$routeProvider', function() {
@@ -41,7 +57,7 @@
         routes.forEach(function(r) {
             setRoute(r.url, r.config);
         });
-        $routeProvider.otherwise({redirectTo: '/'});
+        $routeProvider.otherwise({ redirectTo: '/' });
         $route.reload();
 
         function setRoute(url, config) {

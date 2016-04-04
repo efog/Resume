@@ -19,7 +19,7 @@
         </div>
         <!--//contact-container-->
         <div class="education-container container-block">
-            <h2 class="container-block-title">Education</h2>
+            <h2 class="container-block-title">{{'EDUCATION'|translate}}</h2>
             <div class="item" ng-repeat="item in vm.data.education">
                 <h4 class="degree" output content="item.diploma">MSc in Computer Science</h4>
                 <h5 class="meta" output content="item.school">University of London</h5>
@@ -30,21 +30,21 @@
         <!--//education-container-->
 
         <div class="languages-container container-block">
-            <h2 class="container-block-title">Languages</h2>
+            <h2 class="container-block-title">{{'LANGUAGES'|translate}}</h2>
             <ul class="list-unstyled interests-list">
-                <li>French <span class="lang-desc">(Native)</span></li>
-                <li>English <span class="lang-desc">(Professional)</span></li>
+                <li>{{'FRENCH'|translate}} <span class="lang-desc">({{'NATIVE'|translate}})</span></li>
+                <li>{{'ENGLISH'|translate}} <span class="lang-desc">({{'PROFESSIONAL'|translate}})</span></li>
             </ul>
         </div>
         <!--//interests-->
 
         <div class="interests-container container-block">
-            <h2 class="container-block-title">Interests</h2>
+            <h2 class="container-block-title">{{'INTERESTS'|translate}}</h2>
             <ul class="list-unstyled interests-list">
-                <li>Running</li>
-                <li>Cooking</li>
-                <li>My sons</li>
-                <li>Programming</li>
+                <li>{{'RUNNING'|translate}}</li>
+                <li>{{'COOKING'|translate}}</li>
+                <li>{{'MY_KIDS'|translate}}</li>
+                <li>{{'PROGRAMMING'|translate}}</li>
             </ul>
         </div>
         <!--//interests-->
@@ -55,32 +55,32 @@
     <div class="main-wrapper">
         <div class="resume-header-background"></div>
         <section class="section summary-section">
-            <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+            <h2 class="section-title"><i class="fa fa-user"></i>{{ 'CAREER_PROFILE' | translate }}</h2>
             <div class="summary" output content="vm.data.careerProfile">
             </div>
             <!--//summary-->
         </section>
         <!--//section-->
         <section class="section experiences-section" id="filter-picker">
-            <h2 class="section-title"><i class="fa fa-sticky-note"></i>Summary</h2>
-            <h4>Between {{ vm.startYear.year() }} and {{ vm.endYear.year() }}, Mr. Brouillard worked at:</h4>
+            <h2 class="section-title"><i class="fa fa-sticky-note"></i>{{ 'SUMMARY' | translate }}</h2>
+            <h4>{{ 'BETWEEN' | translate }} {{ vm.startYear.year() }} {{ 'AND' | translate }} {{ vm.endYear.year() }}, {{ 'WORKED_AT' | translate }}</h4>
             <ul class="horizontal">
                 <li ng-repeat="employer in vm.employers track by $index">
                     <filter-select key="employer.name" selected="vm.employerFilters[employer.name]">{{employer.name}}</filter-select>
                 </li>
             </ul>
-            <h4>as</h4>
+            <h4>{{'AS'|translate}}</h4>
             <ul class="horizontal">
                 <li ng-repeat="role in vm.filteredRoles track by $index">
                     <filter-select key="role" selected="vm.roleFilters[role]">{{role}}</filter-select>
                 </li>
             </ul>
-            <h4>doing</h4>
+            <h4>{{'DOING'|translate}}</h4>
             <selection-overlay id="tech-selector" items="vm.technologies" filters="vm.techFilters" defaults="vm.defaultTechs" parent-id="filter-picker"></selection-overlay>
         </section>
         <!--//section-->
         <section class="section experiences-section">
-            <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+            <h2 class="section-title"><i class="fa fa-briefcase"></i>{{'EXPERIENCES'|translate}}</h2>
             <div ng-repeat="employer in vm.filteredEmployers track by $index" ng-hide="vm.employerMandates(employer.mandates).length === 0"
             class="item clearfix">
                 <h3><a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
@@ -120,9 +120,9 @@
         </section>
         <!--//section-->
         <section class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+            <h2 class="section-title"><i class="fa fa-archive"></i>{{'PROJECTS'|translate}}</h2>
             <div class="intro">
-                <p>Mr. Brouillard has worked on different side projects:</p>
+                <p>{{'PROJECTS_SUBTEXT'|translate}}</p>
             </div>
             <!--//intro-->
             <div class="item" ng-repeat="project in vm.projects">
