@@ -43,7 +43,7 @@
                     return getSub(tVal);
                 }
                 else {
-                    return getSub(target.toString());
+                    return getSub(target);
                 }
             };
             var getForTarget = function(target) {
