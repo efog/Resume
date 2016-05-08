@@ -489,7 +489,7 @@
             restrict: 'AE',
             transclude: false,
             scope: {
-                content: '&content',
+                output: '&',
                 substr: '@substr'
             },
             templateUrl: '/app/directives/output/output.html'

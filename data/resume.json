@@ -16,8 +16,8 @@
             "At CGI, Mr. Brouillard is establishing the mobility expertise for CGI’s excellence centers in Sherbrooke and Shawinigan. This mandate involves establishing practices and designs, lead projects, hiring talents, establishing relationships with clients and mentoring to consultants."
         ],
         "fr": [
-            "Diplômé en Génie Logiciel de l'École de Technologie Supérieure de Montréal en 2007, M. Brouillard est un architecte de solution, développeur accompli et chef d'équipe qui cumule près de 10 ans d'expérience pratique sur plusieurs projets tels que des applications Web, des applications mobiles et xClient sur la plate-forme .Net de Microsoft. M. Brouillard poursuit également la formation pour devenir Professional SCRUMMaster. Lors de ses derniers mandats, il a mis à profit des technologies telles que .NET 4.5, C #, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS et SaaS, ASP.Net MVC5, WPF, WCF. A travaillé avec divers clients de Montréal à Sacramento en passant par Winnipeg et a dirigé des équipes de développement situées en Inde.",
-            "Chez CGI, M. Brouillard établit l'expertise mobilité pour les centres de livraison de CGI à Sherbrooke et à Shawinigan. Ce mandat comporte l'établissement des pratiques et des concepts, lead de projets, l'embauche de talents, l'établissement de relations avec les clients et du mentorat aux consultants."
+            "Diplômé en Génie Logiciel de l'École de Technologie Supérieure de Montréal en 2007, M.Brouillard est un architecte de solution, développeur accompli et chef d'équipe qui cumule près de 10 ans d'expérience pratique sur plusieurs projets tels que des applications Web, des applications mobiles et xClient sur la plate-forme .Net de Microsoft. M.Brouillard poursuit également la formation pour devenir Professional SCRUM Master. Lors de ses derniers mandats, il a mis à profit des technologies telles que .NET 4.5, C #, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS et SaaS, ASP.Net MVC5, WPF, WCF. A travaillé avec divers clients de Montréal à Sacramento en passant par Winnipeg et a dirigé des équipes de développement situées en Inde.",
+            "Chez CGI, M.Brouillard établit l'expertise mobilité pour les centres de livraison de CGI à Sherbrooke et à Shawinigan. Ce mandat comporte l'établissement des pratiques et des concepts, lead de projets, l'embauche de talents, l'établissement de relations avec les clients et du mentorat aux consultants."
         ]
     },
     "skills": {
@@ -103,36 +103,36 @@
                         "endDate": null,
                         "description": {
                             "en": "For CGI at Sherbrooke and Shawinigan Center of Excellence Mr. Brouillard is in charge of leading and establishing the mobility expertise in order to attract projects and maintenance contracts of diverse mobile applications and systems. On this mandate, Mr. Brouillard has the tasks:",
-                            "fr": ""
+                            "fr": "Pour les Centres d'Excellence CGI à Sherbrooke et Shawinigan M. Brouillard est chargé de diriger et d'établir l'expertise en mobilité dans le but d'attirer des projets et des contrats de développement et de maintenance d'applications et systèmes mobiles divers. Au cours de ce mandat, M. Brouillard effectue les tâches suivantes:"
                         },
                         "tasks": [
                             {
                                 "en": "Establish guidance and practices in mobile development, design, analysis and quality assurance;",
-                                "fr": ""
+                                "fr": "Établir les pratiques en développement, conception, analyse et assurance qualité d'applications mobiles;"
                             },
                             {
                                 "en": "Lead hiring interviews and contacting talents;",
-                                "fr": ""
+                                "fr": "Mener des entrevues d'embauche et contacts de talents;"
                             },
                             {
                                 "en": "Communicate on a daily basis with clients and CGI Montreal Mobility Center of Excellence in order to position the delivery centers;",
-                                "fr": ""
+                                "fr": "Communiquer sur base régulière avec les clients et le centre d'expertise en Mobilité de CGI à Montréal afin de positionner le centre de livraison;"
                             },
                             {
                                 "en": "Establish formation programs and select training material;",
-                                "fr": ""
+                                "fr": "Établir des programmes de formation;"
                             },
                             {
                                 "en": "Meet clients and establish contacts;",
-                                "fr": ""
+                                "fr": "Rencontrer la clientèle et démarchage;"
                             },
                             {
                                 "en": "Support RFP process;",
-                                "fr": ""
+                                "fr": "Supporter le processus d'appels d'offres"
                             },
                             {
                                 "en": "Develop toolkits and accelerators;",
-                                "fr": ""
+                                "fr": "Développer des outils et accélérateurs;"
                             }
                         ],
                         "technologies": [
@@ -155,7 +155,7 @@
                                 },
                                 "description": {
                                     "en": "A simple nuget package for Visual Studio which lets developers get a head start on developing AngularJS apps on Apache Cordova.",
-                                    "fr": ""
+                                    "fr": "Un paquet nuget pour Visual Studio qui aide les développeurs à échafauder rapidement une application Apache Cordova avec AngularJS."
                                 },
                                 "url": "http://www.nuget.org/packages/VS2015.TACO.AngularOnCordova.Bootstrap"
                             }
@@ -175,28 +175,28 @@
                         "endDate": null,
                         "description": {
                             "en": "For Quest and its client, Spectocor Medical Supplies, the consultant has been in charge of developing the front end components for a report downloader solution. The project has been developed using Agile methodologies. The application is a Windows Forms app with its runtime services layer. The Frontend and Runtime components run independently and communicates through local named pipes. On this mandate Mr. Brouillard was in charge of:",
-                            "fr": ""
+                            "fr": "Pour Quest et son client, Spectocor Medical Supplies, le conseiller a été en charge de la conception et du développement du volet GUI d'une solution de téléchargement de rapports médicaux. Le project a été dévelopé en suivant la méthodologie Agile. L'application est une application de type WinForms et qui dispose de sa couche d'affaire en tant que service Windows distinct. Sur ce mandat, M. Brouillard a été en charge de:"
                         },
                         "tasks": [
                             {
                                 "en": "Design the application structure and validate solution technically;",
-                                "fr": ""
+                                "fr": "Concevoir la structure de l'application et de la validation technique;"
                             },
                             {
-                                "en": "Develop the Winforms application;",
-                                "fr": ""
+                                "en": "Develop the Winforms application and the runtime Windows Service;",
+                                "fr": "Développer l'application WinForms et le service Windows d'exécution"
                             },
                             {
                                 "en": "Design the UX in line with the client’s branding;",
-                                "fr": ""
+                                "fr": "Appliquer les normes graphiques du client;"
                             },
                             {
                                 "en": "Design and develop the runtime layer;",
-                                "fr": ""
+                                "fr": "Concevoir le service d'exécution;"
                             },
                             {
                                 "en": "Design the Windows Service headless printing solution;",
-                                "fr": ""
+                                "fr": "Concevoir la solution d'impression automatisé;"
                             }
                         ],
                         "technologies": [
@@ -226,24 +226,24 @@
                         "endDate": "2015-12-01",
                         "description": {
                             "en": "For Morneau Shepell and CGI on a joint participation to a RFP, Mr. Brouillard was in charge of developing a high quality with appealing UX an AngularJS based web application. The application integrated two complex user data entry scenarios and the development duration spanned over a two weeks’ period. The application integrated with Microsoft SSIS. On this mandate Mr. Brouillard was in charge of:",
-                            "fr": ""
+                            "fr": "Pour Morneau Shepell dans le cadre d'une participation conjointe avec CGI à un appel d'offre, M. Brouillard a été responsable du développement d'une application AngularJS de haute qualité avec une expérience utilisateur accrocheuse. Cette application comprenait la réalisation deux composant de saisie et d'import de données. L'application devait en outre s'intégrer et rapporter l'avancement des tâches de SSIS. L'effort s'est échelonné sur trois semaines et à ce titre les tâches du conseiller étaient: "
                         },
                         "tasks": [
                             {
                                 "en": "Develop the AngularJS web application;",
-                                "fr": ""
+                                "fr": "Développer l'application Web AngularJS;"
                             },
                             {
-                                "en": "Design the UX in line with the minister’s branding;",
-                                "fr": ""
+                                "en": "Design the UX in line with the client's branding;",
+                                "fr": "Concevoir les maquettes et écrans contenant l'image de marque du client ciblé;"
                             },
                             {
                                 "en": "Design the asynchronous SSIS integration mechanisms;",
-                                "fr": ""
+                                "fr": "Concevoir et implémenter le mécanisme d'intégration à SSIS;"
                             },
                             {
                                 "en": "Integrate SignalR job progress reporting hooks;",
-                                "fr": ""
+                                "fr": "Intégrer SignalR et le retour d'information d'avancement des tâches;"
                             }
                         ],
                         "technologies": [
@@ -279,24 +279,24 @@
                         "endDate": null,
                         "description": {
                             "en": "For the Johnston Group in a Kony based mobile application phase 2 development project, Mr. Brouillard is in charge of maintaining the communication between the development team in India, the project management based in Edmonton and the client in Winnipeg. The project is an evolution which adds features to an existing application on mobile web, iOS and Android. On this mandate Mr. Brouillard is responsible for:",
-                            "fr": ""
+                            "fr": "Pour le Groupe Johnston pour la phase 2 d'un projet d'application mobile basé sur la plateforme Kony, M. Brouillard est chargé de maintenir la communication entre l'équipe de développement en Inde, la gestion de projet basé à Edmonton et le client à Winnipeg. Le projet est une évolution qui ajoute des fonctionnalités à une application existante sur le web mobile, iOS et Android. Sur ce mandat M. Brouillard est responsable de:"
                         },
                         "tasks": [
                             {
                                 "en": "Do final QA and delivering the apps to the client;",
-                                "fr": ""
+                                "fr": "Effectuer l'assurance qualité finale et livrer les applications au client;"
                             },
                             {
                                 "en": "Manage in ItunesConnect and Google PlayStore MyBenefits application;",
-                                "fr": ""
+                                "fr": "Gérer dans ItunesConnect et Google PlayStore l'application MyBenefits;"
                             },
                             {
                                 "en": "Mediating between the client and the development team in order to meet the client’s requirements;",
-                                "fr": ""
+                                "fr": "Maintenir le canal de communication au niveau technique entre les parties afin d'atteindre les objectifs et spécifications de l'application;"
                             },
                             {
                                 "en": "Managing development platform provider relationship;",
-                                "fr": ""
+                                "fr": "Gérer le canal de communication avec Kony au moment de la phase de tests;"
                             }
                         ],
                         "technologies": [
@@ -323,52 +323,44 @@
                         "endDate": "2014-03-01",
                         "description": {
                             "en": "For the development of a data capture mobile application for the oil and gas industry the objective was to develop a brand new application on both WinRT platforms and Windows WPF using a reusable code base. Mr. Brouillard on this position was in charge of the solutions design, technical analysis and lead of a team of 5 developers. This project spanned on multiple sites from Montreal, Calgary and Bangalore. As highlights, the application had to allow a disconnected operation model, a scriptable business rule engine and a UIx consistent between the mobile and classic modes. On this mandate, Mr. Brouillard had to:",
-                            "fr": ""
+                            "fr": "Pour le développement d'une application mobile de saisie de données pour l'industrie du pétrole et du gaz, l'objectif était de développer une toute nouvelle application sur les deux plates-formes WinRT et de Windows WPF en utilisant une base de code réutilisable. M. Brouillard sur ce poste était en charge de la conception des solutions, l'analyse technique et de mener une équipe de 5 développeurs. Ce projet a été livré par des équipes multi-sites de Montréal, Calgary et Bangalore. Comme fait saillant, l'application devait permettre un fonctionnement en mode déconnecté, un moteur de règles métiers scriptable et Ulx cohérente entre les modes mobiles et classiques. Sur ce mandat, M. Brouillard devait:"
                         },
                         "tasks": [
                             {
                                 "en": "Design visual models and user experience (UX);",
-                                "fr": ""
+                                "fr": "Concevoir l'interface utilisateur et l'expérience utilisateur (UX);"
                             },
                             {
                                 "en": "Design the solution to minimize the WPF development tasks and by using the WinRT MVVM Framework Caliburn.Micro;",
-                                "fr": ""
+                                "fr": "Concevoir la solution afin de minimiser l'effort de développement puisque l'application devait cibler WPF et WinRT;"
                             },
                             {
                                 "en": "Develop the solution to support the offline mode and a dynamic configurable business rules engine;",
-                                "fr": ""
+                                "fr": "Implémenter un mode de gestion hors ligne et un engin de règles d'affaires entièrement configurable;"
                             },
                             {
                                 "en": "Develop training material for developers;",
-                                "fr": ""
+                                "fr": "Développemenr le matériel de formation pour les développeurs;"
                             },
                             {
                                 "en": "Establish a development recipe and practices to be adopted;",
-                                "fr": ""
+                                "fr": "Établir les recettes de développements et les pratiques à adopter"
                             },
                             {
                                 "en": "Lead a development team and perform quality assurance tasks;",
-                                "fr": ""
+                                "fr": "Diriger une équipe de développement et effectuer des tâches d'assurance qualité;"
                             },
                             {
                                 "en": "Manage customer expectations in terms of technical challenges;",
-                                "fr": ""
+                                "fr": "Gérer les attentes du client en fonctions des limitations et défis techniques;"
                             },
                             {
                                 "en": "Develop components TDD and write unit tests;",
-                                "fr": ""
-                            },
-                            {
-                                "en": "Actively participate in daily monitoring activities;",
-                                "fr": ""
-                            },
-                            {
-                                "en": "Apply established standards development;",
-                                "fr": ""
+                                "fr": "Développer l'application en mode TDD et écrire des tests unitaires;"
                             },
                             {
                                 "en": "Carry out inspections and code reviews;",
-                                "fr": ""
+                                "fr": "Effectuer des revues de code et des inspections;"
                             }
                         ],
                         "technologies": [
@@ -407,40 +399,36 @@
                         "endDate": "2014-03-01",
                         "description": {
                             "en": "As head of the Windows Store service offering Microsoft CGI Expertise Center, Mr. Brouillard is in charge of developing strategies and tools to position the CoE in this growing market. A mandate that has been entrusted to Mr. Brouillard is to develop a reusable application that maximizes the machine base of T4 templating Microsoft in order to obtain a platform that reduces costs of Windows Store application development. In this position, Mr. Brouillard has completed the following tasks:",
-                            "fr": ""
+                            "fr": "En tant que leader du service Windows Store au sein du Centre d'Expertise Microsoft à CGI, M. Brouillard a été chargé d'élaborer des stratégies et des outils pour positionner le centre d'expertise dans ce marché en pleine croissance. Un mandat qui a été confié à M. Brouillard est de développer une application réutilisable qui maximise la base de la machine de T4 templating Microsoft afin d'obtenir une plate-forme qui réduit les coûts développement. À ce titre, M. Brouillard a effectué les tâches suivantes"
                         },
                         "tasks": [
                             {
                                 "en": "Analyze tendering and estimating projects;",
-                                "fr": ""
+                                "fr": "Participer à des appels d'offre et estimations de projets;"
                             },
                             {
                                 "en": "Provide training materials and create a core of developers;",
-                                "fr": ""
+                                "fr": "Monter un catalogue de formation et créer un noyeau de développeurs;"
                             },
                             {
                                 "en": "Perform technology watch;",
-                                "fr": ""
-                            },
-                            {
-                                "en": "Design visual models and user experience (UX);",
-                                "fr": ""
+                                "fr": "Effectuer une veille technologique;"
                             },
                             {
                                 "en": "Design a project template that will generate Windows Phone, Windows Store and WPF applications simultaneously;",
-                                "fr": ""
+                                "fr": "Concevoir des gabarits de projets Windows Phone et WPF simultannés;"
                             },
                             {
-                                "en": "Design and develop the project and the components required for an application of 'Line of Business';",
-                                "fr": ""
+                                "en": "Design and develop the components required for an application of 'Line of Business';",
+                                "fr": "Concevoir et développer les composants requis dans le cadre d'une application de type 'Ligne d'affaire'"
                             },
                             {
                                 "en": "Create T4 templates to generate code from an external data source (SQL, WebAPI);",
-                                "fr": ""
+                                "fr": "Créer des gabarits de génération de code T4 pour des sources de données externes SQL et WebAPI)"
                             },
                             {
                                 "en": "Develop and write unit tests;",
-                                "fr": ""
+                                "fr": "Dévelppper et rédiger des tests unitaires;"
                             }
                         ],
                         "technologies": [
@@ -472,20 +460,20 @@
                         "endDate": "2013-04-01",
                         "description": {
                             "en": "As a senior developer assigned to the Prim’Heure project, Mr. Brouillard is responsible for the development of key functional components. This application manages the schedule of employees and workstations at four Casinos of Lotto-Quebec sites. This application requires the development of components using GDI+. This task requires strong knowledge of Windows Forms and .Net framework foundations. In this role, he executed the following activities:",
-                            "fr": ""
+                            "fr": "En tant que développeur senior affecté au projet Prim'Heure, M. Brouillard est responsable du développement des composants fonctionnels clés. Cette application gère le calendrier des employés et des postes de travail à quatre casinos de sites Lotto-Québec. Cette application nécessite le développement de composants à l'aide GDI +. Cette tâche requiert de solides connaissances de Windows Forms et .Net fondations cadres. Dans ce rôle, il a exécuté les activités suivantes:"
                         },
                         "tasks": [
                             {
                                 "en": "Based on functional requirements documentation, detailing tasks, estimates and and designs of the technical solution elements required to develop the components to meet the functional requirements;",
-                                "fr": ""
+                                "fr": "Sur la base de la documentation des exigences fonctionnelles, détaillant les tâches, des estimations et des designs des éléments de solution techniques nécessaires pour développer les composants pour répondre aux exigences fonctionnelles;"
                             },
                             {
                                 "en": "Developing and improving the applications infrastructure that integrated the functional units, which posed several challenges, required a long term project vision and risk management strategies;",
-                                "fr": ""
+                                "fr": "Développer et améliorer la structure applicative qui intégre les unités fonctionnelles, ce qui pose plusieurs défis, exige une vision à long terme du projet et impose une stratégie de mitigation et de gestion des risques;"
                             },
                             {
                                 "en": "Developing screens and forms using Windows Forms, GDI+ and the Infragistics controls;",
-                                "fr": ""
+                                "fr": "Développer les écrans et formulaires à l'aide de la technologie Windows Forms, GDI+ et Infragistics"
                             },
                             {
                                 "en": "Performing inspections and code reviews; developing optimization strategies with the client in order to reduce the screens complexity while maintaining users’ functional goals; managing the documentation and updates to functional unit documents;",
