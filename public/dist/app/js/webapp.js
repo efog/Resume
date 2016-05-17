@@ -28,7 +28,7 @@
     }
     app.config(function($translateProvider) {
         $translateProvider.useStaticFilesLoader({
-            prefix: 'resources/locale-',
+            prefix: 'locales/locale-',
             suffix: '.json'
         });
         $translateProvider.useSanitizeValueStrategy('escapeParameters');
