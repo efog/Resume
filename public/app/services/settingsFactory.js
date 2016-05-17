@@ -3,11 +3,12 @@
     angular
         .module('app')
         .factory('settingsFactory', settingsFactory);
-    settingsFactory.$inject = ['$http'];
-    function settingsFactory($http) {
+    settingsFactory.$inject = ['$http', '$translate'];
+    function settingsFactory($http, $translate) {
         var factory = {};
         Object.defineProperty(factory, 'lang', {
-            get: function() { return 'en'; }
+            get: function() { return $translate.preferredLanguage(); },
+            set: function(value) { $translate.use(value); }
         });
         factory.prime = function() {
             console.log('priming settings');

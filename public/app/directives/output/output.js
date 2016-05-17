@@ -14,7 +14,7 @@
             restrict: 'AE',
             transclude: false,
             scope: {
-                content: '&content',
+                output: '&',
                 substr: '@substr'
             },
             templateUrl: '/app/directives/output/output.html'
@@ -43,7 +43,7 @@
                     return getSub(tVal);
                 }
                 else {
-                    return getSub(target.toString());
+                    return getSub(target);
                 }
             };
             var getForTarget = function(target) {
