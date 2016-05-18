@@ -184,3 +184,9 @@ selection-collapsed > .filtered-item.ng-hide{
         clear: both;
     }
 }
+a.lang.selected{
+    font-weight: bold;
+}
+a.lang{
+    font-weight: normal;
+}

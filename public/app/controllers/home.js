@@ -1,13 +1,13 @@
-(function() {
+(function () {
     'use strict';
 
     angular
         .module('app')
         .controller('home', home);
 
-    home.$inject = ['$location', 'moment', 'dataService', 'settingsFactory'];
+    home.$inject = ['$location', '$rootScope', '$translate', 'moment', 'dataService', 'settingsFactory'];
 
-    function home($location, moment, dataService, settingsFactory) {
+    function home($location, $rootScope, $translate, moment, dataService, settingsFactory) {
         var _data = {},
             _collapsed = {},
             _earliest,
@@ -23,46 +23,46 @@
         var vm = this;
         vm.collapseMandate = collapseMandate;
         Object.defineProperty(vm, 'data', {
-            get: function() {
+            get: function () {
                 return _data;
             },
-            set: function(value) {
+            set: function (value) {
                 _data = value;
             }
         });
         Object.defineProperty(vm, 'defaultTechs', {
-            get: function() {
+            get: function () {
                 var defaultTechs = '.NET 4.5 C# WinForms Agile Entity NodeJS Express Swift XCode Framework WCF SQL Server ASP.Net MVC GIT UX Design HTML5 JavaScript CSS AngularJS SignalR REST ';
                 defaultTechs += 'JQuery Bootstrap IOS Android Apple AppStore Google PlayStore WPF MVVM Unity TDD Windows Phone WebAPI GDI+ NHibernate SCRUM Azure PaaS IaaS SQL Azure Azure WebJobs';
                 return defaultTechs;
             }
         });
         Object.defineProperty(vm, 'employerFilters', {
-            get: function() {
+            get: function () {
                 return _employerFilters;
             },
-            set: function(value) {
+            set: function (value) {
                 _employerFilters = value;
             }
         });
         Object.defineProperty(vm, 'employers', {
-            get: function() {
+            get: function () {
                 return _employers;
             },
-            set: function(value) {
+            set: function (value) {
                 _employers = value;
             }
         });
         Object.defineProperty(vm, 'filteredEmployers', {
-            get: function() {
+            get: function () {
                 if (!vm.data || !vm.data.workExperience) { return []; }
-                var mapped = vm.data.workExperience.employers.map(function(emp) {
+                var mapped = vm.data.workExperience.employers.map(function (emp) {
                     if (vm.employerFilters[emp.name]) {
                         return emp;
                     }
                 });
                 var retVal = [];
-                mapped.forEach(function(r) {
+                mapped.forEach(function (r) {
                     if (r) {
                         retVal.push(r);
                     }
@@ -71,20 +71,20 @@
             }
         });
         Object.defineProperty(vm, 'filteredRoles', {
-            get: function() {
+            get: function () {
                 if (!vm.data || !vm.filteredEmployers) { return []; }
                 var lang = settingsFactory.lang;
                 var roles = [];
                 for (var i = 0; i < vm.filteredEmployers.length; i++) {
                     var emp = vm.filteredEmployers[i];
                     if (!emp) { continue; }
-                    roles = roles.concat(emp.mandates.map(function(mandate) {
-                        var role = mandate.role[lang] ? mandate.role[lang] : mandate.role;
+                    roles = roles.concat(emp.mandates.map(function (mandate) {
+                        var role = mandate.role[$translate.use()] ? mandate.role[$translate.use()] : mandate.role;
                         return role;
                     }));
                 }
                 var retVal = [];
-                roles.forEach(function(r) {
+                roles.forEach(function (r) {
                     if (retVal.indexOf(r) === -1) {
                         retVal.push(r);
                     }
@@ -93,64 +93,64 @@
             }
         });
         Object.defineProperty(vm, 'isBusy', {
-            get: function() {
+            get: function () {
                 return _isBusy;
             },
-            set: function(value) {
+            set: function (value) {
                 _isBusy = value;
             }
         });
         Object.defineProperty(vm, 'projects', {
-            get: function() {
+            get: function () {
                 if (!vm.data || !vm.data.workExperience) { return []; }
                 var projects = [];
                 for (var i = 0; i < vm.data.workExperience.employers.length; i++) {
                     for (var j = 0; j < vm.data.workExperience.employers[i].mandates.length; j++) {
                         var mandate = vm.data.workExperience.employers[i].mandates[j];
-                        mandate.products.forEach(function(p) { projects.push(p); });
+                        mandate.products.forEach(function (p) { projects.push(p); });
                     }
                 }
                 return projects;
             }
         });
         Object.defineProperty(vm, 'roleFilters', {
-            get: function() {
+            get: function () {
                 return _roleFilters;
             },
-            set: function(value) {
+            set: function (value) {
                 _roleFilters = value;
             }
         });
         Object.defineProperty(vm, 'roles', {
-            get: function() {
+            get: function () {
                 return _roles;
             },
-            set: function(value) {
+            set: function (value) {
                 _roles = value;
             }
         });
         Object.defineProperty(vm, 'techFilters', {
-            get: function() {
+            get: function () {
                 return _techFilters;
             },
-            set: function(value) {
+            set: function (value) {
                 _techFilters = value;
             }
         });
         Object.defineProperty(vm, 'technologies', {
-            get: function() {
+            get: function () {
                 return _technologies;
             },
-            set: function(value) {
+            set: function (value) {
                 _technologies = value;
             }
         });
         Object.defineProperty(vm, 'startYear', {
-            get: function() {
+            get: function () {
                 if (vm.data.workExperience && !_earliest) {
                     _earliest = new Date();
-                    vm.filteredEmployers.forEach(function(employer) {
-                        employer.mandates.forEach(function(mandate) {
+                    vm.filteredEmployers.forEach(function (employer) {
+                        employer.mandates.forEach(function (mandate) {
                             var d = moment(mandate.startDate);
                             if (d && d < _earliest) {
                                 _earliest = d;
@@ -162,11 +162,11 @@
             }
         });
         Object.defineProperty(vm, 'endYear', {
-            get: function() {
+            get: function () {
                 if (vm.data.workExperience && !_latest) {
                     _latest = vm.startYear;
-                    vm.filteredEmployers.forEach(function(employer) {
-                        employer.mandates.forEach(function(mandate) {
+                    vm.filteredEmployers.forEach(function (employer) {
+                        employer.mandates.forEach(function (mandate) {
                             if (!mandate.endDate) {
                                 _latest = moment(new Date());
                                 return;
@@ -181,7 +181,11 @@
                 return _latest;
             }
         });
+        Object.defineProperty(vm, 'lang', {
+            get: function () { return $translate.use(); }
+        });
         activate();
+        vm.setLang = setLang;
         return vm;
         /**
          * Activate controller 
@@ -191,17 +195,24 @@
             vm.employerMandates = employerMandates;
             _isBusy = true;
             settingsFactory.prime();
-            dataService.get(function(resultData) {
+            dataService.get(function (resultData) {
                 vm.data = resultData;
                 setEmployers(vm.data);
                 setRoles(vm.data);
                 setTechnologies(vm.data);
                 setFilters();
                 _isBusy = false;
-            }, function(error) {
+            }, function (error) {
                 console.log(error);
                 _isBusy = false;
             });
+        }
+        /**
+         * Set language of UI
+         */
+        function setLang(lang) {
+            $translate.use(lang);
+            setTimeout($rootScope.$apply(), 3);
         }
         /**
          * Collapse mandate
@@ -212,7 +223,7 @@
         }
         function employerMandates(mandates) {
             var retVal = [];
-            mandates.forEach(function(m) {
+            mandates.forEach(function (m) {
                 if (!vm.isFilteredOut(m)) {
                     retVal.push(m);
                 }
@@ -221,7 +232,7 @@
         }
         function isFilteredOut(mandate) {
             var lang = settingsFactory.lang;
-            var role = mandate.role[lang] ? mandate.role[lang] : mandate.role;
+            var role = mandate.role[$translate.use()] ? mandate.role[$translate.use()] : mandate.role;
 
             var techFiltered = false;
             for (var i = 0; i < mandate.technologies.length; i++) {
@@ -234,21 +245,21 @@
             return filtered;
         }
         function setFilters() {
-            vm.employers.forEach(function(employer) {
+            vm.employers.forEach(function (employer) {
                 if (!employer.name) { return; }
                 var name = employer.name;
                 if (name && name !== '') {
                     _employerFilters[name] = true;
                 }
             });
-            vm.roles.forEach(function(role) {
+            vm.roles.forEach(function (role) {
                 if (!role) { return; }
                 var name = role;
                 if (name && name !== '') {
                     _roleFilters[name] = true;
                 }
             });
-            vm.technologies.forEach(function(tech) {
+            vm.technologies.forEach(function (tech) {
                 if (!tech) { return; }
                 var name = tech;
                 if (name && name !== '') {
@@ -258,7 +269,7 @@
         }
         function setEmployers(data) {
             var employers = '';
-            vm.employers = data.workExperience.employers.map(function(employer) {
+            vm.employers = data.workExperience.employers.map(function (employer) {
                 if (employer && employers.indexOf(employer.name) === -1) {
                     employers += employer.name;
                     return employer;
@@ -270,12 +281,12 @@
             var rolesArr = [];
             var roles = '';
             var lang = settingsFactory.lang;
-            data.workExperience.employers.forEach(function(employer) {
-                var tmpr = employer.mandates.map(function(mandate) {
+            data.workExperience.employers.forEach(function (employer) {
+                var tmpr = employer.mandates.map(function (mandate) {
                     var name = '';
                     mandate.collapsed = true;
-                    if (mandate.role[lang]) {
-                        name += '"' + mandate.role[lang] + '"';
+                    if (mandate.role[$translate.use()]) {
+                        name += '"' + mandate.role[$translate.use()] + '"';
                     }
                     else {
                         name += '"' + mandate.role + '"';
@@ -287,14 +298,14 @@
                 rolesArr = rolesArr.concat(tmpr);
             });
             roles = '';
-            rolesArr = rolesArr.map(function(role) {
+            rolesArr = rolesArr.map(function (role) {
                 if (role && roles.indexOf(role) === -1) {
                     roles += role;
                     return role.split('"')[1];
                 }
             });
             vm.roles.length = 0;
-            rolesArr.forEach(function(r) {
+            rolesArr.forEach(function (r) {
                 if (r) {
                     vm.roles.push(r);
                 }
@@ -304,10 +315,10 @@
             var techs = [];
             var technologies = '';
             var lang = settingsFactory.lang;
-            data.workExperience.employers.forEach(function(employer) {
-                employer.mandates.forEach(function(mandate) {
+            data.workExperience.employers.forEach(function (employer) {
+                employer.mandates.forEach(function (mandate) {
                     if (!mandate.technologies) { return; }
-                    var tmp = mandate.technologies.map(function(tech) {
+                    var tmp = mandate.technologies.map(function (tech) {
                         if (tech && technologies.indexOf(tech) === -1) {
                             technologies += tech;
                             return tech;
@@ -317,7 +328,7 @@
                 });
             });
             vm.technologies.length = 0;
-            techs.forEach(function(t) {
+            techs.forEach(function (t) {
                 if (t) {
                     vm.technologies.push(t);
                 }

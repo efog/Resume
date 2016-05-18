@@ -3,8 +3,8 @@
     angular
         .module('app')
         .directive('output', output);
-    output.$inject = ['$timeout', '$window', 'settingsFactory'];
-    function output($timeout, $window, settingsFactory) {
+    output.$inject = ['$timeout', '$translate', '$window', 'settingsFactory'];
+    function output($timeout, $translate, $window, settingsFactory) {
         // Usage:
         //     <output></output>
         // Creates:
@@ -15,13 +15,14 @@
             transclude: false,
             scope: {
                 output: '&',
-                substr: '@substr'
+                substr: '@substr',
+                lang: '='
             },
             templateUrl: '/app/directives/output/output.html'
         };
         return directive;
         function link(scope, element, attrs) {
-            var lang = settingsFactory.lang;
+            var lang = scope.lang;
             var sub = scope.substr ? scope.substr : -1;
             var getSub = function(target) {
                 if (sub >= 0) {
@@ -31,8 +32,8 @@
                 return target;
             };
             var getForObject = function(target) {
-                if (target[lang]) {
-                    var tVal = target[lang];
+                if (target[scope.lang]) {
+                    var tVal = target[scope.lang];
                     if (Array.isArray(tVal)) {
                         var val = '';
                         tVal.forEach(function(item) {
