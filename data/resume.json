@@ -12,11 +12,11 @@
     "twitter": "ebrouillard",
     "careerProfile": {
         "en": [
-            "Graduate in software engineering from the École de Technologie Supérieure of Montreal in 2007, Mr. Brouillard is a solution architect, accomplished developer and team lead who cumulates nearly 10 years of hands-on experience on several projects such as web applications, mobile apps and xClient apps on the .Net platform and backend integrations. Mr. Brouillard is also training as a Professional SCRUM Master. On his latest mandates he has leveraged technologies such as .NET 4.5, C#, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS and SaaS, ASP.Net MVC5, WPF, WCF. Worked with various clients from Montreal to Sacramento through Winnipeg and led development teams located in India.",
+            "Graduate in software engineering from the École de Technologie Supérieure of Montreal in 2007, Mr. Brouillard is a solution architect, accomplished developer and team lead who cumulates nearly 10 years of hands-on experience on several projects such as web applications, mobile apps and xClient apps on the .Net platform and backend integrations. Mr. Brouillard is also certified as a Professional SCRUM Master. On his latest mandates he has leveraged technologies such as .NET 4.5, C#, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS and SaaS, ASP.Net MVC5, WPF, WCF. Worked with various clients from Montreal to Sacramento through Winnipeg and led development teams located in India.",
             "At CGI, Mr. Brouillard is establishing the mobility expertise for CGI’s excellence centers in Sherbrooke and Shawinigan. This mandate involves establishing practices and designs, lead projects, hiring talents, establishing relationships with clients and mentoring to consultants."
         ],
         "fr": [
-            "Diplômé en Génie Logiciel de l'École de Technologie Supérieure de Montréal en 2007, M.Brouillard est un architecte de solution, développeur accompli et chef d'équipe qui cumule près de 10 ans d'expérience pratique sur plusieurs projets tels que des applications Web, des applications mobiles et xClient sur la plate-forme .Net de Microsoft. M.Brouillard poursuit également la formation pour devenir Professional SCRUM Master. Lors de ses derniers mandats, il a mis à profit des technologies telles que .NET 4.5, C #, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS et SaaS, ASP.Net MVC5, WPF, WCF. A travaillé avec divers clients de Montréal à Sacramento en passant par Winnipeg et a dirigé des équipes de développement situées en Inde.",
+            "Diplômé en Génie Logiciel de l'École de Technologie Supérieure de Montréal en 2007, M.Brouillard est un architecte de solution, développeur accompli et chef d'équipe qui cumule près de 10 ans d'expérience pratique sur plusieurs projets tels que des applications Web, des applications mobiles et xClient sur la plate-forme .Net de Microsoft. M.Brouillard est également certifié Professional SCRUM Master. Lors de ses derniers mandats, il a mis à profit des technologies telles que .NET 4.5, C #, Angular JS, NodeJS, HTML5, CSS3, IOS Swift, Azure PaaS et SaaS, ASP.Net MVC5, WPF, WCF. A travaillé avec divers clients de Montréal à Sacramento en passant par Winnipeg et a dirigé des équipes de développement situées en Inde.",
             "Chez CGI, M.Brouillard établit l'expertise mobilité pour les centres de livraison de CGI à Sherbrooke et à Shawinigan. Ce mandat comporte l'établissement des pratiques et des concepts, lead de projets, l'embauche de talents, l'établissement de relations avec les clients et du mentorat aux consultants."
         ]
     },
@@ -111,6 +111,10 @@
                                 "fr": "Établir les pratiques en développement, conception, analyse et assurance qualité d'applications mobiles;"
                             },
                             {
+                                "en": "Mentor and develop expertise of an interns team by developping in-house innovative solutions;",
+                                "fr": "Mentorer et développer l'expertise d'une équipe composée de stagiaires afin de développer des solutions internes innovantes;"
+                            },
+                            {
                                 "en": "Lead hiring interviews and contacting talents;",
                                 "fr": "Mener des entrevues d'embauche et contacts de talents;"
                             },
@@ -148,6 +152,30 @@
                         ],
                         "products": [
                             {
+                                "year": 2016,
+                                "name": {
+                                    "en": "BCP Mobility",
+                                    "fr": "BCP Mobilité"
+                                },
+                                "description": {
+                                    "en": "As an internal project with interns, we're building an IOS mobile application for managing business continuity plan backed by NodeJS, CGI's LDAP and the MEAN stack;",
+                                    "fr": "Dans le cadre d'un projet interne avec une équipe de stagiaires, il s'agit du développement d'une application mobile sur IOS pour gérer le plan de continuité des affaires bâtie avec XCode et utilisant la stack MEAN pour l'infra d'administration et API;"
+                                },
+                                "url": ""
+                            },
+                            {
+                                "year": 2016,
+                                "name": {
+                                    "en": "Tokioc",
+                                    "fr": "Tokioc"
+                                },
+                                "description": {
+                                    "en": "A simple dependency injection container for NodeJS;",
+                                    "fr": "Un simple conteneur pour l'injection de dépendances pour les applications NodeJS;"
+                                },
+                                "url": "https://github.com/efog/tokioc"
+                            },
+                            {
                                 "year": 2015,
                                 "name": {
                                     "en": "VS2015 TACO Angular on Cordova Bootstrap",
@@ -160,6 +188,61 @@
                                 "url": "http://www.nuget.org/packages/VS2015.TACO.AngularOnCordova.Bootstrap"
                             }
                         ]
+                    },
+                    {
+                        "client": "Quest",
+                        "project": {
+                            "en": "Spectocor Reports Web Portal",
+                            "fr": "Spectocor Reports Web Portal"
+                        },
+                        "role": {
+                            "en": "Solution Architect and Senior Developer",
+                            "fr": "Architecte de Solution et Développeur principal"
+                        },
+                        "startDate": "2016-02-01",
+                        "endDate": null,
+                        "description": {
+                            "en": "For Quest and its client, Spectocor Medical Supplies, the consultant has been in charge of developing the front end components for a reports generation portal. The AngularJS based solution required high performance throughput as medical technicians have to quickly and efficiently review hundreds of electro cardiograms and heartbeat annotations daily in order to generate reports for physicians. The EKG we’re drawn using HTML5 canvas and the session data streamed using Web Sockets. ",
+                            "fr": "Pour Quest et son client, Spectocor Medical Supplies, le consultant a été chargé de développer les composants frontaux pour un portail de génération de rapports. La solution consiste en une application AngularJS et Canvas et nécessite un haut niveau de performances afin que les techniciens médicaux puissent examiner rapidement et efficacement des centaines d’électro-cardiogrammes et annotations quotidiennes afin de générer des rapports pour les médecins. Les graphes cardiaques sont affichés en utilisant les canvas HTML5 et les données échangées avec le backend en utilisant WebSockets. Sur ce mandat, le consultant a été chargé de:"
+                        },
+                        "tasks": [
+                            {
+                                "en": "Design the application structure and validate solution technically;",
+                                "fr": "Concevoir la structure de l'application et de la validation technique;"
+                            },
+                            {
+                                "en": "Develop the AngularJS web application;",
+                                "fr": "Développer l'application AngularJS et le service de streaming avec WebSockets;"
+                            },
+                            {
+                                "en": "Design the UX in line with the client’s branding;",
+                                "fr": "Appliquer les normes graphiques du client;"
+                            },
+                            {
+                                "en": "Design and develop the data streaming service and caching layers;",
+                                "fr": "Concevoir et développer les service de diffusion des données (streaming) et la mise en cache;"
+                            },
+                            {
+                                "en": "Render EKGs and annotations using HTML5 Canvas;",
+                                "fr": "Développer les composants de rendu graphique en utilisant le canvas HTML5;"
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 4.5",
+                            "C#",
+                            "NodeJS",
+                            "AngularJS",
+                            "HTML5",
+                            "Canvas",
+                            "WebSockets",
+                            "Agile",
+                            "Entity Framework",
+                            "WCF",
+                            "SQL Server",
+                            "GIT",
+                            "UX Design"
+                        ],
+                        "products": []
                     },
                     {
                         "client": "Quest",
@@ -184,7 +267,7 @@
                             },
                             {
                                 "en": "Develop the Winforms application and the runtime Windows Service;",
-                                "fr": "Développer l'application WinForms et le service Windows d'exécution"
+                                "fr": "Développer l'application WinForms et le service Windows;"
                             },
                             {
                                 "en": "Design the UX in line with the client’s branding;",
@@ -477,20 +560,19 @@
                             },
                             {
                                 "en": "Performing inspections and code reviews; developing optimization strategies with the client in order to reduce the screens complexity while maintaining users’ functional goals; managing the documentation and updates to functional unit documents;",
-                                "fr": ""
+                                "fr": "Effectuer les revues et les inspections de code; développer des stratégies d'optimisation fonctionnelles afin de réduire la complexité des écran tout en atteignant les objectifs initiaux;"
                             },
                             {
                                 "en": "Manage source control and build delivery;",
-                                "fr": ""
+                                "fr": "Gérer le contrôle de sources et la livraison des incréments;"
                             },
                             {
                                 "en": "Write technical documentation;",
-                                "fr": ""
+                                "fr": "Rédaction de documents techniques;"
                             }
                         ],
                         "technologies": [
                             ".NET 3.5",
-                            ".NET 4.5",
                             "WinForms",
                             "C#",
                             "Visual Studio",
