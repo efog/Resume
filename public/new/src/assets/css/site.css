@@ -1,0 +1,52 @@
+.section{
+    width: 100%;
+}
+
+#head,
+#head.minimized{
+    height: 150px;
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid black;
+    transition: 100ms height ease-in-out
+}
+#head.minimized{
+    height: 0;
+}
+
+#head .content,
+#head.minimized .content{
+    transition: 50ms opacity ease-in-out;
+}
+#head .content{
+    opacity: 1;
+}
+#head.minimized .content{
+    opacity: 0;
+}
+
+#main{
+    top: 50px;
+    z-index: 10;
+}
+#persona{
+    height: 750px;
+    background-image: url(./../images/homie.png);
+    background-size: 100%;
+    background-position-y: 50%;
+}
+#who{
+    height: 400px;
+}
+#what{
+    height: 900px;
+}
+#footer{
+    height: 75px;
+}
+.fixed {
+    position: fixed;
+}
+.relative{
+    position: relative;
+}

@@ -27,6 +27,7 @@ build/Release
 node_modules
 bower_components
 bower
+public/new/bower
 public/lib
 
 # Optional npm cache directory

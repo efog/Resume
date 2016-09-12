@@ -1,6 +1,6 @@
-var express = require('express'),
-    dataService = require('./data.js'),
-    app = express(),
+const dataService = require('./data.js'),
+        express = require('express');
+const app = express(),
     port = process.env.PORT || 9090;
 
 // Statics

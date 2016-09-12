@@ -74,5 +74,10 @@
         "fonts/fontawesome-webfont.woff2"
       ]
     }
+  },
+  "resolutions": {
+    "angular": "^1.5.1",
+    "angular-translate": "^2.11.0",
+    "moment": "^2.12.0"
   }
 }
