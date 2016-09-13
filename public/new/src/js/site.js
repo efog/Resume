@@ -9,10 +9,10 @@ const documentState = {
  */
 const scrollPersona = (event) => {
     const docHeight = documentState.height;
-    const offset = $(event.target).scrollTop() * 10;
+    const offset = $(event.target).scrollTop() * 3;
     const minimumOffset = documentState.personaBackgroundInitialPosition;
     const maximumOffset = 90;
-    const newOffset = minimumOffset + (maximumOffset - minimumOffset) * (offset / docHeight);
+    const newOffset = minimumOffset - (maximumOffset - minimumOffset) * (offset / docHeight);
     documentState.personaBackgroundPosition = newOffset > maximumOffset ? maximumOffset : newOffset;
 };
 
@@ -24,12 +24,12 @@ const scrollPersona = (event) => {
 const documentScrollHandler = (event) => {
     scrollPersona(event);
     if ($(event.target).scrollTop() > 5) {
-        $('#head').addClass('minimized');
-        $('#head').addClass('fixed');
+        $('#full-header').addClass('minimized');
+        $('#small-header').removeClass('minimized');
     }
     else {
-        $('#head').removeClass('minimized');
-        $('#head').removeClass('relative');
+        $('#full-header').removeClass('minimized');
+        $('#small-header').addClass('minimized');
     }
 };
 

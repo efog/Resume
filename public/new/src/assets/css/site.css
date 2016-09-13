@@ -1,28 +1,61 @@
+.bg-color-1{
+    background-color: #3E454C;
+}
+.bg-color-2{
+    background-color: #2185C5;
+}
+.bg-color-3{
+    background-color: #7ECEFD;
+}
+.bg-color-4{
+    background-color: #FFF6E5;
+}
+.bg-color-5{
+    background-color: #FF7F66;
+}
+.fore-color-1{
+    color: #3E454C;
+}
+.fore-color-2{
+    color: #2185C5;
+}
+.fore-color-3{
+    color: #7ECEFD;
+}
+.fore-color-4{
+    color: #FFF6E5;
+}
+.fore-color-5{
+    color: #FF7F66;
+}
+
 .section{
     width: 100%;
 }
 
-#head,
-#head.minimized{
-    height: 150px;
+#full-header,
+#full-header.minimized{
+    margin-top: 0;
     z-index: 100;
-    background-color: white;
-    border-bottom: 1px solid black;
-    transition: 100ms height ease-in-out
+    height: 100px;
+    transition: 300ms margin ease-in-out;
+    box-shadow: 0px 1px 13px #101010;
 }
-#head.minimized{
-    height: 0;
+#full-header.minimized{
+     margin-top: -150px;
 }
 
-#head .content,
-#head.minimized .content{
-    transition: 50ms opacity ease-in-out;
+#small-header,
+#small-header.minimized{
+    box-shadow: 0px 1px 13px #101010;
+    margin-top: 0;
+    height: 50px;
+    z-index: 110;
+    transition: 300ms margin ease-in-out;
+    opacity: 0.9;    
 }
-#head .content{
-    opacity: 1;
-}
-#head.minimized .content{
-    opacity: 0;
+#small-header.minimized{
+     margin-top: -150px;
 }
 
 #main{
@@ -30,10 +63,12 @@
     z-index: 10;
 }
 #persona{
-    height: 750px;
+    height: 650px;
     background-image: url(./../images/homie.png);
     background-size: 100%;
     background-position-y: 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 1px 13px #101010 inset;
 }
 #who{
     height: 400px;
