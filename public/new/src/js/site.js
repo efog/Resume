@@ -1,5 +1,6 @@
 const documentState = {
-    '_personaBackgroundInitialPosition': 0
+    '_personaBackgroundInitialPosition': 0,
+    '_personaBackgroundImage': null
 };
 
 /**
@@ -14,6 +15,72 @@ const scrollPersona = (event) => {
     const maximumOffset = 90;
     const newOffset = minimumOffset - (maximumOffset - minimumOffset) * (offset / docHeight);
     documentState.personaBackgroundPosition = newOffset > maximumOffset ? maximumOffset : newOffset;
+};
+
+/**
+ * Resizes persona background to maintain parrallax effect
+ *
+ * @returns {undefined}
+ */
+const resizePersonaBackgroundHandler = () => {
+
+    if (documentState._resizeTimeout) {
+        clearTimeout(documentState._resizeTimeout);
+    }
+    documentState._resizeTimeout = setTimeout(() => {
+        const personaArea = $('#persona');
+        const personaAreaSize = {
+            'width': personaArea.width(),
+            'height': personaArea.height()
+        };
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        let newVal = '';
+        const image = documentState.personaBackgroundImage;
+        if (personaAreaSize.width < image.width) {
+            canvas.width = personaAreaSize.width;
+            canvas.height = image.height;
+
+            const sX = (image.width - canvas.width) / 2;
+            const sY = 0;
+            const sW = canvas.width;
+            const sH = image.height;
+            const dX = 0;
+            const dY = 0;
+            const dW = canvas.width;
+            const dH = image.height;
+
+            context.drawImage(image, sX, sY, sW, sH, dX, dY, dW, dH);
+        }
+        else {
+            canvas.width = image.width;
+            canvas.height = image.height;
+            context.drawImage(image, 0, 0, image.width, image.height);
+        }
+        newVal = `${canvas.toDataURL()}`;
+        const background = `background-image: url(${newVal})`;
+        personaArea.attr('style', background);
+    }, 50);
+
+};
+
+/**
+ * Setup persona panel
+ *
+ * @returns {undefined}
+ */
+const setupPersonaPanel = () => {
+    const personaArea = $('#persona');
+    const bgImage = personaArea.attr('data-background-image');
+    const image = new Image();
+    image.onload = () => {
+        documentState.personaBackgroundImage = image;
+        resizePersonaBackgroundHandler();
+        personaArea.addClass('visible');
+        personaArea.removeClass('hidden');
+    };
+    image.src = bgImage;
+    $(window).resize(resizePersonaBackgroundHandler);
 };
 
 /**
@@ -57,6 +124,14 @@ $(document).ready(() => {
                 $('#persona').height(value);
             }
         },
+        'personaBackgroundImage': {
+            'get': () => {
+                return this._personaBackgroundImage;
+            },
+            'set': (value) => {
+                this._personaBackgroundImage = value;
+            }
+        },
         'personaBackgroundInitialPosition': {
             'get': () => {
                 return this._personaBackgroundInitialPosition;
@@ -67,10 +142,10 @@ $(document).ready(() => {
         },
         'personaBackgroundPosition': {
             'get': () => {
-                return new RegExp('[0-9]+').exec($('#persona').css('background-position-y'))[0];
+                return new RegExp(/\s\d+/g).exec($('#persona').css('background-position'))[0];
             },
             'set': (value) => {
-                $('#persona').css('background-position-y', `${new RegExp('[0-9]+').exec(value)[0]}%`);
+                $('#persona').css('background-position', `0% ${new RegExp(/\d+/g).exec(value)[0]}%`);
             }
         },
         'personaHeight': {
@@ -82,6 +157,8 @@ $(document).ready(() => {
             }
         }
     });
-    documentState.personaBackgroundInitialPosition = new RegExp('[0-9]+').exec($('#persona').css('background-position-y'))[0];
+    const personaBgPos = $('#persona').css('background-position');
+    documentState.personaBackgroundInitialPosition = new RegExp(/\s\d+/g).exec(personaBgPos)[0];
     $(document).scroll(documentScrollHandler);
+    setupPersonaPanel();
 });

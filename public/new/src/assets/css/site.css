@@ -37,7 +37,6 @@
 #full-header.minimized{
     margin-top: 0;
     z-index: 100;
-    height: 100px;
     transition: 300ms margin ease-in-out;
     box-shadow: 0px 1px 13px #101010;
 }
@@ -49,7 +48,6 @@
 #small-header.minimized{
     box-shadow: 0px 1px 13px #101010;
     margin-top: 0;
-    height: 50px;
     z-index: 110;
     transition: 300ms margin ease-in-out;
     opacity: 0.9;    
@@ -58,17 +56,46 @@
      margin-top: -150px;
 }
 
+.cursive{
+    font-family: 'Lobster', cursive;
+}
+
+.sans-serif{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.header .content {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+}
+
 #main{
     top: 50px;
     z-index: 10;
 }
 #persona{
-    height: 650px;
-    background-image: url(./../images/homie.png);
     background-size: 100%;
-    background-position-y: 50%;
+    background-position: 0% 50%;
     background-repeat: no-repeat;
     box-shadow: 0px 1px 13px #101010 inset;
+}
+#persona.visible,
+#persona.hidden{
+    transition: 200ms opacity ease-in-out;
+    transition: 200ms height ease-in-out;
+}
+#persona.hidden{
+    opacity: 0;
+    height: 0;
+}
+#persona.visible{
+    opacity: 1;
+    height: 650px;
 }
 #who{
     height: 400px;
