@@ -71,7 +71,6 @@ const resizePersonaBackgroundHandler = () => {
  */
 const setupPersonaPanel = () => {
     const personaArea = $('#persona');
-    const bgImage = personaArea.attr('data-background-image');
     const image = new Image();
     image.onload = () => {
         documentState.personaBackgroundImage = image;
@@ -79,7 +78,7 @@ const setupPersonaPanel = () => {
         personaArea.addClass('visible');
         personaArea.removeClass('hidden');
     };
-    image.src = bgImage;
+    image.src = documentState.personaBackgroundImage;
     $(window).resize(resizePersonaBackgroundHandler);
 };
 
@@ -157,8 +156,11 @@ $(document).ready(() => {
             }
         }
     });
-    const personaBgPos = $('#persona').css('background-position');
-    documentState.personaBackgroundInitialPosition = new RegExp(/\s\d+/g).exec(personaBgPos)[0];
+    const personaArea = $('#persona');
+    const bgImage = personaArea.attr('data-background-image');
+    const initialScrollPosition = personaArea.attr('data-initial-background-pos');
+    documentState.personaBackgroundInitialPosition = new RegExp(/\s\d+/g).exec(initialScrollPosition)[0];
+    documentState.personaBackgroundImage = bgImage;
     $(document).scroll(documentScrollHandler);
     setupPersonaPanel();
 });
