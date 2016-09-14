@@ -22,6 +22,21 @@
 .fore-color-3{    color: #7ECEFD;}
 .fore-color-4{    color: #FFF6E5;}
 .fore-color-5{    color: #FF7F66;}
+.border-color-1{    border-color: #3E454C;}
+.border-color-2{    border-color: #2185C5;}
+.border-color-3{    border-color: #7ECEFD;}
+.border-color-4{    border-color: #FFF6E5;}
+.border-color-5{    border-color: #FF7F66;}
+
+.big{
+    font-size: 2.5em;
+}
+.bigger {
+    font-size: 3em;
+}
+.biggest {
+    font-size: 4em;
+}
 
 .section{
         width: 100%;
@@ -35,7 +50,7 @@
     box-shadow: 0px 1px 13px #101010;
 }
 #full-header.minimized{
-     margin-top: -150px;
+     margin-top: -250px;
 }
 
 #small-header,
@@ -72,16 +87,18 @@
     top: 50px;
     z-index: 10;
 }
-#persona{
+.parallax{
     background-size: 100%;
     background-position: 0% 50%;
     background-repeat: no-repeat;
+}
+#persona{
     box-shadow: 0px 1px 13px #101010 inset;
 }
 #persona.visible,
 #persona.hidden{
-    transition: 200ms opacity ease-in-out;
-    transition: 200ms height ease-in-out;
+    transition: 200ms opacity ease-in-out 100ms;
+    transition: 200ms height ease-in-out 100ms;
 }
 #persona.hidden{
     opacity: 0;
@@ -92,10 +109,18 @@
     height: 650px;
 }
 #who{
-    height: 400px;
+    height: 200px;
+    display: table;
+    /*border-bottom-width: 2px;
+    border-bottom-style: solid;*/
+}
+#who .content{    
+    display: table-cell;
+    vertical-align: middle;
 }
 #what{
     height: 900px;
+    box-shadow: 0px 1px 13px #101010 inset;
 }
 #footer{
     height: 75px;
