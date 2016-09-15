@@ -88,6 +88,7 @@
 
 .content.inner{
     margin-bottom: 50px;
+    margin-left: 0;
 }
 
 .outset{    
@@ -95,7 +96,9 @@
 }
 
 .inner-box{
-    margin-top: 45px;
+    margin-top: 105px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 #main{
@@ -137,6 +140,20 @@
 #what{
     height: 900px;
     box-shadow: 0px 1px 13px #101010 inset;
+    background-size: 10%;
+    background-repeat: repeat;
+}
+.what-box{
+    height: 450px;
+    padding: 10px;
+}
+.what-box-content {
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 1px 1px #0f0f0f;
 }
 #footer{
     height: 75px;
