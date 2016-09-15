@@ -17,16 +17,19 @@
 .bg-color-3{    background-color: #7ECEFD;}
 .bg-color-4{    background-color: #FFF6E5;}
 .bg-color-5{    background-color: #FF7F66;}
+.bg-color-white{    background-color: #FFF;}
 .fore-color-1{    color: #3E454C;}
 .fore-color-2{    color: #2185C5;}
 .fore-color-3{    color: #7ECEFD;}
 .fore-color-4{    color: #FFF6E5;}
 .fore-color-5{    color: #FF7F66;}
+.fore-color-white{    background-color: #FFF;}
 .border-color-1{    border-color: #3E454C;}
 .border-color-2{    border-color: #2185C5;}
 .border-color-3{    border-color: #7ECEFD;}
 .border-color-4{    border-color: #FFF6E5;}
 .border-color-5{    border-color: #FF7F66;}
+.border-color-white{    background-color: #FFF;}
 
 .big{
     font-size: 2.5em;
@@ -39,7 +42,7 @@
 }
 
 .section{
-        width: 100%;
+    width: 100%;
 }
 
 #full-header,
@@ -83,6 +86,18 @@
     vertical-align: middle;
 }
 
+.content.inner{
+    margin-bottom: 50px;
+}
+
+.outset{    
+    box-shadow: 0px 1px 13px #101010;
+}
+
+.inner-box{
+    margin-top: 45px;
+}
+
 #main{
     top: 50px;
     z-index: 10;
@@ -91,6 +106,7 @@
     background-size: 100%;
     background-position: 0% 50%;
     background-repeat: no-repeat;
+    transition: 50ms all ease;
 }
 #persona{
     box-shadow: 0px 1px 13px #101010 inset;
@@ -109,7 +125,7 @@
     height: 650px;
 }
 #who{
-    height: 200px;
+    padding: 50px;
     display: table;
     /*border-bottom-width: 2px;
     border-bottom-style: solid;*/
