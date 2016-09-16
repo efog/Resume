@@ -32,13 +32,13 @@
 .border-color-white{    background-color: #FFF;}
 
 .big{
-    font-size: 2.5em;
+    font-size: 2.5em !important;
 }
 .bigger {
-    font-size: 3em;
+    font-size: 3em !important;
 }
 .biggest {
-    font-size: 4em;
+    font-size: 4em !important;
 }
 
 .section{
@@ -139,21 +139,36 @@
 }
 #what{
     height: 900px;
+    background-color: #2185C5;
+    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+    background-size: 13px, 29px, 37px, 53px;
     box-shadow: 0px 1px 13px #101010 inset;
-    background-size: 10%;
-    background-repeat: repeat;
 }
 .what-box{
     height: 450px;
     padding: 10px;
 }
 .what-box-content {
+    position: relative;
     height: 100%;
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
     padding: 5px;
     box-shadow: 0px 1px 1px #0f0f0f;
+}
+.badge{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 10px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 1px 3px #0f0f0f;
+    left: -15px;
+    top: -15px;
 }
 #footer{
     height: 75px;
