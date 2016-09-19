@@ -171,7 +171,21 @@
     overflow-x: auto;
     height: 500px;
     margin: 10px;
-    box-shadow: 0px 2px 1px #3f3f3f inset;
+    box-shadow: 0px 2px 5px #ccc inset;
+}
+.what-box-details ul{
+    list-style: none;
+    padding: 0;
+}
+.what-box-details li{
+    padding-left: 1.3em;
+}
+.wwhat-box-details li:before {
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */ 
 }
 .badge{
     position: absolute;
@@ -181,7 +195,7 @@
     border: 10px solid white;
     border-radius: 50px;
     box-shadow: 0px 1px 3px #0f0f0f;
-    left: -15px;
+    left: -7px;
     top: -20px;
     z-index: 91;
 }

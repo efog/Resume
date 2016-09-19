@@ -1,4 +1,4 @@
-$(document).ready((event) => {
+$(document).ready(function(event) {
     const states = [];
     for (var index = 0; index < $('.parallax').length; index++) {
         const area = $($('.parallax')[index]);
@@ -12,7 +12,7 @@ $(document).ready((event) => {
                 'backgroundImage': bgImage,
                 'backgroundPosition': new RegExp(/\s\d+/g).exec(initialScrollPosition)[0]
             };
-            const scroll = (scrollEvt) => {
+            const scroll = function(scrollEvt) {
                 const docHeight = $(document).height();
                 const offset = $(scrollEvt.target).scrollTop() * 3;
                 const minimumOffset = parallax.backgroundInitialPosition;
@@ -21,11 +21,11 @@ $(document).ready((event) => {
                 parallax.backgroundPosition = newOffset > maximumOffset ? maximumOffset : newOffset;
                 area.css('background-position', `0% ${new RegExp(/\d+/g).exec(parallax.backgroundPosition)[0]}%`);
             };
-            const resize = () => {
+            const resize = function() {
                 if (parallax._resizeTimeout) {
                     clearTimeout(parallax._resizeTimeout);
                 }
-                parallax._resizeTimeout = setTimeout(() => {
+                parallax._resizeTimeout = setTimeout(function() {
                     const canvas = document.createElement('canvas');
                     const context = canvas.getContext('2d');
                     let newVal = '';
@@ -55,7 +55,7 @@ $(document).ready((event) => {
                 }, 50);
             };
             const image = new Image();
-            image.onload = () => {
+            image.onload = function() {
                 parallax.backgroundImage = image;
                 resize();
                 area.addClass('visible');

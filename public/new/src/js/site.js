@@ -4,7 +4,7 @@
  * @param {event} event scroll event
  * @returns {undefined}
  */
-const documentScrollHandler = (event) => {
+const documentScrollHandler = function(event) {
     if ($(event.target).scrollTop() > 5) {
         $('#full-header').addClass('minimized');
         $('#small-header').removeClass('minimized');
@@ -16,6 +16,6 @@ const documentScrollHandler = (event) => {
 };
 
 // Document loaded
-$(document).ready(() => {
+$(document).ready(function() {
     $(document).scroll(documentScrollHandler);
 });
