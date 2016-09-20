@@ -23,13 +23,13 @@
 .fore-color-3{    color: #7ECEFD;}
 .fore-color-4{    color: #FFF6E5;}
 .fore-color-5{    color: #FF7F66;}
-.fore-color-white{    background-color: #FFF;}
+.fore-color-white{    color: #FFF;}
 .border-color-1{    border-color: #3E454C;}
 .border-color-2{    border-color: #2185C5;}
 .border-color-3{    border-color: #7ECEFD;}
 .border-color-4{    border-color: #FFF6E5;}
 .border-color-5{    border-color: #FF7F66;}
-.border-color-white{    background-color: #FFF;}
+.border-color-white{    border-color: #FFF;}
 
 .stripe-background {
     background-color: #2185C5;
@@ -39,7 +39,9 @@
     linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
     background-size: 13px, 29px, 37px, 53px;
     box-shadow: 0px 1px 13px #101010 inset;}
-
+.medium{
+    font-size: 1.5em !important;
+}
 .big{
     font-size: 2.5em !important;
 }
@@ -108,7 +110,7 @@
 }
 
 .inner-box{
-    margin-top: 105px;
+    margin-top: 100px;
     margin-right: 0;
     margin-left: 0;
 }
@@ -152,8 +154,12 @@
 #what{
     height: 900px;
 }
+.domains-box{
+    position: relative;
+    height: 100px;
+}
 .what-box{
-    height: 650px;
+    height: 675px;
     padding: 10px;
 }
 .what-box-content {
@@ -167,9 +173,9 @@
     box-shadow: 0px 1px 1px #0f0f0f;
 }
 .what-box-details{
-    max-height: 500px;
+    max-height: 525px;
     overflow-x: auto;
-    height: 500px;
+    height: 525px;
     margin: 10px;
     box-shadow: 0px 2px 5px #ccc inset;
 }
@@ -186,6 +192,30 @@
     display: inline-block;
     margin-left: -1.3em; /* same as padding-left set on li */
     width: 1.3em; /* same as padding-left set on li */ 
+}
+.domain-badge{ 
+    position: relative;
+    height: 75px;
+    line-height: 75px;
+    width: 75px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50px;
+    box-shadow: 0px 1px 3px #0f0f0f;
+}
+.domain {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.domain-badge i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.domains{
+    padding-top: 10px;
 }
 .badge{
     position: absolute;
@@ -228,4 +258,11 @@
 }
 .relative{
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .badge {
+        top: -33px;
+        left: -12px;
+    }
 }
