@@ -67,9 +67,17 @@
             <!--//summary-->
         </section>
         <!--//section-->
+        <section class="section certifications-section">
+            <h2 class="section-title"><i class="fa fa-certificate"></i>{{'CERTIFICATIONS'|translate}}</h2>
+            <div class="item" ng-repeat="certification in vm.data.certifications track by $index">
+                <h3 class="project-title" lang="vm.lang" output="certification.name"></h3>
+            </div>
+        </section>
+        <!--//section-->
         <section class="section experiences-section" id="filter-picker">
             <h2 class="section-title"><i class="fa fa-sticky-note"></i>{{ 'SUMMARY' | translate }}</h2>
-            <h4>{{ 'BETWEEN' | translate }} {{ vm.startYear.year() }} {{ 'AND' | translate }} {{ vm.endYear.year() }}, {{ 'WORKED_AT' | translate }}</h4>
+            <h4>{{ 'BETWEEN' | translate }} {{ vm.startYear.year() }} {{ 'AND' | translate }} {{ vm.endYear.year() }}, {{ 'WORKED_AT'
+                | translate }}</h4>
             <ul class="horizontal">
                 <li ng-repeat="employer in vm.employers track by $index">
                     <filter-select key="employer.name" selected="vm.employerFilters[employer.name]">{{employer.name}}</filter-select>
@@ -89,7 +97,8 @@
             <h2 class="section-title"><i class="fa fa-briefcase"></i>{{'EXPERIENCES'|translate}}</h2>
             <div ng-repeat="employer in vm.filteredEmployers track by $index" ng-hide="vm.employerMandates(employer.mandates).length === 0"
                 class="item clearfix">
-                <h3><a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
+                <h3>
+                    <a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
                 <div ng-repeat="mandate in vm.employerMandates(employer.mandates) track by $index" class="item clearfix">
                     <div class="meta">
                         <div class="upper-row">

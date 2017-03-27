@@ -67,15 +67,21 @@
         }
     ],
     "certifications": [{
-            "en": "Certified Professional SCRUM Master - April 2016",
-            "fr": "SCRUM Master Professionnel Certifié - Avril 2016"
-        },{
-            "en": "70-483: Programming in C#",
-            "fr": "70-483: Programmation en C#"
+            "name": {
+                "en": "Certified Professional SCRUM Master - April 2016",
+                "fr": "SCRUM Master Professionnel Certifié - Avril 2016"
+            }
+        }, {
+            "name": {
+                "en": "70-483: Programming in C#",
+                "fr": "70-483: Programmation en C#"
+            }
         },
         {
-            "en": "70-536 TS: Microsoft .NET Framework 2.0—Application Development Foundation",
-            "fr": "70-536 TS: Microsoft .NET Framework 2.0—Application Development Foundation"
+            "name": {
+                "en": "70-536 TS: Microsoft .NET Framework 2.0—Application Development Foundation",
+                "fr": "70-536 TS: Microsoft .NET Framework 2.0—Application Development Foundation"
+            }
         }
     ],
     "affiliations": [{
@@ -86,53 +92,52 @@
         "employers": [{
                 "name": "KINESIQ",
                 "mandates": [{
-                        "client": "KINESIQ",
-                        "project": {
-                            "en": "KINESIM",
-                            "fr": "KINESIM"
+                    "client": "KINESIQ",
+                    "project": {
+                        "en": "KINESIM",
+                        "fr": "KINESIM"
+                    },
+                    "role": {
+                        "en": "IT Director",
+                        "fr": "Directeur IT"
+                    },
+                    "startDate": "2017-02-14",
+                    "endDate": "2017-04-01",
+                    "description": {
+                        "en": "For KINESIQ, a startup building an equilibrium training exercise machine, Mr. Brouillard is in charge of the success of the IT side of the startup. At this position, the role of Mr. Brouillard we're:",
+                        "fr": "Pour KINESIQ, une startup élaborant un appareil d'exercice permettant de d'améliorer l'équilibre de personnes en réadaptation et en perte d'autonomie, Mr. Brouillard a pour rôle:"
+                    },
+                    "tasks": [{
+                            "en": "Improve the software delivery lifecycle;",
+                            "fr": "Perfectionner le cycle de livraison logiciel;"
                         },
-                        "role": {
-                            "en": "IT Director",
-                            "fr": "Directeur IT"
+                        {
+                            "en": "Conduct interviews for hires;",
+                            "fr": "Mener des entrevues d'embauche;"
                         },
-                        "startDate": "2017-02-14",
-                        "endDate": "2017-04-01",
-                        "description": {
-                            "en": "For KINESIQ, a startup building an equilibrium training exercise machine, Mr. Brouillard is in charge of the success of the IT side of the startup. At this position, the role of Mr. Brouillard we're:",
-                            "fr": "Pour KINESIQ, une startup élaborant un appareil d'exercice permettant de d'améliorer l'équilibre de personnes en réadaptation et en perte d'autonomie, Mr. Brouillard a pour rôle:"
-                        },
-                        "tasks": [{
-                                "en": "Improve the software delivery lifecycle;",
-                                "fr": "Perfectionner le cycle de livraison logiciel;"
-                            },
-                            {
-                                "en": "Conduct interviews for hires;",
-                                "fr": "Mener des entrevues d'embauche;"
-                            },
-                            {
-                                "en": "Implement a continuous delivery process;",
-                                "fr": "Implanter un processus de livraison continue;"
-                            }
-                        ],
-                        "technologies": [
-                            "NodeJS",
-                            "MongoDB",
-                            ".NET",
-                            "WPF",
-                            "Jenkins",
-                            "Office365",
-                            "MySQL"
-                        ]
-                    }
-                ]
+                        {
+                            "en": "Implement a continuous delivery process;",
+                            "fr": "Implanter un processus de livraison continue;"
+                        }
+                    ],
+                    "technologies": [
+                        "NodeJS",
+                        "MongoDB",
+                        ".NET",
+                        "WPF",
+                        "Jenkins",
+                        "Office365",
+                        "MySQL"
+                    ]
+                }]
             },
             {
                 "name": "CGI",
                 "mandates": [{
                         "client": "Ville de Montréal",
                         "project": {
-                            "en": "Transformation Numérique TI de la Ville de Montréal",
-                            "fr": "Ville de Montreal, IT Digital Transformation"
+                            "en": "Solutions Technologies de l'Information",
+                            "fr": "Solutions Technologies de l'Information"
                         },
                         "role": {
                             "en": "Senior Consultant",
