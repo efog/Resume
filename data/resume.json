@@ -180,7 +180,7 @@
                             "fr": "Spécialiste en solutions mobiles"
                         },
                         "startDate": "2015-07-01",
-                        "endDate": null,
+                        "endDate": "2017-02-12",
                         "description": {
                             "en": "For CGI at Sherbrooke and Shawinigan Center of Excellence Mr. Brouillard is in charge of leading and establishing the mobility expertise in order to attract projects and maintenance contracts of diverse mobile applications and systems. On this mandate, Mr. Brouillard has the tasks:",
                             "fr": "Pour les Centres d'Excellence CGI à Sherbrooke et Shawinigan M. Brouillard est chargé de diriger et d'établir l'expertise en mobilité dans le but d'attirer des projets et des contrats de développement et de maintenance d'applications et systèmes mobiles divers. Au cours de ce mandat, M. Brouillard effectue les tâches suivantes:"
@@ -278,7 +278,7 @@
                             "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2016-02-01",
-                        "endDate": null,
+                        "endDate": "2016-07-01",
                         "description": {
                             "en": "For Quest and its client, Spectocor Medical Supplies, the consultant has been in charge of developing the front end components for a reports generation portal. The AngularJS based solution required high performance throughput as medical technicians have to quickly and efficiently review hundreds of electro cardiograms and heartbeat annotations daily in order to generate reports for physicians. The EKG we’re drawn using HTML5 canvas and the session data streamed using Web Sockets. ",
                             "fr": "Pour Quest et son client, Spectocor Medical Supplies, le consultant a été chargé de développer les composants frontaux pour un portail de génération de rapports. La solution consiste en une application AngularJS et Canvas et nécessite un haut niveau de performances afin que les techniciens médicaux puissent examiner rapidement et efficacement des centaines d’électro-cardiogrammes et annotations quotidiennes afin de générer des rapports pour les médecins. Les graphes cardiaques sont affichés en utilisant les canvas HTML5 et les données échangées avec le backend en utilisant WebSockets. Sur ce mandat, le consultant a été chargé de:"
@@ -332,7 +332,7 @@
                             "fr": "Architecte de Solution et Développeur principal"
                         },
                         "startDate": "2015-11-01",
-                        "endDate": null,
+                        "endDate": "2016-02-01",
                         "description": {
                             "en": "For Quest and its client, Spectocor Medical Supplies, the consultant has been in charge of developing the front end components for a report downloader solution. The project has been developed using Agile methodologies. The application is a Windows Forms app with its runtime services layer. The Frontend and Runtime components run independently and communicates through local named pipes. On this mandate Mr. Brouillard was in charge of:",
                             "fr": "Pour Quest et son client, Spectocor Medical Supplies, le conseiller a été en charge de la conception et du développement du volet GUI d'une solution de téléchargement de rapports médicaux. Le project a été dévelopé en suivant la méthodologie Agile. L'application est une application de type WinForms et qui dispose de sa couche d'affaire en tant que service Windows distinct. Sur ce mandat, M. Brouillard a été en charge de:"
