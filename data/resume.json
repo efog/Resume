@@ -67,6 +67,9 @@
         }
     ],
     "certifications": [{
+            "en": "Certified Professional SCRUM Master - April 2016",
+            "fr": "SCRUM Master Professionnel Certifié - Avril 2016"
+        },{
             "en": "70-483: Programming in C#",
             "fr": "70-483: Programmation en C#"
         },
