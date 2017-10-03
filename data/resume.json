@@ -32,7 +32,8 @@
         "operatingSystems": [],
         "databases": []
     },
-    "education": [{
+    "education": [
+        {
             "year": "2003 - 2007",
             "diploma": {
                 "en": "Software Engineering B.Eng.",
@@ -55,7 +56,8 @@
             }
         }
     ],
-    "languages": [{
+    "languages": [
+        {
             "name": "English",
             "levelWritten": 5,
             "levelSpoken": 5
@@ -66,12 +68,20 @@
             "levelSpoken": 5
         }
     ],
-    "certifications": [{
+    "certifications": [
+        {
             "name": {
                 "en": "Certified Professional SCRUM Master - April 2016",
                 "fr": "SCRUM Master Professionnel Certifié - Avril 2016"
             }
-        }, {
+        },
+        {
+            "name": {
+                "en": "70-532: Developing Microsoft Azure Solutions - Mai 2017",
+                "fr": "70-532: Developing Microsoft Azure Solutions - Mai 2017"
+            }
+        },
+        {
             "name": {
                 "en": "70-483: Programming in C#",
                 "fr": "70-483: Programmation en C#"
@@ -84,56 +94,119 @@
             }
         }
     ],
-    "affiliations": [{
-        "en": "Ordre des ingénieurs du Québec",
-        "fr": "Ordre des ingénieurs du Québec"
-    }],
+    "affiliations": [
+        {
+            "en": "Ordre des ingénieurs du Québec",
+            "fr": "Ordre des ingénieurs du Québec"
+        }
+    ],
     "workExperience": {
-        "employers": [{
+        "employers": [
+            {
                 "name": "KINESIQ",
-                "mandates": [{
-                    "client": "KINESIQ",
-                    "project": {
-                        "en": "KINESIM",
-                        "fr": "KINESIM"
-                    },
-                    "role": {
-                        "en": "IT Director",
-                        "fr": "Directeur IT"
-                    },
-                    "startDate": "2017-02-14",
-                    "endDate": "2017-04-01",
-                    "description": {
-                        "en": "For KINESIQ, a startup building an equilibrium training exercise machine, Mr. Brouillard is in charge of the success of the IT side of the startup. At this position, the role of Mr. Brouillard we're:",
-                        "fr": "Pour KINESIQ, une startup élaborant un appareil d'exercice permettant de d'améliorer l'équilibre de personnes en réadaptation et en perte d'autonomie, Mr. Brouillard a pour rôle:"
-                    },
-                    "tasks": [{
-                            "en": "Improve the software delivery lifecycle;",
-                            "fr": "Perfectionner le cycle de livraison logiciel;"
+                "mandates": [
+                    {
+                        "client": "KINESIQ",
+                        "project": {
+                            "en": "KINESIM",
+                            "fr": "KINESIM"
                         },
-                        {
-                            "en": "Conduct interviews for hires;",
-                            "fr": "Mener des entrevues d'embauche;"
+                        "role": {
+                            "en": "IT Director",
+                            "fr": "Directeur IT"
                         },
-                        {
-                            "en": "Implement a continuous delivery process;",
-                            "fr": "Implanter un processus de livraison continue;"
-                        }
-                    ],
-                    "technologies": [
-                        "NodeJS",
-                        "MongoDB",
-                        ".NET",
-                        "WPF",
-                        "Jenkins",
-                        "Office365",
-                        "MySQL"
-                    ]
-                }]
+                        "startDate": "2017-02-14",
+                        "endDate": "2017-04-01",
+                        "description": {
+                            "en": "For KINESIQ, a startup building an equilibrium training exercise machine, Mr. Brouillard is in charge of the success of the IT side of the startup. At this position, the role of Mr. Brouillard we're:",
+                            "fr": "Pour KINESIQ, une startup élaborant un appareil d'exercice permettant de d'améliorer l'équilibre de personnes en réadaptation et en perte d'autonomie, Mr. Brouillard a pour rôle:"
+                        },
+                        "tasks": [
+                            {
+                                "en": "Improve the software delivery lifecycle;",
+                                "fr": "Perfectionner le cycle de livraison logiciel;"
+                            },
+                            {
+                                "en": "Conduct interviews for hires;",
+                                "fr": "Mener des entrevues d'embauche;"
+                            },
+                            {
+                                "en": "Implement a continuous delivery process;",
+                                "fr": "Implanter un processus de livraison continue;"
+                            }
+                        ],
+                        "technologies": [
+                            "NodeJS",
+                            "MongoDB",
+                            ".NET",
+                            "WPF",
+                            "Jenkins",
+                            "Office365",
+                            "MySQL"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nuvoola",
+                "mandates": [
+                    {
+                        "client": "CIL",
+                        "project": {
+                            "en": "Cloud Innovation Lab",
+                            "fr": "Centre d'Innovation Infonuagique"
+                        },
+                        "role": {
+                            "en": "Principal Director",
+                            "fr": "Directeur Principal"
+                        },
+                        "startDate": "2017-04-01",
+                        "endDate": null,
+                        "description": {
+                            "en": "As a leader of the Cloud Innovation Lab, Mr. Brouillard is in charge of the SDLC for internal and external projects. Based of strong Scrum and DevOps principles, the Cloud Innovation Lab delivers value added and high quality integration and custom cloud solutions on AWS, Azure and GCP. At this position, Mr. Brouillard is responisble of:",
+                            "fr": "En charge du centre d’innovation et de l’intégration de la méthodologie Agiles et DevOps pour différents clients majeurs. Il s’occupe de plusieurs projets de R&D. Ses fonctions l’amène à faire des plans d’analyse et d’évaluation chez des clients."
+                        },
+                        "tasks": [
+                            {
+                                "en": "Establish cloud guidance and practices in DevOps and SDLC;",
+                                "fr": "Établir les pratiques DevOps et SDLC en infonuagique;"
+                            },
+                            {
+                                "en": "Mentor and develop expertise by developping in-house innovative solutions such as cognitive APIs, ChatBots and development accelerators;",
+                                "fr": "Mentorer et développer l'expertise d'une équipe afin de développer des solutions internes innovantes telles que des APIs cognitives, ChatBots et accélérateurs de développement;"
+                            },
+                            {
+                                "en": "Lead hiring interviews and contacting talents;",
+                                "fr": "Mener des entrevues d'embauche et contacts de talents;"
+                            },
+                            {
+                                "en": "Meet clients and establish contacts;",
+                                "fr": "Rencontrer la clientèle et démarchage;"
+                            },
+                            {
+                                "en": "Support RFP process;",
+                                "fr": "Supporter le processus d'appels d'offres"
+                            }
+                        ],
+                        "technologies": [
+                            "IOS",
+                            "Android",
+                            "React",
+                            "Redux",
+                            "AWS",
+                            "GCP",
+                            "Azure",
+                            "AngularJS",
+                            "NodeJS"
+                        ],
+                        "products": []
+                    }
+                ]
             },
             {
                 "name": "CGI",
-                "mandates": [{
+                "mandates": [
+                    {
                         "client": "Ville de Montréal",
                         "project": {
                             "en": "Solutions Technologies de l'Information",
@@ -149,7 +222,8 @@
                             "en": "For the Ville de Montreal IT Direction department, Mr. Brouillard was working in a core set of developers responsible in establishing the NodeJS development foundations in a DevOps fashion. Among the responsibility of helping setting up the standards and development recipes for what will become the development framework, the consultant tasks were:",
                             "fr": "Pour la Ville de Montréal à la direction des systèmes d’information, Mr. Brouillard travaillait dans un noyau de développeurs responsables de l’établissements des fondations de développement NodeJS dans un modèle DevOps. Parmi la responsabilité de Mr. Brouillard de mettre en place les fondations de développement, les tâches du conseiller étaient:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Establish guidance and practices in NodeJS and AngularJS development, design, analysis and quality assurance;",
                                 "fr": "Établir les pratiques en développement NodeJS et AngularJS, conception, analyse et assurance qualité;"
                             },
@@ -193,7 +267,8 @@
                             "en": "For CGI at Sherbrooke and Shawinigan Center of Excellence Mr. Brouillard is in charge of leading and establishing the mobility expertise in order to attract projects and maintenance contracts of diverse mobile applications and systems. On this mandate, Mr. Brouillard has the tasks:",
                             "fr": "Pour les Centres d'Excellence CGI à Sherbrooke et Shawinigan M. Brouillard est chargé de diriger et d'établir l'expertise en mobilité dans le but d'attirer des projets et des contrats de développement et de maintenance d'applications et systèmes mobiles divers. Au cours de ce mandat, M. Brouillard effectue les tâches suivantes:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Establish guidance and practices in mobile development, design, analysis and quality assurance;",
                                 "fr": "Établir les pratiques en développement, conception, analyse et assurance qualité d'applications mobiles;"
                             },
@@ -237,7 +312,8 @@
                             "Apple AppStore",
                             "Google PlayStore"
                         ],
-                        "products": [{
+                        "products": [
+                            {
                                 "year": 2016,
                                 "name": {
                                     "en": "BCP Mobility",
@@ -291,7 +367,8 @@
                             "en": "For Quest and its client, Spectocor Medical Supplies, the consultant has been in charge of developing the front end components for a reports generation portal. The AngularJS based solution required high performance throughput as medical technicians have to quickly and efficiently review hundreds of electro cardiograms and heartbeat annotations daily in order to generate reports for physicians. The EKG we’re drawn using HTML5 canvas and the session data streamed using Web Sockets. ",
                             "fr": "Pour Quest et son client, Spectocor Medical Supplies, le consultant a été chargé de développer les composants frontaux pour un portail de génération de rapports. La solution consiste en une application AngularJS et Canvas et nécessite un haut niveau de performances afin que les techniciens médicaux puissent examiner rapidement et efficacement des centaines d’électro-cardiogrammes et annotations quotidiennes afin de générer des rapports pour les médecins. Les graphes cardiaques sont affichés en utilisant les canvas HTML5 et les données échangées avec le backend en utilisant WebSockets. Sur ce mandat, le consultant a été chargé de:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Design the application structure and validate solution technically;",
                                 "fr": "Concevoir la structure de l'application et de la validation technique;"
                             },
@@ -345,7 +422,8 @@
                             "en": "For Quest and its client, Spectocor Medical Supplies, the consultant has been in charge of developing the front end components for a report downloader solution. The project has been developed using Agile methodologies. The application is a Windows Forms app with its runtime services layer. The Frontend and Runtime components run independently and communicates through local named pipes. On this mandate Mr. Brouillard was in charge of:",
                             "fr": "Pour Quest et son client, Spectocor Medical Supplies, le conseiller a été en charge de la conception et du développement du volet GUI d'une solution de téléchargement de rapports médicaux. Le project a été dévelopé en suivant la méthodologie Agile. L'application est une application de type WinForms et qui dispose de sa couche d'affaire en tant que service Windows distinct. Sur ce mandat, M. Brouillard a été en charge de:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Design the application structure and validate solution technically;",
                                 "fr": "Concevoir la structure de l'application et de la validation technique;"
                             },
@@ -395,7 +473,8 @@
                             "en": "For Morneau Shepell and CGI on a joint participation to a RFP, Mr. Brouillard was in charge of developing a high quality with appealing UX an AngularJS based web application. The application integrated two complex user data entry scenarios and the development duration spanned over a two weeks’ period. The application integrated with Microsoft SSIS. On this mandate Mr. Brouillard was in charge of:",
                             "fr": "Pour Morneau Shepell dans le cadre d'une participation conjointe avec CGI à un appel d'offre, M. Brouillard a été responsable du développement d'une application AngularJS de haute qualité avec une expérience utilisateur accrocheuse. Cette application comprenait la réalisation deux composant de saisie et d'import de données. L'application devait en outre s'intégrer et rapporter l'avancement des tâches de SSIS. L'effort s'est échelonné sur trois semaines et à ce titre les tâches du conseiller étaient: "
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Develop the AngularJS web application;",
                                 "fr": "Développer l'application Web AngularJS;"
                             },
@@ -447,7 +526,8 @@
                             "en": "For the Johnston Group in a Kony based mobile application phase 2 development project, Mr. Brouillard is in charge of maintaining the communication between the development team in India, the project management based in Edmonton and the client in Winnipeg. The project is an evolution which adds features to an existing application on mobile web, iOS and Android. On this mandate Mr. Brouillard is responsible for:",
                             "fr": "Pour le Groupe Johnston pour la phase 2 d'un projet d'application mobile basé sur la plateforme Kony, M. Brouillard est chargé de maintenir la communication entre l'équipe de développement en Inde, la gestion de projet basé à Edmonton et le client à Winnipeg. Le projet est une évolution qui ajoute des fonctionnalités à une application existante sur le web mobile, iOS et Android. Sur ce mandat M. Brouillard est responsable de:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Do final QA and delivering the apps to the client;",
                                 "fr": "Effectuer l'assurance qualité finale et livrer les applications au client;"
                             },
@@ -490,7 +570,8 @@
                             "en": "For the development of a data capture mobile application for the oil and gas industry the objective was to develop a brand new application on both WinRT platforms and Windows WPF using a reusable code base. Mr. Brouillard on this position was in charge of the solutions design, technical analysis and lead of a team of 5 developers. This project spanned on multiple sites from Montreal, Calgary and Bangalore. As highlights, the application had to allow a disconnected operation model, a scriptable business rule engine and a UIx consistent between the mobile and classic modes. On this mandate, Mr. Brouillard had to:",
                             "fr": "Pour le développement d'une application mobile de saisie de données pour l'industrie du pétrole et du gaz, l'objectif était de développer une toute nouvelle application sur les deux plates-formes WinRT et de Windows WPF en utilisant une base de code réutilisable. M. Brouillard sur ce poste était en charge de la conception des solutions, l'analyse technique et de mener une équipe de 5 développeurs. Ce projet a été livré par des équipes multi-sites de Montréal, Calgary et Bangalore. Comme fait saillant, l'application devait permettre un fonctionnement en mode déconnecté, un moteur de règles métiers scriptable et Ulx cohérente entre les modes mobiles et classiques. Sur ce mandat, M. Brouillard devait:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Design visual models and user experience (UX);",
                                 "fr": "Concevoir l'interface utilisateur et l'expérience utilisateur (UX);"
                             },
@@ -565,7 +646,8 @@
                             "en": "As head of the Windows Store service offering Microsoft CGI Expertise Center, Mr. Brouillard is in charge of developing strategies and tools to position the CoE in this growing market. A mandate that has been entrusted to Mr. Brouillard is to develop a reusable application that maximizes the machine base of T4 templating Microsoft in order to obtain a platform that reduces costs of Windows Store application development. In this position, Mr. Brouillard has completed the following tasks:",
                             "fr": "En tant que leader du service Windows Store au sein du Centre d'Expertise Microsoft à CGI, M. Brouillard a été chargé d'élaborer des stratégies et des outils pour positionner le centre d'expertise dans ce marché en pleine croissance. Un mandat qui a été confié à M. Brouillard est de développer une application réutilisable qui maximise la base de la machine de T4 templating Microsoft afin d'obtenir une plate-forme qui réduit les coûts développement. À ce titre, M. Brouillard a effectué les tâches suivantes"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Analyze tendering and estimating projects;",
                                 "fr": "Participer à des appels d'offre et estimations de projets;"
                             },
@@ -625,7 +707,8 @@
                             "en": "As a senior developer assigned to the Prim’Heure project, Mr. Brouillard is responsible for the development of key functional components. This application manages the schedule of employees and workstations at four Casinos of Lotto-Quebec sites. This application requires the development of components using GDI+. This task requires strong knowledge of Windows Forms and .Net framework foundations. In this role, he executed the following activities:",
                             "fr": "En tant que développeur senior affecté au projet Prim'Heure, M. Brouillard est responsable du développement des composants fonctionnels clés. Cette application gère le calendrier des employés et des postes de travail à quatre casinos de sites Lotto-Québec. Cette application nécessite le développement de composants à l'aide GDI +. Cette tâche requiert de solides connaissances de Windows Forms et .Net fondations cadres. Dans ce rôle, il a exécuté les activités suivantes:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Based on functional requirements documentation, detailing tasks, estimates and and designs of the technical solution elements required to develop the components to meet the functional requirements;",
                                 "fr": "Sur la base de la documentation des exigences fonctionnelles, détaillant les tâches, des estimations et des designs des éléments de solution techniques nécessaires pour développer les composants pour répondre aux exigences fonctionnelles;"
                             },
@@ -687,7 +770,8 @@
                             "en": "As an Analyst / .NET Developer, Mr. Brouillard was in charge of developing a .Net WinForms-based simulator of an HydroQuebec grid off-loader. The system needed to operate with near real time performance while simulating up to 48 off-loaders concurrently. The goal was to use this software as a tool to test the next generation of HydroQuebec Network Management System (CADRE). The system uses a new network protocol (DNP/IP) which is developed by a third party specifically for this system. On this assignment, his principal tasks were:",
                             "fr": "À titre d'analyste / Dévelopeur .NET, M. Brouillard a été chargé de développer un simulateur de délesteur pour Hydro-Québec en WinForms .Net. Le système devait opérer en temps réel en simulant jusqu'à 48 délesteurs simultanément. L'objectif était d'utiliser ce logiciel comme un outil pour tester la prochaine génération du système de gestion de réseau d'Hydro-Quebec (CADRE). Le système utilise un nouveau protocole réseau (DNP / IP) qui est développé par un tiers spécifiquement pour ce système. Sur ce mandat, les tâches principales du consultant sont les suivantes:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Extracting from technical specifications of the original hardware equipment requirements for the simulator and write tests cases accordingly;",
                                 "fr": "Extraction des spécifications techniques des besoins à partir de l'équipement d'origine pour le simulateur et écriture des cas de tests en conséquence;"
                             },
@@ -736,7 +820,8 @@
                             "en": "This mandate consisted of developing the updated compensation program used by BRP. The project involved the use of SQL Server SSIS 2005 to extract, manipulate, calculate and store values as required to produce accurate reports in MS Excel and within BRP BOSSWeb. This project required the use of ASP.Net 2.0, Ajax Control Toolkit, Microsoft SQL Server Integration Services, Microsoft SQL Server and Mercury Quality Center. He carried out the following tasks:",
                             "fr": "Ce mandat a consisté à développer le programme de compensation mis à jour utilisé par BRP. Le projet impliquait l'utilisation de SSIS 2005 pour extraire, manipuler, calculer et stocker des valeurs nécessaires pour produire des rapports précis dans MS Excel et au sein de BRP BOSSWeb. Ce projet a nécessité l'utilisation de ASP.Net 2.0, Ajax Control Toolkit, Microsoft SQL Server Integration Services, Microsoft SQL Server et Mercury Quality Center. Il a effectué les tâches suivantes:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Implementing, modifying and correcting new reports built as ASP.Net 2.0 Web forms, implementing and modifying specific SSIS data flows, implementing and modifying specific stored procedures, implementing specific MS Excel macros for cross validation;",
                                 "fr": "La mise en œuvre, la modification et la correction de nouveaux rapports construits en ASP.Net 2.0 WebForms, la mise en œuvre et la modification des flux de données spécifiques dans SSIS, mise en œuvre et la modification des procédures stockées spécifiques, la mise en œuvre des macros spécifiques de MS Excel pour validation croisée;"
                             },
@@ -794,7 +879,8 @@
                             "en": "This mandate consisted of migrating the existing VB6 FormulRDPRM application to an ASP.NET Web application on service-oriented architecture. The solution was used by clients of the Ministère de la justice du Québec wishing to register personal and real rights in the RDPRM registry. His tasks included the following:",
                             "fr": "Ce mandat consistait à migrer l'application VB6 FormulRDPRM existante vers une application Web ASP.NET sur une architecture SOA. La solution a été utilisée par les clients du Ministère de la justice du Québec qui souhaitent enregistrer des droits personnels et réels dans le registre RDPRM. Ses tâches comprenaient ce qui suit:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Developing Web Forms using ASP.Net 2.0 and the Ajax Control Toolkit. Constructing WebControls to attain maintainability and reusability objectives and extending the behaviour of numerous Ajax controls;",
                                 "fr": "Développement de formulaires Web en utilisant ASP.Net 2.0 et AJAX Control Toolkit. Construire des contrôles Web pour atteindre les objectifs de maintenabilité et réutilisabilité et d'étendre le comportement de nombreux contrôles Ajax;"
                             },
@@ -843,7 +929,8 @@
                             "en": "The BRP BOSSWeb project consisted of reengineering a CRM application built originally with ASP, SQL Server 2000 and SAP R3. The objectives of this reengineering were to provide the customer with the same features on a rewritten system in ASP.Net 2.0 and Ajax, SQL Server, Microsoft Office SharePoint Services, SAP XI, AndroMda for the code generation and TeamFoundation Server. On this particular assignment, his tasks included the following:",
                             "fr": "Le projet BRP BOSSWeb consistit en la refonte d'une application CRM construite à l'origine avec ASP, SQL Server 2000 et SAP R3. Les objectifs de cette refonte  étaient de fournir au client une application avec les mêmes caractéristiques dans un système réécrit en ASP.Net 2.0 et Ajax, SQL Server, Microsoft Office SharePoint Services et SAP XI. AndroMDA a été utilisé pour la génération de code. Sur cette affectation, ses tâches comprenaient ce qui suit:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Developing bottom-up functional deliverables using the .NET 2.0 framework;",
                                 "fr": "Développer de bout en bout des composants fonctionnels en utilisant le framework .Net 2.0;"
                             },
@@ -891,7 +978,8 @@
             },
             {
                 "name": "Techsolcom",
-                "mandates": [{
+                "mandates": [
+                    {
                         "client": "Cirque du Soleil",
                         "project": {
                             "en": "COSA 2015",
@@ -907,7 +995,8 @@
                             "en": "For the Cirque du Soleil at the International Headquarters, among a team of three developers, Mr. Brouillard is in charge of the solutions architecture and the development of the 2015 phase of the COSA (Cirque Oriented Service Architecture) platform. This project contains several aspects such as the Azure automated deployment platform design and development and the development of new enterprise services. On this mandate, the tasks of Etienne Brouillard are:",
                             "fr": "Pour le Cirque du Soleil au siège international, parmi une équipe de trois développeurs, M. Brouillard est en charge de solutions et du développement de composants de la phase 2015 du projet COSA (Cirque Oriented Service Architecture). Ce projet contient plusieurs aspects tels que la conception de la plate-forme de déploiement Azure automatisé et le développement et le développement de nouveaux services de l'entreprise. Sur ce mandat, les tâches d'Etienne Brouillard sont:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Design and document the automated deployment process on Azure;",
                                 "fr": "Concevoir et documenter le processus de déploiement automatisé sur Azure;"
                             },
@@ -970,7 +1059,8 @@
                             "en": "For the Cirque du Soleil at the International Headquarters, among a team of five developers and as an introductory project, Mr. Brouillard was in charge of the integration using ASP.Net MVC of the new show’s microsite Toruk – The First Flight. At this position, Mr. Brouillard has quickly taken leadership on the microsite integration on the current azure WebApp. The tasks on this mandate consisted of:",
                             "fr": "Pour le Cirque du Soleil au siège international, parmi une équipe de cinq développeurs, M. Brouillard a été chargé de l'intégration, en utilisant ASP.Net MVC, du microsite du nouveau spectacle du Cirque du Soleil: Toruk - Le premier envol. À ce poste, M. Brouillard a rapidement pris l'initiative sur l'intégration du microsite sur la WebApp Azure actuelle. Les tâches de ce mandat consistaient en:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Develop the Toruk microsite using ASP.Net MVC 5, C# and JavaScript;",
                                 "fr": "Développer le microsite Toruk en utilisant ASP.Net MVC 5, C# et JavaScript;"
                             },
@@ -1021,7 +1111,8 @@
                             "en": "For the Cashtrak NG project, Mr. Brouillard was in charge for the delivery of the technological platform. This platform aims at implement a brand new Azure platform for the cash in transit management system used by GardaWorld. The system consists in several key integration points, several performance key points, a new SPA application template and REST Services hardened to meet high security requirements. All this solely relying on Microsoft Azure PaaS’ and SaaS' in order to reduce to its minimum operation costs and leverages Azure’s great availability record. On this mandate Mr. Brouillard was in charge of: ",
                             "fr": "Pour le projet Cashtrak NG, M. Brouillard était responsable de la livraison de la plate-forme technologique. Cette plate-forme vise à mettre en œuvre une nouveau framework applicatif sur Microsoft Azure pour le développement du système de gestion des valeurs chez GardaWorld. Le système se compose de plusieurs points d'intégration clés, un nouveau modèle d'application de type SPA et services REST sécurisés pour répondre aux exigences élevées en matière de sécurité. Tout cela faisant levier sur Microsoft Azure PaaS et SaaS afin de réduire les coûts d'opération et maximiser la disponibilité d'Azure. Sur ce mandat M. Brouillard était en charge de:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Design the application development platform for the SPA HTML5 app and REST web services using C#, .Net, AngularJS, Azure PaaS and SaaS;",
                                 "fr": "Concevoir le framework applicatif pour le développement des applications SPA et services REST sur C#, AngularJS, Azure PaaS et SaaS;"
                             },
@@ -1090,7 +1181,8 @@
                             "en": "For TechSolCom Inc, Mr. Brouillard has driven Microsoft focused development center of expertise. The orientation of the company is to become a leader in Microsoft and Azure applications solutions development. Moreover, the goal is to leverage the skillset acquired on the Java side of the center to quickly make this development center shine. The existing centers skillsets includes SCRUM and Atlassian. The center used the Cashtrak project with Garda as a first significant milestone. The main objectives were: ",
                             "fr": "Pour TechSolCom Inc, M. Brouillard mis sur pied l'équipe de livraison de solutions Microsoft. L'orientation de la société est de devenir un leader avec Microsoft Azure et le développement des solutions d'applications cloud. En outre, l'objectif est de tirer parti de compétences acquises sur le côté Java du centre pour faire rapidement du centre de développement un succès. Le centre de compétences existant utilise SCRUM et Atlassian. Le centre a utilisé le projet Cashtrak avec Garda comme une première étape importante. Les principaux objectifs étaient les suivants:"
                         },
-                        "tasks": [{
+                        "tasks": [
+                            {
                                 "en": "Establish and obtain the centers development competency silver certification and then move forward toward obtaining the Gold level. ;",
                                 "fr": "Mettre en place et obtenir les niveau de reconnaissance Argent et Or de Microsoft en matière de développement d'applications;"
                             },
@@ -1144,126 +1236,132 @@
             },
             {
                 "name": "Robots & Fruits",
-                "mandates": [{
-                    "client": "LabRadar.net",
-                    "project": {
-                        "en": "LabRadar.net",
-                        "fr": "LabRadar.net"
-                    },
-                    "role": {
-                        "en": "Founder",
-                        "fr": "Fondateur"
-                    },
-                    "startDate": "2015-01-01",
-                    "endDate": null,
-                    "description": {
-                        "en": "As the founder of Robots & Fruits and initiator of LabRadar, Mr Brouillard is in charge of designing the system solution, develop the initial beta and setting up the company. LabRadar aims at providing a powerful content aggregation system using Azure as a cloud environment. The application is being developped by a small team led by Mr. Brouillard. On this endeavour, Mr. Brouillard has these responsibilities:",
-                        "fr": "En tant que fondateur de Robots & Fruits et initiateur de LabRadar, M. Brouillard est en charge de la conception de la solution du système, de développer la version bêta initiale et la mise en place de l'entreprise. LabRadar vise à fournir un système d'agrégation de contenu puissant utilisant Azure comme un environnement cloud. L'application est en cours de développement par une petite équipe dirigée par M. Brouillard. Sur cette entreprise, M. Brouillard a ces responsabilités:"
-                    },
-                    "tasks": [{
-                            "en": "Designing the system solution around Azure;",
-                            "fr": "Concevoir la solution du système sur Azure;"
+                "mandates": [
+                    {
+                        "client": "LabRadar.net",
+                        "project": {
+                            "en": "LabRadar.net",
+                            "fr": "LabRadar.net"
                         },
-                        {
-                            "en": "Develop application modules and features which fulfil initial feature goals;",
-                            "fr": "Développer les modules applicatifs et les fonctionnalités en égard aux objectifs;"
+                        "role": {
+                            "en": "Founder",
+                            "fr": "Fondateur"
                         },
-                        {
-                            "en": "Manage SDLC and DevOps;",
-                            "fr": "Gérer le SDLC dans une perspective DevOps"
+                        "startDate": "2015-01-01",
+                        "endDate": null,
+                        "description": {
+                            "en": "As the founder of Robots & Fruits and initiator of LabRadar, Mr Brouillard is in charge of designing the system solution, develop the initial beta and setting up the company. LabRadar aims at providing a powerful content aggregation system using Azure as a cloud environment. The application is being developped by a small team led by Mr. Brouillard. On this endeavour, Mr. Brouillard has these responsibilities:",
+                            "fr": "En tant que fondateur de Robots & Fruits et initiateur de LabRadar, M. Brouillard est en charge de la conception de la solution du système, de développer la version bêta initiale et la mise en place de l'entreprise. LabRadar vise à fournir un système d'agrégation de contenu puissant utilisant Azure comme un environnement cloud. L'application est en cours de développement par une petite équipe dirigée par M. Brouillard. Sur cette entreprise, M. Brouillard a ces responsabilités:"
                         },
-                        {
-                            "en": "Manage an init of an enterprise and prepare business plan for founding round;",
-                            "fr": "Gérer l'initiation d'une entreprise et préparation du plan d'affaire;"
-                        }
-                    ],
-                    "technologies": [
-                        ".NET 4.5",
-                        "C#",
-                        "Azure",
-                        "NodeJS",
-                        "UX Design",
-                        "Bootstrap",
-                        "CSS",
-                        "HTML5",
-                        "JavaScript",
-                        "SQL Azure",
-                        "Azure WebJobs",
-                        "DocumentDB",
-                        "NoSQL",
-                        "ASP.Net MVC",
-                        "TDD",
-                        "NUnit",
-                        "RhinoMock",
-                        "WCF",
-                        "MVC",
-                        "WCF",
-                        "Agile",
-                        "SCRUM"
-                    ],
-                    "products": []
-                }]
+                        "tasks": [
+                            {
+                                "en": "Designing the system solution around Azure;",
+                                "fr": "Concevoir la solution du système sur Azure;"
+                            },
+                            {
+                                "en": "Develop application modules and features which fulfil initial feature goals;",
+                                "fr": "Développer les modules applicatifs et les fonctionnalités en égard aux objectifs;"
+                            },
+                            {
+                                "en": "Manage SDLC and DevOps;",
+                                "fr": "Gérer le SDLC dans une perspective DevOps"
+                            },
+                            {
+                                "en": "Manage an init of an enterprise and prepare business plan for founding round;",
+                                "fr": "Gérer l'initiation d'une entreprise et préparation du plan d'affaire;"
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 4.5",
+                            "C#",
+                            "Azure",
+                            "NodeJS",
+                            "UX Design",
+                            "Bootstrap",
+                            "CSS",
+                            "HTML5",
+                            "JavaScript",
+                            "SQL Azure",
+                            "Azure WebJobs",
+                            "DocumentDB",
+                            "NoSQL",
+                            "ASP.Net MVC",
+                            "TDD",
+                            "NUnit",
+                            "RhinoMock",
+                            "WCF",
+                            "MVC",
+                            "WCF",
+                            "Agile",
+                            "SCRUM"
+                        ],
+                        "products": []
+                    }
+                ]
             },
             {
                 "name": "Processia Solutions",
-                "mandates": [{
-                    "client": "Renault F1 Team",
-                    "project": {
-                        "en": "ECOBOM (Engineering Change Order / Bill Of Material)",
-                        "fr": "ECOBOM (Engineering Change Order / Bill Of Material)"
-                    },
-                    "role": {
-                        "en": "Senior Developer",
-                        "fr": "Développeur principal"
-                    },
-                    "startDate": "2009-07-01",
-                    "endDate": "2010-08-01",
-                    "description": {
-                        "en": "As a senior developer, Mr. Brouillard was in charge of developing and maintaining an application managing parts engineering change orders for Renault F1 race cars. The process ultimately allowed releasing, within the shortest timeframe possible, parts for a specific car following the part design cycle. As the main developer on the project, he had travel often to Enstone, UK to meet with the team, project managers, client and business analysts. The task at hand was to rebuild, nearly from the ground up, core components of the system to improve its maintainability, evolutivity and overall quality. His tasks included:",
-                        "fr": "En tant que développeur principal, M. Brouillard a été chargé de développer et de maintenir une application de gestion des ordres de modification technique des pièces des voitures de course à l'écurie Renault F1. Le processus a permis en fin de compte libérer, dans les plus brefs délais, des pièces pour une voiture spécifique suivant le cycle de conception de la pièce. En tant que développeur principal du projet, il s'est rendu à Enstone, au Royaume-Uni pour rencontrer l'équipe, les gestionnaires de projet, le client et les analystes d'affaires. La tâche à accomplir était de reconstruire, presque à partir de zéro, des composants de base du système pour améliorer sa maintenabilité, évolutivité et qualité globale. Ses tâches comprenaient:"
-                    },
-                    "tasks": [{
-                            "en": "From the existing solution, extracting business modules and redefining logical layers; analyzing the structure, proposing rebuilding strategies, presenting structured risk and feasibility analysis and determining project scope;",
-                            "fr": "De la solution existante, l'extraction de modules d'affaires et de redéfinir les couches logiques; analyse de la structure, en proposant des stratégies de reconstruction, présenter une analyse du risque et de faisabilité ainsi que la détermination de la portée du projet;"
+                "mandates": [
+                    {
+                        "client": "Renault F1 Team",
+                        "project": {
+                            "en": "ECOBOM (Engineering Change Order / Bill Of Material)",
+                            "fr": "ECOBOM (Engineering Change Order / Bill Of Material)"
                         },
-                        {
-                            "en": "Defining a software development process and tools to use; training team and ensuring that the clients expectations are in line with the planning;",
-                            "fr": "Définition d'un processus et des outils à utiliser pour le développement de la solution logiciel; former une équipe et veiller à ce que les attentes des clients soient en ligne avec la planification;"
+                        "role": {
+                            "en": "Senior Developer",
+                            "fr": "Développeur principal"
                         },
-                        {
-                            "en": "Executing the rework, integrating change and evolution requests and assigning tasks to the development team;",
-                            "fr": "Effectuer la refonte, l'intégration des changements et des demandes d'évolution. Affecter les ressources de développement à des tâches;"
+                        "startDate": "2009-07-01",
+                        "endDate": "2010-08-01",
+                        "description": {
+                            "en": "As a senior developer, Mr. Brouillard was in charge of developing and maintaining an application managing parts engineering change orders for Renault F1 race cars. The process ultimately allowed releasing, within the shortest timeframe possible, parts for a specific car following the part design cycle. As the main developer on the project, he had travel often to Enstone, UK to meet with the team, project managers, client and business analysts. The task at hand was to rebuild, nearly from the ground up, core components of the system to improve its maintainability, evolutivity and overall quality. His tasks included:",
+                            "fr": "En tant que développeur principal, M. Brouillard a été chargé de développer et de maintenir une application de gestion des ordres de modification technique des pièces des voitures de course à l'écurie Renault F1. Le processus a permis en fin de compte libérer, dans les plus brefs délais, des pièces pour une voiture spécifique suivant le cycle de conception de la pièce. En tant que développeur principal du projet, il s'est rendu à Enstone, au Royaume-Uni pour rencontrer l'équipe, les gestionnaires de projet, le client et les analystes d'affaires. La tâche à accomplir était de reconstruire, presque à partir de zéro, des composants de base du système pour améliorer sa maintenabilité, évolutivité et qualité globale. Ses tâches comprenaient:"
                         },
-                        {
-                            "en": "Defining the code generation process using MyGeneration which produces from database tables Stored Procedures and CRUD C# code;",
-                            "fr": "Concevoir le processus de génération de code en utilisant MyGeneration;"
-                        },
-                        {
-                            "en": "Write relevant technical documentation;",
-                            "fr": "Rédaction de documents techniques;"
-                        }
-                    ],
-                    "technologies": [
-                        ".NET 3.5",
-                        "C#",
-                        "WinForms",
-                        "PLM",
-                        "Catia",
-                        "MyGeneration",
-                        "SQL Server",
-                        "SSRS",
-                        "TDD",
-                        "NUnit",
-                        "RhinoMock",
-                        "WCF",
-                        "MVC",
-                        "ASP.Net 2.0",
-                        "WCF",
-                        "Agile",
-                        "SCRUM"
-                    ],
-                    "products": []
-                }]
+                        "tasks": [
+                            {
+                                "en": "From the existing solution, extracting business modules and redefining logical layers; analyzing the structure, proposing rebuilding strategies, presenting structured risk and feasibility analysis and determining project scope;",
+                                "fr": "De la solution existante, l'extraction de modules d'affaires et de redéfinir les couches logiques; analyse de la structure, en proposant des stratégies de reconstruction, présenter une analyse du risque et de faisabilité ainsi que la détermination de la portée du projet;"
+                            },
+                            {
+                                "en": "Defining a software development process and tools to use; training team and ensuring that the clients expectations are in line with the planning;",
+                                "fr": "Définition d'un processus et des outils à utiliser pour le développement de la solution logiciel; former une équipe et veiller à ce que les attentes des clients soient en ligne avec la planification;"
+                            },
+                            {
+                                "en": "Executing the rework, integrating change and evolution requests and assigning tasks to the development team;",
+                                "fr": "Effectuer la refonte, l'intégration des changements et des demandes d'évolution. Affecter les ressources de développement à des tâches;"
+                            },
+                            {
+                                "en": "Defining the code generation process using MyGeneration which produces from database tables Stored Procedures and CRUD C# code;",
+                                "fr": "Concevoir le processus de génération de code en utilisant MyGeneration;"
+                            },
+                            {
+                                "en": "Write relevant technical documentation;",
+                                "fr": "Rédaction de documents techniques;"
+                            }
+                        ],
+                        "technologies": [
+                            ".NET 3.5",
+                            "C#",
+                            "WinForms",
+                            "PLM",
+                            "Catia",
+                            "MyGeneration",
+                            "SQL Server",
+                            "SSRS",
+                            "TDD",
+                            "NUnit",
+                            "RhinoMock",
+                            "WCF",
+                            "MVC",
+                            "ASP.Net 2.0",
+                            "WCF",
+                            "Agile",
+                            "SCRUM"
+                        ],
+                        "products": []
+                    }
+                ]
             }
         ]
     }
