@@ -1,13 +1,15 @@
 <div class="wrapper" ng-controller="home as vm" ng-hide="vm.isBusy">
     <div class="sidebar-wrapper">
         <div class="profile-container">
-            <img class="profile" src="assets/images/profile.png" alt="" />
+            <div style="height: 100px; width: 100px; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto; position: relative; border: 0 solid transparent; border-radius: 100px; background-image: url('assets/images/20689645_10155750147452845_2596458131919005446_o.jpg'); background-size: cover">
+                
+            </div>
             <h1 class="name" lang="vm.lang" output="vm.data.name"></h1>
             <h3 class="tagline" lang="vm.lang" output="vm.data.title">Solution Architect</h3>
         </div>
         <!--//profile-container-->
 
-        <div class="profile-container container-block">
+        <div class="profile-container container-block no-print">
             <a href="#" class="lang" ng-class="{selected: vm.lang === 'en'}" ng-click="$event.preventDefault(); vm.setLang('en');">English</a>/
             <a href="#" class="lang" ng-class="{selected: vm.lang === 'fr'}" ng-click="$event.preventDefault(); vm.setLang('fr');">Français</a>
         </div>
@@ -76,8 +78,7 @@
         <!--//section-->
         <section class="section experiences-section" id="filter-picker">
             <h2 class="section-title"><i class="fa fa-sticky-note"></i>{{ 'SUMMARY' | translate }}</h2>
-            <h4>{{ 'BETWEEN' | translate }} {{ vm.startYear.year() }} {{ 'AND' | translate }} {{ vm.endYear.year() }}, {{ 'WORKED_AT'
-                | translate }}</h4>
+            <h4>{{ 'BETWEEN' | translate }} {{ vm.startYear.year() }} {{ 'AND' | translate }} {{ vm.endYear.year() }}, {{ 'WORKED_AT' | translate }}</h4>
             <ul class="horizontal">
                 <li ng-repeat="employer in vm.employers track by $index">
                     <filter-select key="employer.name" selected="vm.employerFilters[employer.name]">{{employer.name}}</filter-select>
@@ -95,8 +96,7 @@
         <!--//section-->
         <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>{{'EXPERIENCES'|translate}}</h2>
-            <div ng-repeat="employer in vm.filteredEmployers track by $index" ng-hide="vm.employerMandates(employer.mandates).length === 0"
-                class="item clearfix">
+            <div ng-repeat="employer in vm.filteredEmployers track by $index" ng-hide="vm.employerMandates(employer.mandates).length === 0" class="item clearfix">
                 <h3>
                     <a name="{{ employer.name }}"></a>{{ employer.name }}</h3>
                 <div ng-repeat="mandate in vm.employerMandates(employer.mandates) track by $index" class="item clearfix">

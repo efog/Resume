@@ -13,11 +13,13 @@
     "careerProfile": {
         "en": [
             "Graduate in software engineering from the École de Technologie Supérieure of Montreal in 2007, Mr. Brouillard is a solution architect and accomplished developer who cumulates over 10 years of hands-on experience on several projects such as web applications, mobile apps and xClient apps using NodeJS, Azure and .Net platforms. Mr. Brouillard is also certified as a Professional SCRUM Master. On his latest mandates, he has leveraged technologies such as NodeJS, SwaggerAPI, MongoDB, Docker, HTML5, CSS3, C#, ReactJS, AngularJS, IOS Swift, Azure PaaS and SaaS, ASP.Net MVC5, WPF, WCF. He also worked with various clients from Montreal to Sacramento through Winnipeg and led development teams located in India.",
-            "At CGI, Mr. Brouillard main achievements we’re help establishing CGI’s capability in NodeJS development at Ville de Montreal and establishing the mobility expertise for CGI’s excellence centers in Sherbrooke and Shawinigan. These mandates involved establishing practices and designs, tech leading projects, hiring talents, establishing relationships with clients and mentoring to consultants."
+            "At Nuvoola, he is working on setting up a cloud innovation lab focused on turnkey delivery and R & D through the implementation of DevOps practices, PaaS-oriented solution architectures and the SCRUM framework.",
+            "Previously at CGI, Mr. Brouillard main achievements we’re help establishing CGI’s capability in NodeJS development at Ville de Montreal and establishing the mobility expertise for CGI’s excellence centers in Sherbrooke and Shawinigan. These mandates involved establishing practices and designs, tech leading projects, hiring talents, establishing relationships with clients and mentoring to consultants."
         ],
         "fr": [
             "Diplômé en Génie Logiciel de l'École de Technologie Supérieure de Montréal en 2007, M.Brouillard est un architecte de solution et développeur accompli qui cumule plus de 10 ans d'expérience pratique sur plusieurs projets tels que des applications Web, des applications mobiles et xClient sur les plate-formes NodeJS Azure et .Net de Microsoft. M.Brouillard est également certifié Professional SCRUM Master. Lors de ses derniers mandats, il a mis à profit des technologies telles que NodeJS, SwaggerAPI, MongoDB, Docker, HTML5, CSS3, C#, ReactJS, AngularJS, IOS Swift, Azure PaaS and SaaS, ASP.Net MVC5, WPF, WCF. Comme consultant principal, il a travaillé avec divers clients de Montréal à Sacramento en passant par Winnipeg et a dirigé des équipes de développement situées en Inde.",
-            "Chez CGI, M.Brouillard a aidé CGI à mettre en place l’expertise NodeJS à la ville de Montréal et aidé à établir l'expertise mobilité pour les centres de livraison de CGI à Sherbrooke et à Shawinigan. Ces mandats comportent l'établissement des pratiques et des concepts, lead technique de projets, l'embauche de talents, l'établissement de relations avec les clients et du mentorat aux consultants."
+            "Chez Nuvoola, il travaille à la mise sur pied d’un centre d’innovation infonuagique orienté sur la livraison clé en main et R&D grâce à la mise en place de pratiques DevOps, architectures de solution orientées PaaS et du framework SCRUM.",
+            "Précédemment à CGI, M.Brouillard a aidé CGI à mettre en place l’expertise NodeJS à la ville de Montréal et aidé à établir l'expertise mobilité pour les centres de livraison de CGI à Sherbrooke et à Shawinigan. Ces mandats comportent l'établissement des pratiques et des concepts, lead technique de projets, l'embauche de talents, l'établissement de relations avec les clients et du mentorat aux consultants."
         ]
     },
     "skills": {
@@ -77,7 +79,7 @@
         },
         {
             "name": {
-                "en": "70-532: Developing Microsoft Azure Solutions - Mai 2017",
+                "en": "70-532: Developing Microsoft Azure Solutions - May 2017",
                 "fr": "70-532: Developing Microsoft Azure Solutions - Mai 2017"
             }
         },
@@ -102,6 +104,66 @@
     ],
     "workExperience": {
         "employers": [
+            {
+                "name": "Nuvoola",
+                "mandates": [
+                    {
+                        "client": "CIL",
+                        "project": {
+                            "en": "Cloud Innovation Lab",
+                            "fr": "Centre d'Innovation Infonuagique"
+                        },
+                        "role": {
+                            "en": "Principal Director",
+                            "fr": "Directeur Principal"
+                        },
+                        "startDate": "2017-04-01",
+                        "endDate": null,
+                        "description": {
+                            "en": "As leader of the Cloud Innovation Lab, Mr. Brouillard is responsible for the life cycle of software development, solution architectures and technology orientations for both internal and external Nuvoola projects. Based on the Scrum framework and the solid principles of DevOps, the Cloud Innovation Lab provides high-value cloud-based integration and custom solutions that can be deployed at the following three public cloud vendors: AWS, Azure and GCP. In this position, Mr. Brouillard is responsible for:",
+                            "fr": "En tant que leader du Cloud Innovation Lab, M. Brouillard est responsable du cycle de vie du développement logiciel, des architectures de solution et des orientations technologiques pour les projets internes et externes à Nuvoola. En s'appuyant sur le cadre Scrum et les principes solides de DevOps, le Cloud Innovation Lab fournit des solutions d'intégration et sur mesure infonuagiques à haute valeur ajoutée, de haute qualité déployable chez les trois fournisseur cloud publics suivants: AWS, Azure et GCP. À ce poste, M. Brouillard est responsable de:"
+                        },
+                        "tasks": [
+                            {
+                                "en": "Establish project specifics solution architectures;",
+                                "fr": "Établir des architectures de solution spécifiques aux projets;;"
+                            },
+                            {
+                                "en": "Establish cloud guidance and practices in DevOps and SDLC;",
+                                "fr": "Établir les pratiques DevOps et SDLC en infonuagique;"
+                            },
+                            {
+                                "en": "Mentor and develop expertise by developping in-house innovative solutions such as cognitive APIs, ChatBots and development accelerators;",
+                                "fr": "Mentorer et développer l'expertise d'une équipe afin de développer des solutions internes innovantes telles que des APIs cognitives, ChatBots et accélérateurs de développement;"
+                            },
+                            {
+                                "en": "Lead hiring interviews and contacting talents;",
+                                "fr": "Mener des entrevues d'embauche et contacts de talents;"
+                            },
+                            {
+                                "en": "Meet clients and establish contacts;",
+                                "fr": "Rencontrer la clientèle et démarchage;"
+                            },
+                            {
+                                "en": "Support RFP process;",
+                                "fr": "Supporter le processus d'appels d'offres"
+                            }
+                        ],
+                        "technologies": [
+                            "AWS",
+                            "GCP",
+                            "Azure",
+                            "DevOps",
+                            "VSTS",
+                            "SCRUM",
+                            "PaaS",
+                            "SaaS",
+                            "IAM"
+                        ],
+                        "products": []
+                    }
+                ]
+            },
             {
                 "name": "KINESIQ",
                 "mandates": [
@@ -144,62 +206,6 @@
                             "Office365",
                             "MySQL"
                         ]
-                    }
-                ]
-            },
-            {
-                "name": "Nuvoola",
-                "mandates": [
-                    {
-                        "client": "CIL",
-                        "project": {
-                            "en": "Cloud Innovation Lab",
-                            "fr": "Centre d'Innovation Infonuagique"
-                        },
-                        "role": {
-                            "en": "Principal Director",
-                            "fr": "Directeur Principal"
-                        },
-                        "startDate": "2017-04-01",
-                        "endDate": null,
-                        "description": {
-                            "en": "As a leader of the Cloud Innovation Lab, Mr. Brouillard is in charge of the SDLC for internal and external projects. Based of strong Scrum and DevOps principles, the Cloud Innovation Lab delivers value added and high quality integration and custom cloud solutions on AWS, Azure and GCP. At this position, Mr. Brouillard is responisble of:",
-                            "fr": "En charge du centre d’innovation et de l’intégration de la méthodologie Agiles et DevOps pour différents clients majeurs. Il s’occupe de plusieurs projets de R&D. Ses fonctions l’amène à faire des plans d’analyse et d’évaluation chez des clients."
-                        },
-                        "tasks": [
-                            {
-                                "en": "Establish cloud guidance and practices in DevOps and SDLC;",
-                                "fr": "Établir les pratiques DevOps et SDLC en infonuagique;"
-                            },
-                            {
-                                "en": "Mentor and develop expertise by developping in-house innovative solutions such as cognitive APIs, ChatBots and development accelerators;",
-                                "fr": "Mentorer et développer l'expertise d'une équipe afin de développer des solutions internes innovantes telles que des APIs cognitives, ChatBots et accélérateurs de développement;"
-                            },
-                            {
-                                "en": "Lead hiring interviews and contacting talents;",
-                                "fr": "Mener des entrevues d'embauche et contacts de talents;"
-                            },
-                            {
-                                "en": "Meet clients and establish contacts;",
-                                "fr": "Rencontrer la clientèle et démarchage;"
-                            },
-                            {
-                                "en": "Support RFP process;",
-                                "fr": "Supporter le processus d'appels d'offres"
-                            }
-                        ],
-                        "technologies": [
-                            "IOS",
-                            "Android",
-                            "React",
-                            "Redux",
-                            "AWS",
-                            "GCP",
-                            "Azure",
-                            "AngularJS",
-                            "NodeJS"
-                        ],
-                        "products": []
                     }
                 ]
             },
