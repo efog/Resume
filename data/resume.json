@@ -114,8 +114,8 @@
                     "startDate": "2018-04-01",
                     "endDate": null,
                     "description": {
-                        "en": "As an Azure specialist, M. Brouillard is involved in several facets of the Atlas Project. He's assisting the Release Management Teams establish, setup and evolve their DevOps process leveraging Azure DevOps, established solution architectures for jobs automation and brings innovative solutions for application monitoring and identity management using ServerLess computing. As such he does:",
-                        "fr": "En tant que spécialiste Azure, Mr. Brouillard est impliqué à divers niveaux sur le projet Atlas. Il assiste l'équipe de gestion des livraisons dans l'établissement, la configuration et l'évolution des pratiques DevOps sur Azure DevOps, établie l'architecture de la solution d'automatisation des processus métiers et concrétise des solutions innovatrices de surveillance applicatives et gestion des identités faisant levier des solutions sans serveur. À ce rôle il a donc participé activement à:"
+                        "en": "As an Azure specialist, M. Brouillard is involved in several facets of the Atlas Project. He's assisting the Release Management Teams establish, setup and evolve their DevOps process leveraging Azure DevOps, defining solution architectures for jobs automation and brings innovative solutions for application monitoring and identity management using ServerLess computing. As such he does:",
+                        "fr": "En tant que spécialiste Azure, Mr. Brouillard est impliqué à divers niveaux sur le projet Atlas. Il assiste l'équipe de gestion des livraisons dans l'établissement, la configuration et l'évolution des pratiques DevOps sur Azure DevOps, défini l'architecture de la solution d'automatisation des processus métiers et concrétise des solutions innovatrices de surveillance applicatives et gestion des identités faisant levier des plateformes ServerLess. À ce rôle il a donc participé activement à:"
                     },
                     "tasks": [{
                             "en": "Define Azure based solution architectures for different project facets such as Monitoring, Job Automation and Identity Management;",
@@ -163,6 +163,7 @@
                         "PaaS",
                         "SaaS",
                         "IAM",
+                        "Kubernetes",
                         "ServerLess",
                         "Infrastructure",
                         "NodeJS",
@@ -171,6 +172,57 @@
                         "GraphAPI"
                     ],
                     "products": []
+                }]
+            },
+            {
+                "name": "Locomotive10",
+                "mandates": [{
+                    "client": "Abeona Systems",
+                    "project": {
+                        "en": "Bird",
+                        "fr": "Bird"
+                    },
+                    "role": {
+                        "en": "Technological Consultant",
+                        "fr": "Consultant en Technologie"
+                    },
+                    "startDate": "2018-04-01",
+                    "endDate": null,
+                    "description": {
+                        "en": "Through his own enterprise, Locomotive10, Étienne Brouillard is responsible for Abeona Systems' solutions software assets. Abeona Systems develops several products for the monitoring and prevention of hazardous situations for the elderly. At this position, M. Brouillard is in charge of:",
+                        "fr": "Au compte de sa propre entreprise, Locomotive10, Étienne Brouillard est responsable pour Abeona Systems de l'implantation et de la conceptions de la plateforme logicielle. Abeona Systems développe divers produits de télé-surveillance et de prévenance de situations dangereuses pour les personnes agées en perte d'autonomie. À ce titre, Mr. Brouillard est en charge de:"
+                    },
+                    "tasks": [{
+                            "en": "Define the IoT solution architecture using Azure IoT and Serverless computings;",
+                            "fr": "Définir la solution Internet des Objets faisant levier sur Azure IoT et l'informatique sans serveur;"
+                        },
+                        {
+                            "en": "Develop in GoLang and deploy on PaaS Kubernetes cluster the integration components;",
+                            "fr": "Développer avec GoLang et déployer les composants d'intégrations sur Kubernetes;"
+                        },
+                        {
+                            "en": "Implement CI/CD pipelines on Azure DevOps;",
+                            "fr": "Implémenter des pipelines CI/CD sur Azure DevOps;"
+                        },
+                        {
+                            "en": "Supervise the development work of a third party, define architecture, manage technical expections, deliveries and continuous integration/deployment;",
+                            "fr": "Superviser le travail de développement impartie à une tierce partie, définir l'architecture de la solution, gérer les attentes techniques, les livraisons et l'intégration continue;"
+                        },
+                        {
+                            "en": "Implement a continuous delivery process;",
+                            "fr": "Implanter un processus de livraison continue;"
+                        }
+                    ],
+                    "technologies": [
+                        "GoLang",
+                        "IoT",
+                        ".Net",
+                        "Docker",
+                        "Kubernetes",
+                        "Azure App Service",
+                        "Azure Logic Apps",
+                        "Azure SQL Server"
+                    ]
                 }]
             },
             {
